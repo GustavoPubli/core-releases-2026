@@ -124,6 +124,13 @@ body::after{
 .fbtn:hover{color:var(--ink);border-color:var(--bord);transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--hard)}
 .fbtn[aria-pressed="true"]{background:#ededed;color:#0b0b0d;border-color:#ededed}
 .fbtn[aria-pressed="true"] small{color:#4a4a4a}
+.sortCtl{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);
+  background:var(--srf);border:1.5px solid var(--line2);border-radius:2px;box-shadow:3px 3px 0 var(--hard);
+  min-height:38px;display:inline-flex;align-items:center;gap:9px;padding:0 11px}
+.sortCtl span{color:var(--faint)}
+.sortCtl select{appearance:none;-webkit-appearance:none;border:0;background:transparent;color:var(--ink);font:inherit;
+  letter-spacing:.12em;text-transform:uppercase;outline:0;cursor:pointer;padding:10px 18px 10px 0}
+.sortCtl select option{background:#101012;color:#f1f1f1}
 
 /* ============ MARQUEE ============ */
 .mq{border-top:1.5px solid var(--bord);border-bottom:1.5px solid var(--bord);background:var(--srf2);overflow:hidden;margin-top:clamp(26px,5vh,48px)}
@@ -659,6 +666,42 @@ R.forEach((r,i)=>{
   if(r.sec==="s")singles.push(r);else (groups[r.m]=groups[r.m]||[]).push(r);
 });
 const months=Object.keys(groups).map(Number).sort((a,b)=>a-b);
+let sortDir="asc";
+function dateKey(r){
+  const p=r.d.split("/").map(Number);
+  return (p[1]||0)*100+(p[0]||0);
+}
+function monthOrder(){
+  return months.slice().sort((a,b)=>sortDir==="desc"?b-a:a-b);
+}
+function compareReleaseNodes(a,b){
+  const ra=R[+a.dataset.i],rb=R[+b.dataset.i];
+  const d=dateKey(ra)-dateKey(rb);
+  return sortDir==="desc"?(d? -d:ra.i-rb.i):(d?d:ra.i-rb.i);
+}
+function syncDockOrder(){
+  const d=document.getElementById("dock");if(!d)return;
+  const keep=t=>d.querySelector(t);
+  const top=keep('[data-target="#top0"]'),sg=keep('[data-target="#singles"]'),sep=keep(".sep"),sug=keep('[data-target="#sugira"]'),ig=keep('[data-url]');
+  if(top)d.appendChild(top);
+  monthOrder().forEach(m=>{const b=keep('[data-target="#m'+m+'"]');if(b)d.appendChild(b)});
+  [sg,sep,sug,ig].forEach(x=>{if(x)d.appendChild(x)});
+}
+function applySortOrder(){
+  monthOrder().forEach(m=>{
+    const sec=document.getElementById("m"+m);if(!sec)return;
+    const grid=sec.querySelector(".grid");
+    if(grid)[...grid.querySelectorAll(".card")].sort(compareReleaseNodes).forEach(el=>grid.appendChild(el));
+    app.appendChild(sec);
+  });
+  const sg=document.getElementById("singles");
+  if(sg){
+    const rows=sg.querySelector(".rows");
+    if(rows)[...rows.querySelectorAll(".row")].sort(compareReleaseNodes).forEach(el=>rows.appendChild(el));
+    app.appendChild(sg);
+  }
+  syncDockOrder();
+}
 
 function platHTML(r){
   const enc=encodeURIComponent((r.a+" "+r.t.replace(/[|]/g," ")).replace(/\s+/g," ").trim());
@@ -731,7 +774,13 @@ document.getElementById("stats").innerHTML=
  +'<div class="stat"><b>'+nSg+'</b><span>singles</span></div>';
 const FL=[["all","Todos",nAll],["alb","Álbuns",nAlb],["ep","EPs",nEp],["sg","Singles",nSg]];
 document.getElementById("filters").innerHTML=FL.map(f=>
-  '<button class="fbtn" data-f="'+f[0]+'" aria-pressed="'+(f[0]==="all")+'">'+f[1]+"<small>"+f[2]+"</small></button>").join("");
+  '<button class="fbtn" data-f="'+f[0]+'" aria-pressed="'+(f[0]==="all")+'">'+f[1]+"<small>"+f[2]+"</small></button>").join("")
+  +'<label class="sortCtl" for="sort-order"><span>Ordem</span><select id="sort-order" aria-label="Ordenar registros"><option value="asc">Antigos primeiro</option><option value="desc">Recentes primeiro</option></select></label>';
+
+document.getElementById("sort-order").addEventListener("change",e=>{
+  sortDir=e.target.value;
+  applySortOrder();
+});
 
 document.getElementById("filters").addEventListener("click",e=>{
   const b=e.target.closest(".fbtn");if(!b)return;
