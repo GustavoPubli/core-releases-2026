@@ -595,7 +595,6 @@ const R=[
 {d:"03/07",a:"DED",t:"RESENT: Deluxe Edition",k:"DELUXE",g:"nu metal / modern metal",note:"DELUXE",q:"DED RESENT"},
 {d:"03/07",a:"Risk It",t:"Mercy For None",k:"ÁLBUM",g:"hardcore"},
 {d:"03/07",a:"Moonspell",t:"Far From God",k:"ÁLBUM",g:"gothic metal"},
-{d:"04/07",a:"Liturgy",t:"The Paranoiac Miracle, Immortal Life, Harmonium",k:"ÁLBUM",g:"experimental / extreme metal adjacent"},
 {d:"12/06",a:"Bring Me The Horizon",t:"Black & Blue (Repented Version)",k:"SINGLE",g:"deathcore / regravação",sec:"s"},
 {d:"12/06",a:"Fit For A King",t:"Blood Pact",k:"SINGLE / EP",g:"metalcore",sec:"s"},
 {d:"12/06",a:"Imminence",t:"The Sword That Never Bends",k:"SINGLE",g:"metalcore sinfônico",sec:"s"},
@@ -910,16 +909,11 @@ if(finePtr&&!reduced){
   start();
 })();
 
-/* touch: tap na capa puxa o vinil · desktop: clique abre o link */
-const coarse=matchMedia("(hover:none)").matches;
+/* toque/clique na capa puxa o vinil; links ficam apenas nos botoes das plataformas */
 document.addEventListener("click",e=>{
   const dw=e.target.closest(".discwrap");
   if(!dw){document.querySelectorAll(".card.active").forEach(c=>c.classList.remove("active"));return}
-  const card=dw.closest(".card"),r=R[+card.dataset.i];
-  if(!coarse){
-    const url=r.sp||r.link||("https://open.spotify.com/search/"+encodeURIComponent(r.a+" "+r.t)+(MOB?"":"/albums"));
-    window.open(url,"_blank","noopener");return;
-  }
+  const card=dw.closest(".card");
   const was=card.classList.contains("active");
   document.querySelectorAll(".card.active").forEach(c=>c.classList.remove("active"));
   if(!was)card.classList.add("active");
