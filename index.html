@@ -626,8 +626,10 @@ const R=[
 {d:"03/07",a:"No Cure",t:"When The Spasm Cease",k:"SINGLE",g:"hardcore / metalcore",sec:"s"}
 ];
 
-/* Overrides manuais: chave "artista|título" (normalizados) → {dz:albumId} ou {q:"busca"} */
-const OVR={};
+/* Overrides manuais: chave "artista|título" (normalizados) → {dz:albumId}, {q:"busca"} ou {manual:true} */
+const OVR={
+  "metaladian|deaditation":{manual:true}
+};
 
 const MESES=["","JANEIRO","FEVEREIRO","MARÇO","ABRIL","MAIO","JUNHO","JULHO","AGOSTO","SETEMBRO","OUTUBRO","NOVEMBRO","DEZEMBRO"];
 const CURTOS=["","JAN","FEV","MAR","ABR","MAI","JUN","JUL","AGO","SET","OUT","NOV","DEZ"];
@@ -663,6 +665,17 @@ function titleLoose(cand,target){
 }
 function artistOk(cand,target){return normA(cand)===normA(target);}
 function key(r){return norm(r.a)+"|"+norm(r.t)}
+function manualCover(r){
+  const x=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">'
+    +'<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050506"/><stop offset=".55" stop-color="#16181b"/><stop offset="1" stop-color="#2a0d0d"/></linearGradient><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".82" numOctaves="4"/><feColorMatrix type="saturate" values="0"/></filter></defs>'
+    +'<rect width="1200" height="1200" fill="url(#g)"/><rect width="1200" height="1200" filter="url(#n)" opacity=".18"/><path d="M96 170h1008M96 1030h1008M170 96v1008M1030 96v1008" stroke="#e7e7e7" stroke-width="8" opacity=".78"/><path d="M175 760c170-390 390-520 850-350M160 815c220-280 520-360 880-180" stroke="#d8d8d8" stroke-width="18" opacity=".18" fill="none"/><circle cx="600" cy="600" r="285" fill="none" stroke="#f1f1f1" stroke-width="20" opacity=".13"/><circle cx="600" cy="600" r="82" fill="#e8e8e8" opacity=".08"/>'
+    +'<text x="600" y="555" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="118" font-weight="900" fill="#efefef" letter-spacing="5">'+x(r.a).toUpperCase()+'</text>'
+    +'<text x="600" y="655" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#cfcfcf" letter-spacing="10">'+x(r.t).toUpperCase()+'</text>'
+    +'<text x="600" y="960" text-anchor="middle" font-family="monospace" font-size="26" fill="#898989" letter-spacing="8">CORE RELEASES MANUAL ART</text>'
+    +'</svg>';
+  return "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(svg);
+}
 
 /* ---------- icons ---------- */
 const IC={
@@ -1090,7 +1103,7 @@ async function resolveArt(r){
   const ov=OVR[key(r)];
   if(ov&&ov.q)r.q=ov.q;
   const layers=[
-    ["L0",async()=>ov&&ov.dz?dzAlbumById(ov.dz):null],
+    ["L0",async()=>ov&&ov.manual?{cover:manualCover(r),link:ov.link||null}:ov&&ov.dz?dzAlbumById(ov.dz):null],
     ["L1",()=>dzSearch(r,false)],
     ["L2",()=>dzSearch(r,true)],
     ["L3",()=>dzFromDisco(r)],
