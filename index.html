@@ -102,8 +102,6 @@ body::after{
 }
 .ht span{display:block}
 .ht .l2{color:#e9eaec}
-.caret{display:inline-block;width:.42em;height:.78em;margin-left:.08em;background:#f0f0f0;vertical-align:-.06em;animation:blink 1.1s steps(2,start) infinite;
-  box-shadow:3px 3px 0 #1a1a1e}
 
 .sub{margin-top:clamp(18px,3vh,28px);display:flex;flex-wrap:wrap;gap:10px 26px;align-items:baseline}
 .tagm{font-family:var(--mono);font-size:clamp(11.5px,1.45vw,14px);font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
@@ -239,24 +237,6 @@ section.mo{padding:clamp(46px,7vh,84px) 0 8px;scroll-margin-top:26px;position:re
 .plat a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--hard)}
 .plat svg{width:17px;height:17px}
 
-/* ============ SINGLES ============ */
-.rows{border-top:1.5px solid var(--bord);position:relative;z-index:1;margin-bottom:clamp(26px,4vh,44px)}
-.row{display:grid;grid-template-columns:74px minmax(0,1fr) minmax(0,240px) auto auto;gap:16px;align-items:center;padding:17px 8px;border-bottom:1px solid var(--line);transition:background .18s,transform .18s,box-shadow .18s;position:relative}
-.row:hover{background:var(--srf);transform:translateX(6px);box-shadow:inset 3px 0 0 #e8e8e8}
-.rdt{font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:.12em;color:var(--dim)}
-.row .artist{margin:0;font-size:15.5px}
-.row .album{font-size:15.5px;margin-top:1px}
-.rgenre{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:var(--faint);text-transform:uppercase;text-align:right;line-height:1.6}
-.chipR{font-family:var(--mono);font-size:8.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);border:1.5px solid var(--line2);border-radius:2px;padding:6px 8px 5px;background:var(--srf);box-shadow:2.5px 2.5px 0 var(--hard);white-space:nowrap;justify-self:end}
-.row .plat{margin:0}
-.row .plat a{width:33px;height:29px}
-@media(max-width:860px){
-  .row{grid-template-columns:60px minmax(0,1fr) auto}
-  .rgenre{display:none}
-  .chipR{grid-column:3}
-  .row .plat{grid-column:2/4;justify-content:flex-start}
-}
-
 /* ============ SUGESTÃO ============ */
 .suggest{position:relative;padding:clamp(64px,10vh,120px) 0 clamp(30px,5vh,50px)}
 .bigS{font-family:var(--arch);font-weight:900;font-stretch:125%;font-size:clamp(26px,5vw,54px);letter-spacing:-.02em;text-transform:uppercase;color:#f4f4f4;margin-top:clamp(20px,3.4vh,32px);line-height:1;
@@ -369,16 +349,16 @@ footer a:hover{color:#fff}
       <i class="tk a"></i><i class="tk b"></i><i class="tk c"></i><i class="tk d"></i>
       <div class="meta">
         <span>[ CORE_RELEASES / 2026 ]</span>
-        <span class="rec"><i></i>v09.07.26 · atualizado</span>
+        <span class="rec"><i></i>v10.07.26 · atualizado</span>
       </div>
       <div class="heroTitle">
         <h1 class="ht" aria-label="Core Releases">
           <span>CORE</span>
-          <span class="l2">RELEASES<span class="caret" aria-hidden="true"></span></span>
+          <span class="l2">RELEASES</span>
         </h1>
       </div>
       <div class="sub">
-        <span class="tagm">ÁLBUNS ✚ EPS ✚ DELUXES ✚ LIVES ✚ SINGLES</span>
+        <span class="tagm">ÁLBUNS ✚ EPS ✚ DELUXES ✚ LIVES ✚ REISSUES</span>
       </div>
       <p class="blurb">Todo lançamento que importa em 2026, num lugar só. <i>Mês a mês, capa a capa, do jeito que disco merece.</i></p>
       <div class="stats" id="stats"></div>
@@ -412,7 +392,7 @@ footer a:hover{color:#fff}
     <h2 class="bigS">Faça uma sugestão</h2>
     <form id="sform" class="sform" novalidate>
       <div class="fld"><label for="f-art">Artista *</label><input id="f-art" name="artista" autocomplete="off" required></div>
-      <div class="fld"><label for="f-alb">Álbum / EP / Single *</label><input id="f-alb" name="album" autocomplete="off" required></div>
+      <div class="fld"><label for="f-alb">Álbum / EP / edição *</label><input id="f-alb" name="album" autocomplete="off" required></div>
       <div class="fld"><label for="f-mes">Mês</label>
         <select id="f-mes" name="mes">
           <option value="">—</option><option>Janeiro</option><option>Fevereiro</option><option>Março</option><option>Abril</option><option>Maio</option><option>Junho</option><option>Julho</option><option>Agosto</option><option>Setembro</option><option>Outubro</option><option>Novembro</option><option>Dezembro</option>
@@ -435,8 +415,8 @@ footer a:hover{color:#fff}
       <p class="tiny">CURADORIA &amp; IDEALIZAÇÃO — <a href="https://instagram.com/gustpires13" target="_blank" rel="noopener">@gustpires13</a></p>
     </div>
     <div class="fcol">
-      <p>© 2026 CORE RELEASES. Corte desta edição em <b style="color:#dcdcdc">09.07.2026</b>. A base cruza calendários de lançamento, veículos especializados, DSPs, Bandcamp, páginas oficiais, gravadoras, subreddits e checagem manual. Quando há divergência, a prioridade é fonte oficial de artista, selo ou plataforma de streaming, sempre com revisão de data, formato e recorte.</p>
-      <p class="tiny"><b>FONTES DE PESQUISA</b> · Metal Injection · MetalSucks · Blabbermouth · Loudwire · Kerrang! · Revolver · Rate Your Music · Album of the Year · Sputnikmusic · Billboard · Official Charts · Luminate · Metal Archives · Angry Metal Guy · No Clean Singing · New Noise Magazine · Wall of Sound · Distorted Sound · ThePRP · Tenho Mais Discos Que Amigos · State of the Scene · Downstage · Rock Feed · Heavy Music HQ · Igor Miranda · Apple Music · Spotify · Bandcamp · sites oficiais das bandas · r/Metalcore · r/Deathcore · r/Djent · r/progmetal · r/PostHardcore · r/numetal · r/Hardcore · r/Metal · r/MetalForTheMasses · r/TechnicalDeathMetal · r/SlamBrutalDeathMetal · r/corejerk · SharpTone · UNFD · Sumerian · Fearless · Rise · Pure Noise · Arising Empire · Century Media · Nuclear Blast · Metal Blade · Unique Leader · MNRK Heavy · Epitaph · Prosthetic · Closed Casket Activities · DAZE · Triple B · Flatspot · Good Fight · 3DOT · InsideOut · Napalm · Spinefarm · Better Noise · Roadrunner · Solid State · Thriller Records.</p>
+      <p>© 2026 CORE RELEASES. Corte desta edição em <b style="color:#dcdcdc">10.07.2026</b>. A base cruza calendários de lançamento, veículos especializados, plataformas de streaming, Bandcamp, páginas oficiais, gravadoras, comunidades e imprensa brasileira. Quando há divergência, a prioridade é a fonte oficial do artista, selo ou plataforma, com revisão manual de data, formato e recorte.</p>
+      <p class="tiny"><b>FONTES DE PESQUISA</b> · Metal Injection · MetalSucks · Blabbermouth · Loudwire · Kerrang! · Revolver · Rate Your Music · Album of the Year · Sputnikmusic · Billboard · Official Charts · Luminate · Metal Archives · Angry Metal Guy · No Clean Singing · New Noise Magazine · Wall of Sound · Distorted Sound · ThePRP · Tenho Mais Discos Que Amigos · State of the Scene · Downstage · Rock Feed · Heavy Music HQ · Igor Miranda · Boolin Tunes · Lambgoat · Apple Music · Spotify · Deezer · Qobuz · Bandcamp · canais oficiais dos artistas · r/Metalcore · r/Deathcore · r/Djent · r/progmetal · r/PostHardcore · r/numetal · r/Hardcore · r/Metal · r/MetalForTheMasses · r/TechnicalDeathMetal · r/SlamBrutalDeathMetal · r/corejerk · SharpTone · UNFD · Sumerian · Fearless · Rise · Pure Noise · Arising Empire · Century Media · Nuclear Blast · Metal Blade · Unique Leader · MNRK Heavy · Epitaph · Prosthetic · Closed Casket Activities · DAZE · Triple B · Flatspot · Good Fight · 3DOT · InsideOut · Napalm · Spinefarm · Better Noise · Roadrunner · Solid State · Thriller Records.</p>
     </div>
   </div>
 </footer>
@@ -459,7 +439,7 @@ footer a:hover{color:#fff}
 const SPOTIFY={clientId:"",clientSecret:""};
 
 /* ============================================================
-   DADOS — corte 09.07.2026 · 162 registros
+   DADOS — corte 10.07.2026
 ============================================================ */
 const R=[
 {d:"02/01",a:"Paleface Swiss",t:"The Wilted",k:"EP",g:"deathcore / nu deathcore"},
@@ -474,7 +454,7 @@ const R=[
 {d:"23/01",a:"Crystal Lake",t:"The Weight Of Sound",k:"ÁLBUM",g:"metalcore / deathcore"},
 {d:"23/01",a:"Poppy",t:"Empty Hands",k:"ÁLBUM",g:"metalcore / alt metal / industrial"},
 {d:"23/01",a:"Textures",t:"Genotype",k:"ÁLBUM",g:"djent / prog metal"},
-{d:"30/01",a:"Hanabie.",t:"Hot Topic",k:"EP",g:"metalcore / modern metal"},
+{d:"28/01",a:"Hanabie.",t:"Hot Topic",k:"EP",g:"metalcore / modern metal"},
 {d:"30/01",a:"MØL",t:"Dreamcrush",k:"ÁLBUM",g:"blackgaze / alt metal"},
 {d:"30/01",a:"Nightmarer",t:"Hell Interface",k:"EP",g:"dissonant deathcore"},
 {d:"30/01",a:"Shields",t:"Death & Connection",k:"ÁLBUM",g:"metalcore"},
@@ -482,11 +462,13 @@ const R=[
 {d:"30/01",a:"Urne",t:"Setting Fire To The Sky",k:"ÁLBUM",g:"sludge prog / modern metal"},
 {d:"06/02",a:"Before I Turn",t:"Immoral and Malevolent Happenings",k:"ÁLBUM",g:"metalcore / deathcore"},
 {d:"06/02",a:"Karnivool",t:"In Verses",k:"ÁLBUM",g:"prog metal moderno"},
+{d:"06/02",a:"Lex Level",t:"VERDE",k:"DELUXE",g:"metalcore / post-hardcore / hardcore brasileiro",note:"DELUXE"},
 {d:"13/02",a:"Angel Du$t",t:"Cold 2 The Touch",k:"ÁLBUM",g:"hardcore / alt rock pesado"},
 {d:"13/02",a:"The Browning",t:"Burn This World [Evolved]",k:"ÁLBUM",g:"electronicore / deathcore"},
 {d:"13/02",a:"Converge",t:"Love Is Not Enough",k:"ÁLBUM",g:"metalcore / mathcore"},
 {d:"13/02",a:"Space Of Variations",t:"Poisoned Art",k:"ÁLBUM",g:"metalcore moderno"},
 {d:"13/02",a:"Story Of The Year",t:"A.R.S.O.N.",k:"ÁLBUM",g:"post-hardcore / alternative rock pesado"},
+{d:"12/02",a:"Pense",t:"Som No Sebo Ao Vivo",k:"EP AO VIVO",g:"post-hardcore / metalcore brasileiro",note:"AO VIVO"},
 {d:"20/02",a:"Abstracted",t:"Hiraeth",k:"ÁLBUM",g:"prog death / tech metal"},
 {d:"20/02",a:"Chained To The Bottom Of The Ocean",t:"Let Us Not Speak of Them But Look and Pass On",k:"EP",g:"sludge / hardcore pesado"},
 {d:"20/02",a:"Mothica",t:"Somewhere In Between",k:"EP",g:"alt rock pesado / modern heavy"},
@@ -498,11 +480,13 @@ const R=[
 {d:"27/02",a:"Final Gasp",t:"New Day Symptoms",k:"ÁLBUM",g:"hardcore / death rock"},
 {d:"27/02",a:"Nothing",t:"A Short History Of Decay",k:"ÁLBUM",g:"shoegaze pesado / alt rock"},
 {d:"27/02",a:"Rob Zombie",t:"The Great Satan",k:"ÁLBUM",g:"industrial metal / alt metal"},
+{d:"02/03",a:"Do Protesto à Resistência",t:"O Caos Começou",k:"ÁLBUM",g:"hardcore / metalcore brasileiro"},
 {d:"06/03",a:"ERRA",t:"silence outlives the earth",k:"ÁLBUM",g:"progressive metalcore / djent"},
 {d:"06/03",a:"Lost Society",t:"Hell Is A State Of Mind",k:"ÁLBUM",g:"modern metal"},
 {d:"13/03",a:"Lamb Of God",t:"Into Oblivion",k:"ÁLBUM",g:"groove metal / modern metal"},
 {d:"13/03",a:"UnityTX",t:"Somewhere, In Between…",k:"ÁLBUM",g:"nu metalcore / rap metal"},
 {d:"13/03",a:"Vicious Rain",t:"The Anatomy Of Surviving",k:"ÁLBUM",g:"metalcore moderno"},
+{d:"19/03",a:"Emphuria",t:"Falso Bicho",k:"ÁLBUM",g:"metalcore / post-hardcore brasileiro"},
 {d:"20/03",a:"Gaerea",t:"Loss",k:"ÁLBUM",g:"extreme metal moderno / post-black"},
 {d:"20/03",a:"Lost In Hollywood",t:"Lost In Hollywood",k:"ÁLBUM",g:"modern metalcore"},
 {d:"20/03",a:"Poison The Well",t:"Peace In Place",k:"ÁLBUM",g:"metalcore / post-hardcore"},
@@ -514,6 +498,7 @@ const R=[
 {d:"27/03",a:"Black Label Society",t:"Engines Of Demolition",k:"ÁLBUM",g:"heavy metal / hard rock moderno"},
 {d:"27/03",a:"Don Broco",t:"Nightmare Tripping",k:"ÁLBUM",g:"nu metal / metalcore / alt rock"},
 {d:"27/03",a:"Pop Evil",t:"What Remains (Midnight Edition)",k:"DELUXE",g:"alt metal / hard rock moderno",note:"DELUXE",q:"Pop Evil What Remains"},
+{d:"25/03",a:"RANCORE",t:"UNHAS",k:"EP",g:"hardcore / metalcore brasileiro"},
 {d:"03/04",a:"Corrosion Of Conformity",t:"Good God/Baad Man",k:"ÁLBUM",g:"sludge / groove / hardcore adjacent"},
 {d:"03/04",a:"Dust",t:"Thoughts Of A Falling Man",k:"ÁLBUM",g:"groove metal / metalcore"},
 {d:"03/04",a:"No Terror In The Bang",t:"Existence",k:"EP",g:"cinematic modern metal"},
@@ -528,12 +513,14 @@ const R=[
 {d:"10/04",a:"Obey The Kraken",t:"Apocrypha",k:"EP",g:"deathcore"},
 {d:"10/04",a:"Inferi",t:"Heaven Wept",k:"ÁLBUM",g:"tech death / extreme metal"},
 {d:"10/04",a:"Lord Of The Lost",t:"Opvs Noir Vol. 3",k:"ÁLBUM",g:"dark rock / industrial gótico"},
+{d:"10/04",a:"planoreal",t:"Mérito",k:"EP",g:"post-hardcore / metalcore brasileiro"},
 {d:"17/04",a:".gif from god",t:"Dissimulation",k:"ÁLBUM",g:"mathcore / screamo pesado"},
 {d:"17/04",a:"From Ashes To New",t:"Reflections",k:"ÁLBUM",g:"nu metal / modern metal"},
 {d:"17/04",a:"Nekrogoblikon",t:"The Boiling Sea",k:"EP",g:"melodeath / modern metal"},
 {d:"17/04",a:"Slipknot",t:"All Hope Is Gone",k:"REISSUE",g:"nu metal / alt metal",note:"REISSUE"},
 {d:"17/04",a:"The Last Ten Seconds Of Life",t:"The Dead Ones",k:"ÁLBUM",g:"deathcore"},
 {d:"17/04",a:"Wage War",t:"It Calls Me By Name",k:"EP",g:"metalcore moderno"},
+{d:"16/04",a:"Metade de Mim",t:"ACIDENTES",k:"ÁLBUM",g:"post-hardcore / metalcore brasileiro"},
 {d:"18/04",a:"Look Outside Your Window",t:"Look Outside Your Window",k:"ÁLBUM DE ARQUIVO",g:"experimental alt rock / Slipknot adjacent"},
 {d:"24/04",a:"The Amity Affliction",t:"House Of Cards",k:"ÁLBUM",g:"metalcore / post-hardcore"},
 {d:"24/04",a:"Armed For Apocalypse",t:"The Earth Is Breathing Beneath Me",k:"ÁLBUM",g:"sludge / metalcore"},
@@ -545,6 +532,7 @@ const R=[
 {d:"24/04",a:"Sepultura",t:"The Cloud Of Unknowing",k:"EP",g:"thrash / groove metal"},
 {d:"24/04",a:"Terror",t:"Still Suffer",k:"ÁLBUM",g:"hardcore / metalcore adjacent"},
 {d:"24/04",a:"The Saddest Landscape",t:"Alone With Heaven",k:"ÁLBUM",g:"screamo / post-hardcore"},
+{d:"30/04",a:"RANCORE",t:"BRIO",k:"ÁLBUM",g:"hardcore / metalcore brasileiro"},
 {d:"01/05",a:"Cage Fight",t:"Exuvia",k:"ÁLBUM",g:"hardcore / thrash / metalcore"},
 {d:"01/05",a:"Cognizance",t:"In Light, No Shape",k:"ÁLBUM",g:"tech death / deathcore adjacent"},
 {d:"01/05",a:"Dream On Dreamer",t:"Heavens",k:"ÁLBUM",g:"post-hardcore / metalcore melódico"},
@@ -559,6 +547,8 @@ const R=[
 {d:"08/05",a:"The Narrator",t:"Phosphor",k:"ÁLBUM",g:"metalcore"},
 {d:"08/05",a:"sace6",t:"brutalist",k:"ÁLBUM",g:"nu metal / alt metal"},
 {d:"08/05",a:"Idle Threat",t:"You'll Forget The Sun",k:"ÁLBUM",g:"post-hardcore melódico"},
+{d:"08/05",a:"Far From Alaska",t:"Som No Sebo Ao Vivo",k:"EP AO VIVO",g:"alternative rock / post-hardcore brasileiro",note:"AO VIVO"},
+{d:"08/05",a:"Black Pantera",t:"Live at Hellfest",k:"ÁLBUM AO VIVO",g:"hardcore / punk metal brasileiro",note:"AO VIVO"},
 {d:"15/05",a:"alt.",t:"Nevermore",k:"EP",g:"alternative metal / metalcore moderno"},
 {d:"15/05",a:"Held.",t:"Grey",k:"ÁLBUM",g:"modern rock / alt metal"},
 {d:"15/05",a:"Jungle Rot",t:"Cruel Face Of War",k:"ÁLBUM",g:"death metal / hardcore adjacent"},
@@ -578,6 +568,7 @@ const R=[
 {d:"29/05",a:"Oathbreaker",t:"Rheia (Redux)",k:"ÁLBUM",g:"blackened hardcore / post-metal",note:"REDUX",q:"Oathbreaker Rheia"},
 {d:"29/05",a:"Devin Townsend",t:"The Moth",k:"ÁLBUM",g:"prog metal moderno"},
 {d:"29/05",a:"Sparta",t:"Cut A Silhouette",k:"ÁLBUM",g:"post-hardcore"},
+{d:"29/05",a:"Bullet Bane",t:"O AGORA QUE COBRA VIVER",k:"ÁLBUM",g:"post-hardcore / metalcore brasileiro"},
 {d:"05/06",a:"August Burns Red",t:"Season Of Surrender",k:"ÁLBUM",g:"metalcore"},
 {d:"05/06",a:"Converge",t:"Hum Of Hurt",k:"ÁLBUM",g:"metalcore / mathcore / noise rock"},
 {d:"05/06",a:"Evanescence",t:"Sanctuary",k:"ÁLBUM",g:"gothic/alternative metal"},
@@ -587,6 +578,9 @@ const R=[
 {d:"12/06",a:"Gideon",t:"4x4",k:"EP",g:"metalcore / hardcore"},
 {d:"12/06",a:"Sleeping With Sirens",t:"An Ending In Itself",k:"ÁLBUM",g:"post-hardcore / alt rock pesado"},
 {d:"12/06",a:"Stitched Up Heart",t:"Medusa",k:"ÁLBUM",g:"alternative metal / electronic"},
+{d:"12/06",a:"Fit For A King",t:"Blood Pact",k:"EP",g:"metalcore"},
+{d:"12/06",a:"Secrets",t:"Bitter Dose",k:"EP",g:"post-hardcore / metalcore"},
+{d:"12/06",a:"What Lies Below",t:"Monolith",k:"EP",g:"progressive metalcore"},
 {d:"19/06",a:"Endseeker",t:"Coffin Born",k:"EP",g:"death metal moderno"},
 {d:"19/06",a:"There Were Wires",t:"Vessel",k:"ÁLBUM",g:"post-hardcore / noise rock"},
 {d:"26/06",a:"Gracie",t:"Miss Misfortunately",k:"ÁLBUM",g:"emo / alt rock pesado"},
@@ -600,35 +594,40 @@ const R=[
 {d:"01/07",a:"Arson",t:"Arson",k:"ÁLBUM",g:"hardcore"},
 {d:"01/07",a:"Dealer",t:"Taboo",k:"EP",g:"nu metalcore / metalcore"},
 {d:"01/07",a:"KOH",t:"Golden Death",k:"EP",g:"progressive metalcore / djent"},
-{d:"01/07",a:"Metaladian",t:"Deaditation",k:"ÁLBUM",g:"progressive death / technical metal"},
 {d:"02/07",a:"Sleep Theory",t:"(E)motional (S)upport (C)are (P)ackage",k:"EP DE COVERS",g:"modern rock / alt metal adjacent",note:"COVERS"},
 {d:"03/07",a:"DED",t:"RESENT: Deluxe Edition",k:"DELUXE",g:"nu metal / modern metal",note:"DELUXE",q:"DED RESENT"},
 {d:"03/07",a:"Ice Sealed Eyes",t:"Tape 1: Far Away",k:"EP",g:"alternative metal / metalcore"},
 {d:"03/07",a:"Risk It",t:"Mercy For None",k:"ÁLBUM",g:"hardcore"},
 {d:"03/07",a:"Moonspell",t:"Far From God",k:"ÁLBUM",g:"gothic metal"},
-{d:"04/07",a:"Liturgy",t:"The Paranoiac Miracle, Immortal Life, Harmonium",k:"ARQUIVO DIGITAL",g:"experimental / extreme metal"},
+{d:"07/07",a:"A Última Theoria",t:"Não Existe Cura",k:"ÁLBUM",g:"metalcore / hardcore brasileiro"},
 {d:"08/07",a:"rozemary",t:"it's harder now to breathe",k:"EP",g:"metalcore / post-hardcore"},
 {d:"09/07",a:"Destruction Of The Healer",t:"A Universe Bereaved",k:"ÁLBUM",g:"progressive melodeath / deathcore adjacent"},
-{d:"12/06",a:"Bring Me The Horizon",t:"Black & Blue (Repented Version)",k:"SINGLE",g:"deathcore / regravação",sec:"s"},
-{d:"12/06",a:"Fit For A King",t:"Blood Pact",k:"SINGLE / EP",g:"metalcore",sec:"s"},
-{d:"12/06",a:"Imminence",t:"The Sword That Never Bends",k:"SINGLE",g:"metalcore sinfônico",sec:"s"},
-{d:"12/06",a:"Secrets",t:"Bitter Dose",k:"SINGLE",g:"post-hardcore / metalcore",sec:"s"},
-{d:"12/06",a:"What Lies Below",t:"Monolith",k:"SINGLE",g:"progressive metalcore",sec:"s"},
-{d:"19/06",a:"Beartooth",t:"Bullshit",k:"SINGLE",g:"hard rock / metalcore melódico",sec:"s"},
-{d:"19/06",a:"Boundaries",t:"May This Pain Never Leave",k:"SINGLE",g:"metalcore",sec:"s"},
-{d:"19/06",a:"Motionless In White",t:"R.I.P. feat. Skylar Grey",k:"SINGLE",g:"metalcore / industrial",sec:"s"},
-{d:"19/06",a:"thrown",t:"rehearsed",k:"SINGLE",g:"nu metalcore / hardcore",sec:"s"},
-{d:"26/06",a:"Half Me",t:"Built On Your Blood",k:"SINGLE",g:"metalcore",sec:"s"},
-{d:"26/06",a:"Ice Nine Kills",t:"Play Dead",k:"SINGLE",g:"theatrical metalcore",sec:"s"},
-{d:"26/06",a:"I Prevail",t:"Paradise feat. Amira Elfeky",k:"SINGLE",g:"post-hardcore / modern metal",sec:"s"},
-{d:"26/06",a:"Like Moths To Flames",t:"How To Be Lonely",k:"SINGLE",g:"metalcore",sec:"s"},
-{d:"26/06",a:"Loathe",t:"Fangs",k:"SINGLE",g:"alt metal / shoegaze metal",sec:"s"},
-{d:"03/07",a:"No Cure",t:"When The Spasm Cease",k:"SINGLE",g:"hardcore / metalcore",sec:"s"}
+{d:"09/07",a:"From This Day Forward",t:"TRY GATEKEEPING THIS",k:"EP",g:"metalcore / metallic hardcore"},
+{d:"10/07",a:"2SILENT",t:"WHERE ROSES WEEP (DELUXE)",k:"DELUXE",g:"metalcore / post-hardcore",note:"DELUXE"},
+{d:"10/07",a:"Arise From Worms",t:"Becoming the Devil",k:"ÁLBUM",g:"deathcore / blackened deathcore"},
+{d:"10/07",a:"Bring Me The Horizon",t:"Count Your Blessings | Repented",k:"ÁLBUM REGRAVADO",g:"deathcore / metalcore",note:"REGRAVADO"},
+{d:"10/07",a:"Cancer Bats",t:"Bat Sabbath | Worship (EP)",k:"EP",g:"sludge metal / hardcore / stoner metal"},
+{d:"10/07",a:"DevilDriver",t:"Strike And Kill",k:"ÁLBUM",g:"groove metal / modern metal"},
+{d:"10/07",a:"Eva Under Fire",t:"Violence",k:"ÁLBUM",g:"hard rock / alternative metal"},
+{d:"10/07",a:"If These Trees Could Talk",t:"A Deep, Returning Echo",k:"ÁLBUM",g:"post-metal / instrumental rock"},
+{d:"10/07",a:"My Chemical Romance",t:"The Black Parade (The Black Parade at 20)",k:"DELUXE",g:"emo / alternative rock / post-hardcore",note:"DELUXE"},
+{d:"10/07",a:"No Cure",t:"It Is Going To Get Dark",k:"ÁLBUM",g:"hardcore / metalcore"},
+{d:"10/07",a:"Peacemaker FL",t:"Broken Home",k:"EP",g:"hardcore / metalcore"},
+{d:"10/07",a:"Show Me The Body",t:"No Greater Love",k:"ÁLBUM",g:"hardcore / noise rock / punk"},
+{d:"10/07",a:"Snag",t:"Company Picnic",k:"EP",g:"screamo / emo violence / post-hardcore"},
+{d:"10/07",a:"Soulprison",t:"Purgatory",k:"EP",g:"hardcore / metalcore"},
+{d:"10/07",a:"The Plot In You",t:"Volumes",k:"ÁLBUM",g:"metalcore / post-hardcore / alternative metal"},
+{d:"10/07",a:"What Lies Below",t:"I Let It Consume Me",k:"ÁLBUM",g:"progressive metalcore / djent"}
 ];
 
-/* Overrides manuais: chave "artista|título" (normalizados) → {dz:albumId}, {q:"busca"} ou {manual:true} */
+/* Capas oficiais confirmadas: somente canais dos artistas, selos ou Bandcamp. */
 const OVR={
-  "metaladian|deaditation":{manual:true}
+  "arson|arson":{cover:"https://f4.bcbits.com/img/a0577176587_10.jpg",link:"https://newmoralityzine.bandcamp.com/album/arson"},
+  "destructionofthehealer|auniversebereaved":{cover:"https://f4.bcbits.com/img/a2344654135_10.jpg",link:"https://grindheadrecords.bandcamp.com/album/a-universe-bereaved"},
+  "lookoutsideyourwindow|lookoutsideyourwindow":{cover:"https://shop.lookoutsideyourwindow.com/cdn/shop/files/LOYW-850079803190.jpg?v=1778029525&width=1200",link:"https://shop.lookoutsideyourwindow.com/collections/all"},
+  "oathbreaker|rheiaredux":{cover:"https://f4.bcbits.com/img/a0408336144_10.jpg",link:"https://oathbreakerband.bandcamp.com/album/rheia-redux"},
+  "icesealedeyes|tape1faraway":{cover:"https://arising-empire.com/cms/uploads/release_tape-1-far-away_293.jpg",link:"https://arising-empire.com/artists/ice-sealed-eyes/acid-tears"},
+  "thehometeam|itlivesitchanges":{cover:"https://thrillerrecords.com/cdn/shop/articles/The_Home_Team_-_It_Lives_It_Changes_7a17fff1-ac9e-47aa-81bc-7f0cbf4034cb_1000x.jpg?v=1782494959",link:"https://thrillerrecords.com/blogs/news/the-home-team-share-reimagined-album-it-lives-it-changes"}
 };
 
 const MESES=["","JANEIRO","FEVEREIRO","MARÇO","ABRIL","MAIO","JUNHO","JULHO","AGOSTO","SETEMBRO","OUTUBRO","NOVEMBRO","DEZEMBRO"];
@@ -665,18 +664,6 @@ function titleLoose(cand,target){
 }
 function artistOk(cand,target){return normA(cand)===normA(target);}
 function key(r){return norm(r.a)+"|"+norm(r.t)}
-function manualCover(r){
-  const x=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-  const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">'
-    +'<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050506"/><stop offset=".55" stop-color="#16181b"/><stop offset="1" stop-color="#2a0d0d"/></linearGradient><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".82" numOctaves="4"/><feColorMatrix type="saturate" values="0"/></filter></defs>'
-    +'<rect width="1200" height="1200" fill="url(#g)"/><rect width="1200" height="1200" filter="url(#n)" opacity=".18"/><path d="M96 170h1008M96 1030h1008M170 96v1008M1030 96v1008" stroke="#e7e7e7" stroke-width="8" opacity=".78"/><path d="M175 760c170-390 390-520 850-350M160 815c220-280 520-360 880-180" stroke="#d8d8d8" stroke-width="18" opacity=".18" fill="none"/><circle cx="600" cy="600" r="285" fill="none" stroke="#f1f1f1" stroke-width="20" opacity=".13"/><circle cx="600" cy="600" r="82" fill="#e8e8e8" opacity=".08"/>'
-    +'<text x="600" y="555" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="118" font-weight="900" fill="#efefef" letter-spacing="5">'+x(r.a).toUpperCase()+'</text>'
-    +'<text x="600" y="655" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#cfcfcf" letter-spacing="10">'+x(r.t).toUpperCase()+'</text>'
-    +'<text x="600" y="960" text-anchor="middle" font-family="monospace" font-size="26" fill="#898989" letter-spacing="8">CORE RELEASES MANUAL ART</text>'
-    +'</svg>';
-  return "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(svg);
-}
-
 /* ---------- icons ---------- */
 const IC={
 sp:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M7.4 9.7c3.1-.9 6.6-.7 9.4.8"/><path d="M8 12.5c2.5-.7 5.3-.5 7.6.7"/><path d="M8.6 15.2c2-.5 4-.4 5.8.5"/></svg>',
@@ -686,11 +673,12 @@ yt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7
 
 /* ---------- render ---------- */
 const app=document.getElementById("app");
-const groups={},singles=[];
+const groups={};
 R.forEach((r,i)=>{
   r.i=i;r.m=parseInt(r.d.slice(3),10);
-  if(r.sec==="s")singles.push(r);else (groups[r.m]=groups[r.m]||[]).push(r);
+  (groups[r.m]=groups[r.m]||[]).push(r);
 });
+Object.values(groups).forEach(list=>list.sort((a,b)=>dateKey(a)-dateKey(b)||a.i-b.i));
 const months=Object.keys(groups).map(Number).sort((a,b)=>a-b);
 let sortDir="asc";
 function dateKey(r){
@@ -708,10 +696,10 @@ function compareReleaseNodes(a,b){
 function syncDockOrder(){
   const d=document.getElementById("dock");if(!d)return;
   const keep=t=>d.querySelector(t);
-  const top=keep('[data-target="#top0"]'),sg=keep('[data-target="#singles"]'),sep=keep(".sep"),sug=keep('[data-target="#sugira"]'),ig=keep('[data-url]');
+  const top=keep('[data-target="#top0"]'),sep=keep(".sep"),sug=keep('[data-target="#sugira"]'),ig=keep('[data-url]');
   if(top)d.appendChild(top);
   monthOrder().forEach(m=>{const b=keep('[data-target="#m'+m+'"]');if(b)d.appendChild(b)});
-  [sg,sep,sug,ig].forEach(x=>{if(x)d.appendChild(x)});
+  [sep,sug,ig].forEach(x=>{if(x)d.appendChild(x)});
 }
 function applySortOrder(){
   monthOrder().forEach(m=>{
@@ -720,12 +708,6 @@ function applySortOrder(){
     if(grid)[...grid.querySelectorAll(".card")].sort(compareReleaseNodes).forEach(el=>grid.appendChild(el));
     app.appendChild(sec);
   });
-  const sg=document.getElementById("singles");
-  if(sg){
-    const rows=sg.querySelector(".rows");
-    if(rows)[...rows.querySelectorAll(".row")].sort(compareReleaseNodes).forEach(el=>rows.appendChild(el));
-    app.appendChild(sg);
-  }
   syncDockOrder();
 }
 
@@ -755,16 +737,6 @@ function cardHTML(r){
     +"</div>"
   +"</article>";
 }
-function rowHTML(r){
-  return '<div class="row rv" data-i="'+r.i+'">'
-    +'<span class="rdt">'+r.d.replace("/",".")+"</span>"
-    +'<div class="rmain"><h3 class="artist">'+esc(r.a)+'</h3><p class="album">'+esc(r.t)+"</p></div>"
-    +'<span class="rgenre">'+esc(r.g)+"</span>"
-    +'<span class="chipR">'+esc(r.k)+"</span>"
-    +platHTML(r)
-  +"</div>";
-}
-
 let html="";
 for(const m of months){
   const list=groups[m];
@@ -773,10 +745,6 @@ for(const m of months){
     +'<h2>'+MESES[m]+'<span class="mcount">· '+list.length+" registros</span></h2></div>"
     +'<div class="grid">'+list.map(cardHTML).join("")+"</div></section>";
 }
-html+='<section class="mo" id="singles">'
-  +'<div class="mh"><span class="ghost" aria-hidden="true">45</span>'
-  +'<h2>SINGLES<span class="mcount">· '+singles.length+" registros</span></h2></div>"
-  +'<div class="rows">'+singles.map(rowHTML).join("")+"</div></section>";
 app.innerHTML=html;
 
 /* marquee */
@@ -796,17 +764,17 @@ app.innerHTML=html;
 /* stats + filtros */
 const PRED={
   all:()=>true,
-  alb:r=>r.k.includes("ÁLBUM")||r.k==="DELUXE"||r.k==="REISSUE",
-  ep:r=>r.k.includes("EP"),
-  sg:r=>r.k.includes("SINGLE")
+  alb:r=>r.k==="ÁLBUM"||r.k==="ÁLBUM AO VIVO"||r.k==="ÁLBUM DE ARQUIVO"||r.k==="ÁLBUM REIMAGINADO"||r.k==="ÁLBUM REGRAVADO",
+  ep:r=>r.k==="EP"||r.k==="EP AO VIVO"||r.k==="EP DE COVERS",
+  oth:r=>r.k==="DELUXE"||r.k==="REISSUE"||r.k==="ARQUIVO DIGITAL"
 };
-const nAll=R.length,nAlb=R.filter(PRED.alb).length,nEp=R.filter(PRED.ep).length,nSg=R.filter(PRED.sg).length;
+const nAll=R.length,nAlb=R.filter(PRED.alb).length,nEp=R.filter(PRED.ep).length,nOth=R.filter(PRED.oth).length;
 document.getElementById("stats").innerHTML=
   '<div class="stat"><b>'+nAll+'</b><span>registros</span></div>'
  +'<div class="stat"><b>'+nAlb+'</b><span>álbuns</span></div>'
  +'<div class="stat"><b>'+nEp+'</b><span>EPs</span></div>'
- +'<div class="stat"><b>'+nSg+'</b><span>singles</span></div>';
-const FL=[["all","Todos",nAll],["alb","Álbuns",nAlb],["ep","EPs",nEp],["sg","Singles",nSg]];
+ +'<div class="stat"><b>'+nOth+'</b><span>outros</span></div>';
+const FL=[["all","Todos",nAll],["alb","Álbuns",nAlb],["ep","EPs",nEp],["oth","Outros",nOth]];
 document.getElementById("filters").innerHTML=FL.map(f=>
   '<button class="fbtn" data-f="'+f[0]+'" aria-pressed="'+(f[0]==="all")+'">'+f[1]+"<small>"+f[2]+"</small></button>").join("")
   +'<label class="sortCtl" for="sort-order"><span>Ordem</span><select id="sort-order" aria-label="Ordenar registros"><option value="asc">Antigos primeiro</option><option value="desc">Recentes primeiro</option></select></label>';
@@ -820,9 +788,9 @@ document.getElementById("filters").addEventListener("click",e=>{
   const b=e.target.closest(".fbtn");if(!b)return;
   document.querySelectorAll(".fbtn").forEach(x=>x.setAttribute("aria-pressed",x===b));
   const p=PRED[b.dataset.f];
-  document.querySelectorAll(".card,.row").forEach(c=>c.classList.toggle("hide",!p(R[+c.dataset.i])));
+  document.querySelectorAll(".card").forEach(c=>c.classList.toggle("hide",!p(R[+c.dataset.i])));
   document.querySelectorAll("section.mo").forEach(s=>{
-    const n=s.querySelectorAll(".card:not(.hide),.row:not(.hide)").length;
+    const n=s.querySelectorAll(".card:not(.hide)").length;
     s.style.display=n?"":"none";
     s.querySelector(".mcount").textContent="· "+n+" registro"+(n===1?"":"s");
     const dk=document.querySelector('.dki[data-target="#'+s.id+'"]');
@@ -836,7 +804,7 @@ document.getElementById("filters").addEventListener("click",e=>{
 const dock=document.getElementById("dock");
 const dockItems=[{g:"↑",l:"Topo",t:"#top0"}]
   .concat(months.map(m=>({g:String(m).padStart(2,"0"),l:MESES[m],t:"#m"+m})))
-  .concat([{g:"45",l:"Singles",t:"#singles"},{sep:1},{g:"＋",l:"Sugerir",t:"#sugira"},{g:"IG",l:"@gustpires13",u:"https://instagram.com/gustpires13"}]);
+  .concat([{sep:1},{g:"＋",l:"Sugerir",t:"#sugira"},{g:"IG",l:"@gustpires13",u:"https://instagram.com/gustpires13"}]);
 dock.innerHTML=dockItems.map(it=>it.sep?'<span class="dki sep" aria-hidden="true"></span>'
   :'<button class="dki" '+(it.t?'data-target="'+it.t+'"':'data-url="'+it.u+'"')+' aria-label="'+esc(it.l)+'">'+it.g+'<span class="lb">'+esc(it.l)+"</span></button>").join("");
 dock.addEventListener("click",e=>{
@@ -1014,38 +982,6 @@ async function dzSearch(r,loose){
   if(!hit)return null;
   return{cover:dzCoverOf(hit),link:hit.link||null};
 }
-const discoCache={};
-async function dzDisco(r){
-  const ck=normA(r.a);
-  if(!(ck in discoCache)){
-    discoCache[ck]=null;
-    try{
-      const d=await jsonp("https://api.deezer.com/search/artist?limit=8&q="+encodeURIComponent(r.a));
-      const art=(d&&d.data||[]).find(x=>artistOk(x.name,r.a));
-      if(art){
-        const al=await jsonp("https://api.deezer.com/artist/"+art.id+"/albums?limit=200");
-        discoCache[ck]=(al&&al.data)||[];
-      }
-    }catch(e){}
-  }
-  return discoCache[ck];
-}
-async function dzFromDisco(r){
-  const list=await dzDisco(r);if(!list||!list.length)return null;
-  let best=null,bs=0;
-  for(const x of list){const s=overlapScore(x.title,r.t);if(s>bs){bs=s;best=x}}
-  if(best&&bs>=0.45)return{cover:dzCoverOf(best),link:best.link||null};
-  return null;
-}
-async function dzLastResort(r){
-  const list=await dzDisco(r);if(!list||!list.length)return null;
-  const y=(x)=>String(x.release_date||"");
-  const inMonth=list.filter(x=>y(x).startsWith("2026-"+String(r.m).padStart(2,"0")));
-  const in26=list.filter(x=>y(x).startsWith("2026"));
-  const pick=(inMonth[0]||in26.sort((a,b)=>y(b).localeCompare(y(a)))[0]);
-  if(pick)return{cover:dzCoverOf(pick),link:pick.link||null};
-  return null;
-}
 async function itSearch(r,loose){
   const q=r.q||(r.a+" "+r.t);
   const res=await fetch("https://itunes.apple.com/search?media=music&entity=album&limit=12&term="+encodeURIComponent(q));
@@ -1103,14 +1039,10 @@ async function resolveArt(r){
   const ov=OVR[key(r)];
   if(ov&&ov.q)r.q=ov.q;
   const layers=[
-    ["L0",async()=>ov&&ov.manual?{cover:manualCover(r),link:ov.link||null}:ov&&ov.dz?dzAlbumById(ov.dz):null],
+    ["L0",async()=>ov&&ov.cover?{cover:ov.cover,link:ov.link||null}:ov&&ov.dz?dzAlbumById(ov.dz):null],
     ["L1",()=>dzSearch(r,false)],
-    ["L2",()=>dzSearch(r,true)],
-    ["L3",()=>dzFromDisco(r)],
-    ["L4",()=>itSearch(r,false)],
-    ["L5",()=>itSearch(r,true)],
-    ["L6",()=>mbCAA(r)],
-    ["L7",()=>dzLastResort(r)]
+    ["L2",()=>itSearch(r,false)],
+    ["L3",()=>mbCAA(r)]
   ];
   for(const[name,fn]of layers){
     try{
@@ -1223,7 +1155,7 @@ app.addEventListener("pointerover",e=>{
   Promise.resolve(prioritizeLink(r)).catch(()=>{}).finally(()=>hoverBusy.delete(r.i));
 });
 function startLinkTrickle(){
-  const list=R.filter(r=>r.sec!=="s"&&r.seed);let i=0;
+  const list=R.filter(r=>r.seed);let i=0;
   (function step(){
     if(i>=list.length)return;
     const r=list[i++];
@@ -1234,7 +1166,7 @@ function startLinkTrickle(){
 spFillAll();
 
 (async function pool(){
-  const list=R.filter(r=>r.sec!=="s");
+  const list=R.slice();
   let i=0;const size=5;
   await Promise.all(Array.from({length:size},async()=>{
     while(i<list.length){const r=list[i++];await resolveArt(r);await sleep(120)}
