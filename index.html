@@ -689,7 +689,12 @@ R.forEach((r,i)=>{
 });
 Object.values(groups).forEach(list=>list.sort((a,b)=>dateKey(a)-dateKey(b)||a.i-b.i));
 const months=Object.keys(groups).map(Number).sort((a,b)=>a-b);
+const SORT_KEY="core-releases-sort-order";
 let sortDir="asc";
+try{
+  const savedSort=localStorage.getItem(SORT_KEY);
+  if(savedSort==="asc"||savedSort==="desc")sortDir=savedSort;
+}catch(e){}
 function dateKey(r){
   const p=r.d.split("/").map(Number);
   return (p[1]||0)*100+(p[0]||0);
@@ -787,8 +792,12 @@ document.getElementById("filters").innerHTML=FL.map(f=>
   '<button class="fbtn" data-f="'+f[0]+'" aria-pressed="'+(f[0]==="all")+'">'+f[1]+"<small>"+f[2]+"</small></button>").join("")
   +'<label class="sortCtl" for="sort-order"><span>Ordem</span><select id="sort-order" aria-label="Ordenar registros"><option value="asc">Antigos primeiro</option><option value="desc">Recentes primeiro</option></select></label>';
 
-document.getElementById("sort-order").addEventListener("change",e=>{
+const sortOrder=document.getElementById("sort-order");
+sortOrder.value=sortDir;
+applySortOrder();
+sortOrder.addEventListener("change",e=>{
   sortDir=e.target.value;
+  try{localStorage.setItem(SORT_KEY,sortDir)}catch(err){}
   applySortOrder();
 });
 
