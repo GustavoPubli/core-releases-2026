@@ -170,24 +170,6 @@ section.mo{padding:clamp(46px,7vh,84px) 0 8px;scroll-margin-top:26px;position:re
 .discwrap{position:relative;aspect-ratio:1/1;cursor:pointer;perspective:1100px;transition:transform .3s ease}
 .card:hover .discwrap,.card.active .discwrap{transform:translateY(-5px) scale(1.03)}
 
-.vpos{position:absolute;top:4%;left:4%;width:92%;height:92%;z-index:1;pointer-events:none;transition:transform .65s cubic-bezier(.2,1.15,.35,1);will-change:transform}
-.vinyl{
-  width:100%;height:100%;border-radius:50%;position:relative;
-  background:
-    radial-gradient(circle at 34% 28%,rgba(255,255,255,.13),transparent 44%),
-    repeating-radial-gradient(circle at center,#0a0a0a 0px,#0a0a0a 1.6px,#161616 2.5px,#0f0f0f 3.6px);
-  box-shadow:0 12px 34px rgba(0,0,0,.72),inset 0 0 0 1px rgba(255,255,255,.05);
-  animation:spin 5.5s linear infinite;animation-play-state:paused;
-}
-.vinyl::before{content:"";position:absolute;inset:0;border-radius:50%;
-  background:conic-gradient(from 208deg,transparent 0 6%,rgba(255,255,255,.09) 11%,transparent 17%,transparent 48%,rgba(255,255,255,.06) 54%,transparent 60%)}
-.vlabel{position:absolute;inset:32.5%;border-radius:50%;
-  background-image:var(--art,radial-gradient(circle at 35% 30%,#4a4a4a,#141414 70%));
-  background-size:cover;background-position:center;
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.18),0 0 0 2px rgba(0,0,0,.55)}
-.vlabel::after{content:"";position:absolute;left:50%;top:50%;width:13%;height:13%;transform:translate(-50%,-50%);border-radius:50%;background:#060606;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.22)}
-@keyframes spin{to{transform:rotate(360deg)}}
-
 .sleeve{
   position:absolute;inset:0;z-index:2;background:var(--srf2);border:1px solid var(--line);overflow:hidden;
   transform-origin:10% 50%;
@@ -214,12 +196,8 @@ section.mo{padding:clamp(46px,7vh,84px) 0 8px;scroll-margin-top:26px;position:re
 .chip{position:absolute;z-index:3;top:9px;left:9px;font-family:var(--mono);font-size:8.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#0b0b0d;background:#e8e8e8;border:1.5px solid #0b0b0d;box-shadow:2.5px 2.5px 0 var(--hard);padding:5px 7px 4px}
 
 @media (hover:hover){
-  .card:hover .vpos{transform:translateX(56%)}
-  .card:hover .vinyl{animation-play-state:running}
   .card:hover .sleeve{transform:rotateY(-8deg) translateX(-3%);box-shadow:20px 26px 44px rgba(0,0,0,.6);border-color:var(--line2)}
 }
-.card.active .vpos{transform:translateX(56%)}
-.card.active .vinyl{animation-play-state:running}
 .card.active .sleeve{transform:rotateY(-8deg) translateX(-3%);box-shadow:20px 26px 44px rgba(0,0,0,.6);border-color:var(--line2)}
 
 .info{margin-top:14px}
@@ -334,7 +312,6 @@ footer a:hover{color:#fff}
   *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
   .rv{opacity:1;transform:none}
 }
-.rm .vinyl{animation:none}
 .rm .mq .in{animation:none}
 </style>
 </head>
@@ -349,7 +326,7 @@ footer a:hover{color:#fff}
       <i class="tk a"></i><i class="tk b"></i><i class="tk c"></i><i class="tk d"></i>
       <div class="meta">
         <span>[ CORE_RELEASES / 2026 ]</span>
-        <span class="rec"><i></i>v11.07.26 · atualizado</span>
+        <span class="rec"><i></i>v13.07.26 · atualizado</span>
       </div>
       <div class="heroTitle">
         <h1 class="ht" aria-label="Core Releases">
@@ -415,7 +392,7 @@ footer a:hover{color:#fff}
       <p class="tiny">CURADORIA &amp; IDEALIZAÇÃO — <a href="https://instagram.com/gustpires13" target="_blank" rel="noopener">@gustpires13</a></p>
     </div>
     <div class="fcol">
-      <p>© 2026 CORE RELEASES. Corte desta edição em <b style="color:#dcdcdc">11.07.2026</b>. A base cruza calendários de lançamento, veículos especializados, plataformas de streaming, Bandcamp, páginas oficiais, gravadoras, comunidades e imprensa brasileira. Quando há divergência, a prioridade é a fonte oficial do artista, selo ou plataforma, com revisão manual de data, formato e recorte.</p>
+      <p>© 2026 CORE RELEASES. Corte desta edição em <b style="color:#dcdcdc">13.07.2026</b>. A base cruza calendários de lançamento, veículos especializados, plataformas de streaming, Bandcamp, páginas oficiais, gravadoras, comunidades e imprensa brasileira. Quando há divergência, a prioridade é a fonte oficial do artista, selo ou plataforma, com revisão manual de data, formato e recorte.</p>
       <p class="tiny"><b>FONTES DE PESQUISA</b> · Metal Injection · MetalSucks · Blabbermouth · Loudwire · Kerrang! · Revolver · Rate Your Music · Album of the Year · Sputnikmusic · Billboard · Official Charts · Luminate · Metal Archives · Angry Metal Guy · No Clean Singing · New Noise Magazine · Wall of Sound · Distorted Sound · ThePRP · Tenho Mais Discos Que Amigos · State of the Scene · Downstage · Rock Feed · Heavy Music HQ · Igor Miranda · Boolin Tunes · Lambgoat · Apple Music · Spotify · Deezer · Qobuz · Bandcamp · canais oficiais dos artistas · r/Metalcore · r/Deathcore · r/Djent · r/progmetal · r/PostHardcore · r/numetal · r/Hardcore · r/Metal · r/MetalForTheMasses · r/TechnicalDeathMetal · r/SlamBrutalDeathMetal · r/corejerk · SharpTone · UNFD · Sumerian · Fearless · Rise · Pure Noise · Arising Empire · Century Media · Nuclear Blast · Metal Blade · Unique Leader · MNRK Heavy · Epitaph · Prosthetic · Closed Casket Activities · DAZE · Triple B · Flatspot · Good Fight · 3DOT · InsideOut · Napalm · Spinefarm · Better Noise · Roadrunner · Solid State · Thriller Records.</p>
     </div>
   </div>
@@ -439,7 +416,7 @@ footer a:hover{color:#fff}
 const SPOTIFY={clientId:"",clientSecret:""};
 
 /* ============================================================
-   DADOS — corte 11.07.2026
+   DADOS — corte 13.07.2026
 ============================================================ */
 const R=[
 {d:"02/01",a:"Paleface Swiss",t:"The Wilted",k:"EP",g:"deathcore / nu deathcore"},
@@ -613,8 +590,11 @@ const R=[
 {d:"10/07",a:"Bring Me The Horizon",t:"Count Your Blessings | Repented",k:"ÁLBUM REGRAVADO",g:"deathcore / metalcore",note:"REGRAVADO"},
 {d:"10/07",a:"Cancer Bats",t:"Bat Sabbath | Worship",k:"EP",g:"sludge metal / hardcore / stoner metal"},
 {d:"10/07",a:"Deadwitxh",t:"Misery Is All The Rage",k:"ÁLBUM",g:"metalcore / alternative metal"},
+{d:"10/07",a:"Dehumanizing Itatrain Worship",t:"二次元コンプレックス 2D Complex",k:"ÁLBUM",g:"slamming brutal death metal / deathcore"},
 {d:"10/07",a:"DevilDriver",t:"Strike And Kill",k:"ÁLBUM",g:"groove metal / modern metal"},
 {d:"10/07",a:"Eva Under Fire",t:"Villainous",k:"ÁLBUM",g:"hard rock / alternative metal"},
+{d:"10/07",a:"Frog Mallet",t:"Consumed By Frogs",k:"ÁLBUM",g:"slamming brutal death metal / deathcore"},
+{d:"10/07",a:"GOETHE",t:"Pain Will Find You Again",k:"EP",g:"hardcore / metallic hardcore"},
 {d:"10/07",a:"heaven // alone",t:"what i would give to be somewhere else",k:"EP",g:"post-hardcore / shoegaze"},
 {d:"10/07",a:"If These Trees Could Talk",t:"The Hidden Hand",k:"ÁLBUM",g:"post-metal / instrumental rock"},
 {d:"10/07",a:"Liasis",t:"Hey! Is This Yours?",k:"EP",g:"mathcore / post-hardcore"},
@@ -653,7 +633,10 @@ const OVR={
   "lookoutsideyourwindow|lookoutsideyourwindow":{cover:"https://shop.lookoutsideyourwindow.com/cdn/shop/files/LOYW-850079803190.jpg?v=1778029525&width=1200",link:"https://shop.lookoutsideyourwindow.com/collections/all"},
   "oathbreaker|rheiaredux":{cover:"https://f4.bcbits.com/img/a0408336144_10.jpg",link:"https://oathbreakerband.bandcamp.com/album/rheia-redux"},
   "icesealedeyes|tape1faraway":{cover:"https://arising-empire.com/cms/uploads/release_tape-1-far-away_293.jpg",link:"https://arising-empire.com/artists/ice-sealed-eyes/acid-tears"},
-  "thehometeam|itlivesitchanges":{cover:"https://thrillerrecords.com/cdn/shop/articles/The_Home_Team_-_It_Lives_It_Changes_7a17fff1-ac9e-47aa-81bc-7f0cbf4034cb_1000x.jpg?v=1782494959",link:"https://thrillerrecords.com/blogs/news/the-home-team-share-reimagined-album-it-lives-it-changes"}
+  "thehometeam|itlivesitchanges":{cover:"https://thrillerrecords.com/cdn/shop/articles/The_Home_Team_-_It_Lives_It_Changes_7a17fff1-ac9e-47aa-81bc-7f0cbf4034cb_1000x.jpg?v=1782494959",link:"https://thrillerrecords.com/blogs/news/the-home-team-share-reimagined-album-it-lives-it-changes"},
+  "dehumanizingitatrainworship|2dcomplex":{cover:"https://f4.bcbits.com/img/a4074481493_10.jpg",link:"https://stillbirthrecords.bandcamp.com/album/2d-complex"},
+  "frogmallet|consumedbyfrogs":{cover:"https://f4.bcbits.com/img/a1857568394_10.jpg",link:"https://frogmallet.bandcamp.com/album/consumed-by-frogs"},
+  "goethe|painwillfindyouagain":{cover:"https://f4.bcbits.com/img/a1587537116_10.jpg",link:"https://goetheau.bandcamp.com/album/pain-will-find-you-again"}
 };
 
 const MESES=["","JANEIRO","FEVEREIRO","MARÇO","ABRIL","MAIO","JUNHO","JULHO","AGOSTO","SETEMBRO","OUTUBRO","NOVEMBRO","DEZEMBRO"];
@@ -748,7 +731,6 @@ function platHTML(r){
 function cardHTML(r){
   return '<article class="card rv" data-i="'+r.i+'">'
     +'<div class="discwrap" title="'+esc(r.a+" — "+r.t)+'">'
-      +'<div class="vpos"><div class="vinyl"><span class="vlabel"></span></div></div>'
       +'<div class="sleeve loading"><span class="shim"></span>'
         +(r.note?'<span class="chip">'+esc(r.note)+"</span>":"")
         +'<img alt="Capa de '+esc(r.t)+' — '+esc(r.a)+'" loading="lazy" decoding="async" referrerpolicy="no-referrer">'
