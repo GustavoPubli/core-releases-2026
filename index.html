@@ -1024,7 +1024,6 @@ function applyArt(card,r,got,src){
     placeholder(card,r,"erro de imagem ("+src+")");
   };
   img.src=got.cover;
-  card.querySelector(".vlabel").style.setProperty("--art",'url("'+got.cover+'")');
   if(got.link&&!got.itlink){const a=card.querySelector(".p-dz");a.href=got.link;a.title="Abrir álbum no Deezer";r.link=got.link;r.seed=got.link}
   else if(got.link){r.link=r.link||got.link;r.seed=r.seed||got.link}
   if(src!=="L0"&&src!=="L1")AUD.push({r,src});
