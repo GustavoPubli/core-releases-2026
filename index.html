@@ -349,7 +349,7 @@ footer a:hover{color:#fff}
       <i class="tk a"></i><i class="tk b"></i><i class="tk c"></i><i class="tk d"></i>
       <div class="meta">
         <span>[ CORE_RELEASES / 2026 ]</span>
-        <span class="rec"><i></i>v15.07.26 · atualizado</span>
+        <span class="rec"><i></i>v16.07.26 · atualizado</span>
       </div>
       <div class="heroTitle">
         <h1 class="ht" aria-label="Core Releases">
@@ -415,7 +415,7 @@ footer a:hover{color:#fff}
       <p class="tiny">CURADORIA &amp; IDEALIZAÇÃO — <a href="https://instagram.com/gustpires13" target="_blank" rel="noopener">@gustpires13</a></p>
     </div>
     <div class="fcol">
-      <p>© 2026 CORE RELEASES. Corte desta edição em <b style="color:#dcdcdc">15.07.2026</b>. A base cruza calendários de lançamento, veículos especializados, plataformas de streaming, Bandcamp, páginas oficiais, gravadoras, comunidades e imprensa brasileira. Quando há divergência, a prioridade é a fonte oficial do artista, selo ou plataforma, com revisão manual de data, formato e recorte.</p>
+      <p>© 2026 CORE RELEASES. Corte desta edição em <b style="color:#dcdcdc">16.07.2026</b>. A base cruza calendários de lançamento, veículos especializados, plataformas de streaming, Bandcamp, páginas oficiais, gravadoras, comunidades e imprensa brasileira. Quando há divergência, a prioridade é a fonte oficial do artista, selo ou plataforma, com revisão manual de data, formato e recorte.</p>
       <p class="tiny"><b>FONTES DE PESQUISA</b> · Metal Injection · MetalSucks · Blabbermouth · Loudwire · Kerrang! · Revolver · Rate Your Music · Album of the Year · Sputnikmusic · Billboard · Official Charts · Luminate · Metal Archives · Angry Metal Guy · No Clean Singing · New Noise Magazine · Wall of Sound · Distorted Sound · ThePRP · Tenho Mais Discos Que Amigos · State of the Scene · Downstage · Rock Feed · Heavy Music HQ · Igor Miranda · Boolin Tunes · Lambgoat · Apple Music · Spotify · Deezer · Qobuz · Bandcamp · canais oficiais dos artistas · r/Metalcore · r/Deathcore · r/Djent · r/progmetal · r/PostHardcore · r/numetal · r/Hardcore · r/Metal · r/MetalForTheMasses · r/TechnicalDeathMetal · r/SlamBrutalDeathMetal · r/corejerk · SharpTone · UNFD · Sumerian · Fearless · Rise · Pure Noise · Arising Empire · Century Media · Nuclear Blast · Metal Blade · Unique Leader · MNRK Heavy · Epitaph · Prosthetic · Closed Casket Activities · DAZE · Triple B · Flatspot · Good Fight · 3DOT · InsideOut · Napalm · Spinefarm · Better Noise · Roadrunner · Solid State · Thriller Records.</p>
     </div>
   </div>
@@ -439,7 +439,7 @@ footer a:hover{color:#fff}
 const SPOTIFY={clientId:"",clientSecret:""};
 
 /* ============================================================
-   DADOS — corte 15.07.2026
+   DADOS — corte 16.07.2026
 ============================================================ */
 const R=[
 {d:"02/01",a:"Paleface Swiss",t:"The Wilted",k:"EP",g:"deathcore / nu deathcore"},
@@ -835,7 +835,7 @@ const PRED={
   all:()=>true,
   alb:r=>r.k==="ÁLBUM"||r.k==="ÁLBUM AO VIVO"||r.k==="ÁLBUM DE ARQUIVO"||r.k==="ÁLBUM REIMAGINADO"||r.k==="ÁLBUM REGRAVADO",
   ep:r=>r.k==="EP"||r.k==="EP AO VIVO"||r.k==="EP DE COVERS",
-  oth:r=>r.k==="DELUXE"||r.k==="REISSUE"||r.k==="ARQUIVO DIGITAL"
+  oth:r=>r.k==="DELUXE"||r.k==="REISSUE"||r.k==="REEDIÇÃO"||r.k==="ARQUIVO DIGITAL"
 };
 const nAll=R.length,nAlb=R.filter(PRED.alb).length,nEp=R.filter(PRED.ep).length,nOth=R.filter(PRED.oth).length;
 document.getElementById("stats").innerHTML=
