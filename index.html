@@ -1131,6 +1131,13 @@ function jsonp(url){
   });
 }
 const dzCoverOf=al=>al.cover_xl||al.cover_big||al.cover_medium||null;
+function deezerDirectLink(link){
+  if(!link)return null;
+  try{
+    const host=new URL(link,location.href).hostname.toLowerCase();
+    return host==="deezer.com"||host.endsWith(".deezer.com")||host==="deezer.page.link"?link:null;
+  }catch(e){return null}
+}
 async function dzAlbumById(id){
   const d=await jsonp("https://api.deezer.com/album/"+id);
   if(d&&!d.error&&dzCoverOf(d))return{cover:dzCoverOf(d),link:d.link||null};
@@ -1180,7 +1187,8 @@ function applyArt(card,r,got,src){
   };
   img.src=got.cover;
   card.querySelector(".vlabel").style.setProperty("--art",'url("'+got.cover+'")');
-  if(got.link&&!got.itlink){const a=card.querySelector(".p-dz");a.href=got.link;a.title="Abrir álbum no Deezer";r.link=got.link;r.seed=got.link}
+  const dzLink=!got.itlink&&deezerDirectLink(got.link);
+  if(dzLink){const a=card.querySelector(".p-dz");a.href=dzLink;a.title="Abrir álbum no Deezer";r.link=dzLink;r.seed=dzLink}
   else if(got.link){r.link=r.link||got.link;r.seed=r.seed||got.link}
   if(src!=="L0"&&src!=="L1")AUD.push({r,src});
 }
