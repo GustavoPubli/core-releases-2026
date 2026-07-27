@@ -4,12 +4,12 @@
   "previous_cutoff": "2026-07-20",
   "run_type": "friday_main_incremental",
   "database_before": 252,
-  "additions": 39,
-  "corrections": 0,
-  "database_after": 291,
+  "additions": 41,
+  "corrections": 1,
+  "database_after": 292,
   "cover_registry": {
     "preserved": 82,
-    "appended": 39,
+    "appended": 41,
     "removed": 0,
     "changed": 0
   },
@@ -52,9 +52,12 @@
     {"date":"2026-07-24","artist":"Waterparks","title":"JINX","format":"ÁLBUM","evidence":"https://www.deezer.com/album/967865511"},
     {"date":"2026-05-08","artist":"Karmanjakah","title":"Diamond morning","format":"ÁLBUM","evidence":"https://music.apple.com/us/album/diamond-morning/1880531748","discovery_status":"late_discovery","reason":"Independent progressive metal release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music, Deezer, Album of the Year and progressive-metal communities"},
     {"date":"2026-04-24","artist":"Plini","title":"An Unnameable Desire","format":"ÁLBUM","evidence":"https://music.apple.com/us/album/an-unnameable-desire/1893487344","discovery_status":"late_discovery","reason":"Independent instrumental progressive metal release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music, Deezer and progressive-metal press"},
-    {"date":"2026-04-10","artist":"The Mechanist","title":"Synthetic Sun","format":"ÁLBUM","evidence":"https://themechanistband.bandcamp.com/album/synthetic-sun","discovery_status":"late_discovery","reason":"Independent UK metalcore and djent release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music and Deezer"}
+    {"date":"2026-04-10","artist":"The Mechanist","title":"Synthetic Sun","format":"ÁLBUM","evidence":"https://themechanistband.bandcamp.com/album/synthetic-sun","discovery_status":"late_discovery","reason":"Independent UK metalcore and djent release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music and Deezer"},
+    {"date":"2026-07-21","artist":"Manuel Gardner Fernandes","title":"Volume VII","format":"ÁLBUM","evidence":"https://music.apple.com/nz/album/volume-vii/6791175768","discovery_status":"late_discovery","reason":"Independent instrumental progressive metal and djent album missed because regional DSP indexing updated after the main source pass; confirmed through Apple Music, Deezer and Amazon Music"},
+    {"date":"2026-06-12","artist":"Austin Carlile","title":"2die4","format":"ÁLBUM","evidence":"https://music.apple.com/us/album/2die4/1884805464","discovery_status":"late_discovery","reason":"Solo nu metal and rap metal album connected to the metalcore scene was missed by the core-first discovery pass; confirmed through Apple Music, Spotify and Deezer"}
   ],
   "deferred_or_rejected": [
+    {"artist":"Secrets","title":"Bitter Dose","status":"rejected_single","reason":"Apple Music and Deezer package the waterfall release as an EP, but the official artist communication identifies it as a single from the album scheduled for 2026-09-18"},
     {"artist":"Rivers Ablaze","title":"Inexternal Dread Pt.2 (Tension)","status":"rejected_single","reason":"Apple Music classifies the three-track release as a single"},
     {"artist":"Failstate","title":"ZERO / COME HOME","status":"rejected_single","reason":"Apple Music classifies the two-track release as a single"},
     {"artist":"Cholera","title":"The Answer To Infection Redux","status":"deferred","reason":"exact official release date still unresolved","retry_after":"2026-07-29"},
