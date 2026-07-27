@@ -4,12 +4,12 @@
   "previous_cutoff": "2026-07-20",
   "run_type": "friday_main_incremental",
   "database_before": 252,
-  "additions": 38,
+  "additions": 39,
   "corrections": 0,
-  "database_after": 290,
+  "database_after": 291,
   "cover_registry": {
     "preserved": 82,
-    "appended": 38,
+    "appended": 39,
     "removed": 0,
     "changed": 0
   },
@@ -51,7 +51,8 @@
     {"date":"2026-07-24","artist":"Mayday Parade","title":"Sugar","format":"ÁLBUM","evidence":"https://www.deezer.com/album/943622601"},
     {"date":"2026-07-24","artist":"Waterparks","title":"JINX","format":"ÁLBUM","evidence":"https://www.deezer.com/album/967865511"},
     {"date":"2026-05-08","artist":"Karmanjakah","title":"Diamond morning","format":"ÁLBUM","evidence":"https://music.apple.com/us/album/diamond-morning/1880531748","discovery_status":"late_discovery","reason":"Independent progressive metal release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music, Deezer, Album of the Year and progressive-metal communities"},
-    {"date":"2026-04-24","artist":"Plini","title":"An Unnameable Desire","format":"ÁLBUM","evidence":"https://music.apple.com/us/album/an-unnameable-desire/1893487344","discovery_status":"late_discovery","reason":"Independent instrumental progressive metal release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music, Deezer and progressive-metal press"}
+    {"date":"2026-04-24","artist":"Plini","title":"An Unnameable Desire","format":"ÁLBUM","evidence":"https://music.apple.com/us/album/an-unnameable-desire/1893487344","discovery_status":"late_discovery","reason":"Independent instrumental progressive metal release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music, Deezer and progressive-metal press"},
+    {"date":"2026-04-10","artist":"The Mechanist","title":"Synthetic Sun","format":"ÁLBUM","evidence":"https://themechanistband.bandcamp.com/album/synthetic-sun","discovery_status":"late_discovery","reason":"Independent UK metalcore and djent release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music and Deezer"}
   ],
   "deferred_or_rejected": [
     {"artist":"Rivers Ablaze","title":"Inexternal Dread Pt.2 (Tension)","status":"rejected_single","reason":"Apple Music classifies the three-track release as a single"},
