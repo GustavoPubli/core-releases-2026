@@ -1,69 +1,1081 @@
 {
   "schema_version": 1,
-  "last_successful_cutoff": "2026-07-24",
-  "previous_cutoff": "2026-07-20",
-  "run_type": "friday_main_incremental",
-  "database_before": 252,
-  "additions": 41,
-  "corrections": 1,
-  "database_after": 292,
+  "last_successful_cutoff": "2026-07-27",
+  "previous_cutoff": "2026-07-24",
+  "run_type": "historical_backfill",
+  "database_before": 292,
+  "additions": 86,
+  "corrections": 0,
+  "database_after": 378,
   "cover_registry": {
-    "preserved": 82,
-    "appended": 41,
+    "preserved": 123,
+    "appended": 86,
     "removed": 0,
     "changed": 0
   },
   "verified_additions": [
-    {"date":"2026-07-17","artist":"Black Winter","title":"If God Just Gave Me One More Chance...","format":"ÁLBUM","evidence":"https://www.deezer.com/album/1022012891"},
-    {"date":"2026-07-17","artist":"Tactus Shift","title":"Perception","format":"EP","evidence":"https://music.apple.com/us/album/perception-ep/6782685444"},
-    {"date":"2026-07-18","artist":"Borduna","title":"Algozes","format":"EP","evidence":"https://music.apple.com/us/album/algozes-ep/6788814187"},
-    {"date":"2026-07-20","artist":"diebesideyourhome","title":"nothing ever truly leaves","format":"EP","evidence":"https://music.apple.com/us/album/nothing-ever-truly-leaves-ep/6791266508"},
-    {"date":"2026-07-21","artist":"Cady","title":"Limitations of the Human Form","format":"ÁLBUM","evidence":"https://music.apple.com/us/album/limitations-of-the-human-form/6793292468"},
-    {"date":"2026-07-21","artist":"Scar Chamber","title":"Ugly On The Inside","format":"ÁLBUM","evidence":"https://bravewordsrecords.bandcamp.com/album/ugly-on-the-inside"},
-    {"date":"2026-07-22","artist":"Instrument of God","title":"The Sun Reflects the Colour of Your Eyes","format":"EP","evidence":"https://music.apple.com/us/album/the-sun-reflects-the-colour-of-your-eyes-ep/6792777619"},
-    {"date":"2026-07-22","artist":"SUNSWARM","title":"THOSE WHO DO NOT BUILD MUST BURN","format":"ÁLBUM","evidence":"https://www.deezer.com/album/999823751"},
-    {"date":"2026-07-23","artist":"Gloombringer","title":"The Weight of Marching Graves","format":"EP","evidence":"https://music.apple.com/us/album/the-weight-of-marching-graves-ep/6791996325"},
-    {"date":"2026-07-23","artist":"Litosth","title":"Dreaming","format":"ÁLBUM","country":"BR","evidence":"https://www.deezer.com/album/1002027531"},
-    {"date":"2026-07-24","artist":"A Sight in Veracity","title":"Film Burns","format":"ÁLBUM","evidence":"https://www.deezer.com/album/1015959171"},
-    {"date":"2026-07-24","artist":"Bleached Cross","title":"Wrath","format":"ÁLBUM","evidence":"https://www.deezer.com/album/971457441"},
-    {"date":"2026-07-24","artist":"Castiel","title":"All Returns to Hollow and Silence","format":"EP","evidence":"https://www.deezer.com/album/926486751"},
-    {"date":"2026-07-24","artist":"Changing Places In The Fire","title":"Changing Places In The Fire","format":"ÁLBUM","evidence":"https://www.deezer.com/album/926466841"},
-    {"date":"2026-07-24","artist":"Combichrist","title":"The Venom In The Mouth Of God","format":"ÁLBUM","evidence":"https://www.deezer.com/album/947418851"},
-    {"date":"2026-07-24","artist":"DazGak!","title":"Stimpy","format":"EP","evidence":"https://music.apple.com/us/album/stimpy-ep/6768726216"},
-    {"date":"2026-07-24","artist":"Embodiment","title":"Cryptomorph","format":"EP","evidence":"https://www.deezer.com/album/1028374342"},
-    {"date":"2026-07-24","artist":"Lockstep","title":"I Know What I Saw","format":"ÁLBUM","evidence":"https://www.deezer.com/album/972560911"},
-    {"date":"2026-07-24","artist":"Madball","title":"Not Your Kingdom","format":"ÁLBUM","evidence":"https://www.deezer.com/album/962031021"},
-    {"date":"2026-07-24","artist":"Mimi Barks","title":"Dreamstate of Fear","format":"EP","evidence":"https://mimibarks.com/products/pre-order-dreamstate-of-fear-cd"},
-    {"date":"2026-07-24","artist":"New Forms","title":"Nothing's Sacred Anymore","format":"EP","evidence":"https://www.deezer.com/album/987450251"},
-    {"date":"2026-07-24","artist":"nightdive","title":"This Will End","format":"EP","evidence":"https://www.deezer.com/album/966405801"},
-    {"date":"2026-07-24","artist":"Stab","title":"Lost In Maine","format":"ÁLBUM","evidence":"https://www.deezer.com/album/970664221"},
-    {"date":"2026-07-24","artist":"Caelestia","title":"Revelations In Black","format":"ÁLBUM","evidence":"https://www.deezer.com/album/977194281"},
-    {"date":"2026-07-24","artist":"Divulsive","title":"Spawned In Viscera","format":"ÁLBUM","evidence":"https://www.deezer.com/album/982803031"},
-    {"date":"2026-07-24","artist":"Meshuggah","title":"Catch Thirtythree: 20th Anniversary Edition (2026 Remastered)","format":"REISSUE","evidence":"https://www.deezer.com/album/981539081"},
-    {"date":"2026-07-24","artist":"Meshuggah","title":"Destroy Erase Improve: 30th Anniversary Edition (2026 Remastered)","format":"REISSUE","evidence":"https://www.deezer.com/album/981539151"},
-    {"date":"2026-07-24","artist":"North Sea Echoes","title":"How to Cast a Shadow","format":"ÁLBUM","evidence":"https://www.deezer.com/album/966498791"},
-    {"date":"2026-07-24","artist":"REZN","title":"Cycles in the Infinite Dream","format":"ÁLBUM","evidence":"https://www.deezer.com/album/960067931"},
-    {"date":"2026-07-24","artist":"Ripper","title":"Towards Rebirth","format":"ÁLBUM","evidence":"https://www.deezer.com/album/1035648632"},
-    {"date":"2026-07-24","artist":"Sallow Moth","title":"Hydrophilous Brood","format":"ÁLBUM","evidence":"https://www.deezer.com/album/974094061"},
-    {"date":"2026-07-24","artist":"Squelching","title":"Squelching","format":"ÁLBUM","evidence":"https://www.deezer.com/album/1009005311"},
-    {"date":"2026-07-24","artist":"The HU","title":"HUN","format":"ÁLBUM","evidence":"https://www.deezer.com/album/976486601"},
-    {"date":"2026-07-24","artist":"Tyraels Ascension","title":"Grave Seeker","format":"ÁLBUM","evidence":"https://music.apple.com/us/album/grave-seeker/6782613983"},
-    {"date":"2026-07-24","artist":"Mayday Parade","title":"Sugar","format":"ÁLBUM","evidence":"https://www.deezer.com/album/943622601"},
-    {"date":"2026-07-24","artist":"Waterparks","title":"JINX","format":"ÁLBUM","evidence":"https://www.deezer.com/album/967865511"},
-    {"date":"2026-05-08","artist":"Karmanjakah","title":"Diamond morning","format":"ÁLBUM","evidence":"https://music.apple.com/us/album/diamond-morning/1880531748","discovery_status":"late_discovery","reason":"Independent progressive metal release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music, Deezer, Album of the Year and progressive-metal communities"},
-    {"date":"2026-04-24","artist":"Plini","title":"An Unnameable Desire","format":"ÁLBUM","evidence":"https://music.apple.com/us/album/an-unnameable-desire/1893487344","discovery_status":"late_discovery","reason":"Independent instrumental progressive metal release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music, Deezer and progressive-metal press"},
-    {"date":"2026-04-10","artist":"The Mechanist","title":"Synthetic Sun","format":"ÁLBUM","evidence":"https://themechanistband.bandcamp.com/album/synthetic-sun","discovery_status":"late_discovery","reason":"Independent UK metalcore and djent release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music and Deezer"},
-    {"date":"2026-07-21","artist":"Manuel Gardner Fernandes","title":"Volume VII","format":"ÁLBUM","evidence":"https://music.apple.com/nz/album/volume-vii/6791175768","discovery_status":"late_discovery","reason":"Independent instrumental progressive metal and djent album missed because regional DSP indexing updated after the main source pass; confirmed through Apple Music, Deezer and Amazon Music"},
-    {"date":"2026-06-12","artist":"Austin Carlile","title":"2die4","format":"ÁLBUM","evidence":"https://music.apple.com/us/album/2die4/1884805464","discovery_status":"late_discovery","reason":"Solo nu metal and rap metal album connected to the metalcore scene was missed by the core-first discovery pass; confirmed through Apple Music, Spotify and Deezer"}
+    {
+      "date": "2026-07-17",
+      "artist": "Black Winter",
+      "title": "If God Just Gave Me One More Chance...",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/1022012891"
+    },
+    {
+      "date": "2026-07-17",
+      "artist": "Tactus Shift",
+      "title": "Perception",
+      "format": "EP",
+      "evidence": "https://music.apple.com/us/album/perception-ep/6782685444"
+    },
+    {
+      "date": "2026-07-18",
+      "artist": "Borduna",
+      "title": "Algozes",
+      "format": "EP",
+      "evidence": "https://music.apple.com/us/album/algozes-ep/6788814187"
+    },
+    {
+      "date": "2026-07-20",
+      "artist": "diebesideyourhome",
+      "title": "nothing ever truly leaves",
+      "format": "EP",
+      "evidence": "https://music.apple.com/us/album/nothing-ever-truly-leaves-ep/6791266508"
+    },
+    {
+      "date": "2026-07-21",
+      "artist": "Cady",
+      "title": "Limitations of the Human Form",
+      "format": "ÁLBUM",
+      "evidence": "https://music.apple.com/us/album/limitations-of-the-human-form/6793292468"
+    },
+    {
+      "date": "2026-07-21",
+      "artist": "Scar Chamber",
+      "title": "Ugly On The Inside",
+      "format": "ÁLBUM",
+      "evidence": "https://bravewordsrecords.bandcamp.com/album/ugly-on-the-inside"
+    },
+    {
+      "date": "2026-07-22",
+      "artist": "Instrument of God",
+      "title": "The Sun Reflects the Colour of Your Eyes",
+      "format": "EP",
+      "evidence": "https://music.apple.com/us/album/the-sun-reflects-the-colour-of-your-eyes-ep/6792777619"
+    },
+    {
+      "date": "2026-07-22",
+      "artist": "SUNSWARM",
+      "title": "THOSE WHO DO NOT BUILD MUST BURN",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/999823751"
+    },
+    {
+      "date": "2026-07-23",
+      "artist": "Gloombringer",
+      "title": "The Weight of Marching Graves",
+      "format": "EP",
+      "evidence": "https://music.apple.com/us/album/the-weight-of-marching-graves-ep/6791996325"
+    },
+    {
+      "date": "2026-07-23",
+      "artist": "Litosth",
+      "title": "Dreaming",
+      "format": "ÁLBUM",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/1002027531"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "A Sight in Veracity",
+      "title": "Film Burns",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/1015959171"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Bleached Cross",
+      "title": "Wrath",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/971457441"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Castiel",
+      "title": "All Returns to Hollow and Silence",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/926486751"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Changing Places In The Fire",
+      "title": "Changing Places In The Fire",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/926466841"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Combichrist",
+      "title": "The Venom In The Mouth Of God",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/947418851"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "DazGak!",
+      "title": "Stimpy",
+      "format": "EP",
+      "evidence": "https://music.apple.com/us/album/stimpy-ep/6768726216"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Embodiment",
+      "title": "Cryptomorph",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/1028374342"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Lockstep",
+      "title": "I Know What I Saw",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/972560911"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Madball",
+      "title": "Not Your Kingdom",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/962031021"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Mimi Barks",
+      "title": "Dreamstate of Fear",
+      "format": "EP",
+      "evidence": "https://mimibarks.com/products/pre-order-dreamstate-of-fear-cd"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "New Forms",
+      "title": "Nothing's Sacred Anymore",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/987450251"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "nightdive",
+      "title": "This Will End",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/966405801"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Stab",
+      "title": "Lost In Maine",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/970664221"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Caelestia",
+      "title": "Revelations In Black",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/977194281"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Divulsive",
+      "title": "Spawned In Viscera",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/982803031"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Meshuggah",
+      "title": "Catch Thirtythree: 20th Anniversary Edition (2026 Remastered)",
+      "format": "REISSUE",
+      "evidence": "https://www.deezer.com/album/981539081"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Meshuggah",
+      "title": "Destroy Erase Improve: 30th Anniversary Edition (2026 Remastered)",
+      "format": "REISSUE",
+      "evidence": "https://www.deezer.com/album/981539151"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "North Sea Echoes",
+      "title": "How to Cast a Shadow",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/966498791"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "REZN",
+      "title": "Cycles in the Infinite Dream",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/960067931"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Ripper",
+      "title": "Towards Rebirth",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/1035648632"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Sallow Moth",
+      "title": "Hydrophilous Brood",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/974094061"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Squelching",
+      "title": "Squelching",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/1009005311"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "The HU",
+      "title": "HUN",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/976486601"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Tyraels Ascension",
+      "title": "Grave Seeker",
+      "format": "ÁLBUM",
+      "evidence": "https://music.apple.com/us/album/grave-seeker/6782613983"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Mayday Parade",
+      "title": "Sugar",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/943622601"
+    },
+    {
+      "date": "2026-07-24",
+      "artist": "Waterparks",
+      "title": "JINX",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/967865511"
+    },
+    {
+      "date": "2026-05-08",
+      "artist": "Karmanjakah",
+      "title": "Diamond morning",
+      "format": "ÁLBUM",
+      "evidence": "https://music.apple.com/us/album/diamond-morning/1880531748",
+      "discovery_status": "late_discovery",
+      "reason": "Independent progressive metal release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music, Deezer, Album of the Year and progressive-metal communities"
+    },
+    {
+      "date": "2026-04-24",
+      "artist": "Plini",
+      "title": "An Unnameable Desire",
+      "format": "ÁLBUM",
+      "evidence": "https://music.apple.com/us/album/an-unnameable-desire/1893487344",
+      "discovery_status": "late_discovery",
+      "reason": "Independent instrumental progressive metal release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music, Deezer and progressive-metal press"
+    },
+    {
+      "date": "2026-04-10",
+      "artist": "The Mechanist",
+      "title": "Synthetic Sun",
+      "format": "ÁLBUM",
+      "evidence": "https://themechanistband.bandcamp.com/album/synthetic-sun",
+      "discovery_status": "late_discovery",
+      "reason": "Independent UK metalcore and djent release missed by core-first discovery sources; confirmed through official Bandcamp, Apple Music and Deezer"
+    },
+    {
+      "date": "2026-07-21",
+      "artist": "Manuel Gardner Fernandes",
+      "title": "Volume VII",
+      "format": "ÁLBUM",
+      "evidence": "https://music.apple.com/nz/album/volume-vii/6791175768",
+      "discovery_status": "late_discovery",
+      "reason": "Independent instrumental progressive metal and djent album missed because regional DSP indexing updated after the main source pass; confirmed through Apple Music, Deezer and Amazon Music"
+    },
+    {
+      "date": "2026-06-12",
+      "artist": "Austin Carlile",
+      "title": "2die4",
+      "format": "ÁLBUM",
+      "evidence": "https://music.apple.com/us/album/2die4/1884805464",
+      "discovery_status": "late_discovery",
+      "reason": "Solo nu metal and rap metal album connected to the metalcore scene was missed by the core-first discovery pass; confirmed through Apple Music, Spotify and Deezer"
+    },
+    {
+      "date": "2026-01-03",
+      "artist": "Sherane",
+      "title": "sherane",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/886389332",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-07",
+      "artist": "josh",
+      "title": "Forty Thousand Brothers...",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/891049692",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-07",
+      "artist": "mydiarytoyou!",
+      "title": "You Have A Way With Last Words",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/881052662",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-08",
+      "artist": "sonia is dead",
+      "title": "like figs from a tree",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/886253812",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-09",
+      "artist": "Calm and Secure",
+      "title": "Glass In The Mouth Of The Sun",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/891279052",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-09",
+      "artist": "QUEEN KONA",
+      "title": "LONG LIVE",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/873135802",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-09",
+      "artist": "Surefire",
+      "title": "Endorphins",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/845421342",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-09",
+      "artist": "Takatak",
+      "title": "Influx",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/891196312",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-12",
+      "artist": "Sear",
+      "title": "O Merciful",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/880712852",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-14",
+      "artist": "Silver Fang",
+      "title": "Death or Devotion",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/897950002",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-16",
+      "artist": "Cold Night For Alligators",
+      "title": "With All That's Left",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/814189171",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-16",
+      "artist": "Dream Drop",
+      "title": "blackcastle: pt.2",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/854989242",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-16",
+      "artist": "Ratos de Porão",
+      "title": "Feijoada Acidente? - Brasil",
+      "format": "REISSUE",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/894245122",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-16",
+      "artist": "Sanity Slip",
+      "title": "Sanity Slip",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/897576162",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-16",
+      "artist": "Vexatious",
+      "title": "Empty Threat",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/884410122",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-17",
+      "artist": "Youth Novel",
+      "title": "I Went Through This Experience Smiling",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/894203112",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-20",
+      "artist": "Palace of Mourning",
+      "title": "Palace of Mourning",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/893196912",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-23",
+      "artist": "Dagger Threat",
+      "title": "bleed///reboot",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/815958281",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-23",
+      "artist": "Elwood Stray",
+      "title": "Descending",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/821862171",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-23",
+      "artist": "FALCHI",
+      "title": "Solace",
+      "format": "EP",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/881328442",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-23",
+      "artist": "Iridium",
+      "title": "HELL IS JUST A HALFWAY HOUSE",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/881210062",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-30",
+      "artist": "406",
+      "title": "The Frailty Of The Contorted Human Mind",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/902808512",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-30",
+      "artist": "Asleep in the Wake",
+      "title": "Emergent",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/900265042",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-30",
+      "artist": "Contrasts",
+      "title": "False Idol",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/874826532",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-30",
+      "artist": "Dead Fish",
+      "title": "Labirinto da Memória (Deluxe)",
+      "format": "DELUXE",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/897578322",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-30",
+      "artist": "Falling Empires",
+      "title": "This Is The End",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/887898982",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-30",
+      "artist": "HATE COMPLEX",
+      "title": "Dissonance",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/842172232",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-30",
+      "artist": "Minus Youth",
+      "title": "Lines Crossed",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/855203842",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-30",
+      "artist": "Our Mirage",
+      "title": "Fractured Minds",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/835119042",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-30",
+      "artist": "Ratos de Porão",
+      "title": "Feijoada Acidente? - Internacional",
+      "format": "REISSUE",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/892720882",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-30",
+      "artist": "Survivalist",
+      "title": "A Place For Those Who Suffer, Alone",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/867954322",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-01-30",
+      "artist": "The Hirsch Effekt",
+      "title": "Der Brauch",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/830038351",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-06",
+      "artist": "Capsize",
+      "title": "Under a Hollow Sky",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/930775041",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-13",
+      "artist": "Glassbone",
+      "title": "Ruthless Savagery",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/898233202",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-13",
+      "artist": "Unseen Faith",
+      "title": "Fractured Will",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/826446661",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-16",
+      "artist": "Killing Pace",
+      "title": "HCPM",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/905570162",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-20",
+      "artist": "Above, Below",
+      "title": "I Guess It Was Nowhere",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/907519432",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-20",
+      "artist": "DIESECT",
+      "title": "HIDE FROM THE LIGHT",
+      "format": "DELUXE",
+      "evidence": "https://www.deezer.com/album/719507001",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-20",
+      "artist": "FJØRT",
+      "title": "belle époque",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/854490612",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-20",
+      "artist": "FLESH CREEP",
+      "title": "WE NEED YOU TO BLEED",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/902005722",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-20",
+      "artist": "Foreword",
+      "title": "Exposition",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/878506992",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-20",
+      "artist": "Good Tiger",
+      "title": "The Most Negative Day of the Year",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/886438642",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-20",
+      "artist": "Mirrorcell",
+      "title": "Long Nights In Lovescape",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/838612332",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-20",
+      "artist": "The Veer Union",
+      "title": "Reinvention",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/767395251",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-20",
+      "artist": "trauma ray",
+      "title": "Carnival",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/845481262",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-21",
+      "artist": "HRFTR",
+      "title": "What If That's All There Is",
+      "format": "ÁLBUM",
+      "evidence": "https://music.apple.com/us/album/what-if-thats-all-there-is/1876548580",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-27",
+      "artist": "Blackwater Drowning",
+      "title": "OBSCURE SORROWS",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/835765122",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-27",
+      "artist": "From Sheep to Wolves",
+      "title": "Ephemeris",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/649006171",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-27",
+      "artist": "Impluvium",
+      "title": "Echoes of a Dying Cosmos",
+      "format": "EP",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/908123612",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-02-27",
+      "artist": "Matador",
+      "title": "Above, Below and So",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/849616912",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-03-04",
+      "artist": "Dead Fish",
+      "title": "20 Anos de Zero e Um (Ao Vivo)",
+      "format": "ÁLBUM AO VIVO",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/925666991",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-03-06",
+      "artist": "Filth",
+      "title": "Welcome To Shell Town",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/896007282",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-03-08",
+      "artist": "A Jeweller's Death",
+      "title": "Thine Lupus.",
+      "format": "ÁLBUM",
+      "country": "BR",
+      "evidence": "https://ajewellersdeath.bandcamp.com/album/thine-lupus",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-03-12",
+      "artist": "Mauled",
+      "title": "When Your Eyes Are Shut",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/895898622",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-03-13",
+      "artist": "Bleeding Through",
+      "title": "This Is Live, This Is Murderous",
+      "format": "ÁLBUM AO VIVO",
+      "evidence": "https://www.deezer.com/album/931098701",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-03-13",
+      "artist": "Bound in Fear",
+      "title": "A Mind Too Sick To Heal",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/834688642",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-03-13",
+      "artist": "Wielded Steel",
+      "title": "Sins Of Your Domain",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/897622332",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-03-19",
+      "artist": "Great American Ghost",
+      "title": "Tragedy of The Commons (Reconstructed)",
+      "format": "ÁLBUM REIMAGINADO",
+      "evidence": "https://www.deezer.com/album/935954811",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-03-27",
+      "artist": "Party Cannon",
+      "title": "Subjected To A Partying",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/898313202",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-04-09",
+      "artist": "Enter Shikari",
+      "title": "Lose Your Self",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/944212421",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-04-10",
+      "artist": "Love Rarely",
+      "title": "Pain Travels",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/892926672",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-04-10",
+      "artist": "Mire",
+      "title": "Pale Reflection",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/898623342",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-04-10",
+      "artist": "Touché Amoré",
+      "title": "Stage Four (10 Year Anniversary Edition)",
+      "format": "REISSUE",
+      "evidence": "https://www.deezer.com/album/915390451",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-04-10",
+      "artist": "WARGASM (UK)",
+      "title": "Wargasm - Live in London 2025",
+      "format": "ÁLBUM AO VIVO",
+      "evidence": "https://www.deezer.com/album/918426091",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-04-16",
+      "artist": "Midwinter",
+      "title": "A Love I Hope Will Haunt Me Forever",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/955634191",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-04-23",
+      "artist": "Vomit Forth",
+      "title": "IN THE NAME OF THE FATHER",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/936926771",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-04-24",
+      "artist": "Rodox",
+      "title": "Rodox - As Melhores",
+      "format": "COMPILAÇÃO",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/965401961",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-04-24",
+      "artist": "Sugar Spine",
+      "title": "Soul Before Spirit",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/912702391",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-04-24",
+      "artist": "Waste",
+      "title": "The Weight Of Everything",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/860692802",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-05-01",
+      "artist": "Detach the Islands",
+      "title": "Concrete Jungle",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/970582111",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-05-01",
+      "artist": "FBC & BAKA",
+      "title": "TAMBORES, CAFEZAIS, FUZIS, GUARANAS E OUTRAS BRASILIDADES",
+      "format": "ÁLBUM",
+      "country": "BR",
+      "evidence": "https://music.apple.com/br/album/tambores-cafezais-fuzis-guaranas-e-outras-brasilidades/1895285355",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-05-05",
+      "artist": "Darko US",
+      "title": "Oni 2",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/971438361",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-05-15",
+      "artist": "A Static Lullaby",
+      "title": "...And Don't Forget To Breathe (Live)",
+      "format": "ÁLBUM AO VIVO",
+      "evidence": "https://www.deezer.com/album/969098711",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-05-21",
+      "artist": "Asfixia Social",
+      "title": "Mess Bigger",
+      "format": "ÁLBUM",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/972555121",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-05-22",
+      "artist": "Blight Town",
+      "title": "Nu Malaise",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/984197481",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-05-22",
+      "artist": "Dressed In Blood",
+      "title": "Darkness Within",
+      "format": "EP",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/965673351",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-05-29",
+      "artist": "Balmora",
+      "title": "These Graven Halls",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/997114261",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-05-29",
+      "artist": "LUFEH",
+      "title": "OVERWHELMED",
+      "format": "ÁLBUM",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/987832331",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-05-29",
+      "artist": "Wyrmhaven",
+      "title": "Seasons of Gloom",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/923151761",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-06-05",
+      "artist": "100 Demons",
+      "title": "Embrace The Black Light",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/962324831",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-06-12",
+      "artist": "Still Remains",
+      "title": "Spirit Breaker",
+      "format": "EP",
+      "evidence": "https://www.deezer.com/album/976948911",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-06-16",
+      "artist": "Prompts",
+      "title": "Parasite Dream",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/990420881",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-06-26",
+      "artist": "Zao",
+      "title": "Pillars",
+      "format": "EP DE COVERS",
+      "evidence": "https://www.deezer.com/album/972433381",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-07-03",
+      "artist": "Allpacas",
+      "title": "Jorge",
+      "format": "ÁLBUM",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/1013577011",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-07-10",
+      "artist": "FINAL RESTING PLACE",
+      "title": "THIRD WORLD TRIBUNAL",
+      "format": "ÁLBUM",
+      "evidence": "https://www.deezer.com/album/1023761251",
+      "discovery_status": "historical_backfill"
+    },
+    {
+      "date": "2026-07-15",
+      "artist": "Carceral",
+      "title": "Descending Reprisal",
+      "format": "ÁLBUM",
+      "country": "BR",
+      "evidence": "https://www.deezer.com/album/1022267031",
+      "discovery_status": "historical_backfill"
+    }
   ],
   "deferred_or_rejected": [
-    {"artist":"Secrets","title":"Bitter Dose","status":"rejected_single","reason":"Apple Music and Deezer package the waterfall release as an EP, but the official artist communication identifies it as a single from the album scheduled for 2026-09-18"},
-    {"artist":"Rivers Ablaze","title":"Inexternal Dread Pt.2 (Tension)","status":"rejected_single","reason":"Apple Music classifies the three-track release as a single"},
-    {"artist":"Failstate","title":"ZERO / COME HOME","status":"rejected_single","reason":"Apple Music classifies the two-track release as a single"},
-    {"artist":"Cholera","title":"The Answer To Infection Redux","status":"deferred","reason":"exact official release date still unresolved","retry_after":"2026-07-29"},
-    {"artist":"Guerilla Warfare","title":"A Splash Of Color","status":"deferred","reason":"authoritative format and metadata not yet indexed","retry_after":"2026-07-29"},
-    {"artist":"Tiny Voices","title":"my mind's recession","status":"deferred","reason":"official date conflict remains unresolved","retry_after":"2026-07-29"},
-    {"artist":"Cascades","title":"A Hatred as Pure and Potent as Sunshine","status":"deferred","reason":"conflicting availability and future-date metadata","retry_after":"2026-07-29"}
+    {
+      "artist": "Secrets",
+      "title": "Bitter Dose",
+      "status": "rejected_single",
+      "reason": "Apple Music and Deezer package the waterfall release as an EP, but the official artist communication identifies it as a single from the album scheduled for 2026-09-18"
+    },
+    {
+      "artist": "Rivers Ablaze",
+      "title": "Inexternal Dread Pt.2 (Tension)",
+      "status": "rejected_single",
+      "reason": "Apple Music classifies the three-track release as a single"
+    },
+    {
+      "artist": "Failstate",
+      "title": "ZERO / COME HOME",
+      "status": "rejected_single",
+      "reason": "Apple Music classifies the two-track release as a single"
+    },
+    {
+      "artist": "Cholera",
+      "title": "The Answer To Infection Redux",
+      "status": "deferred",
+      "reason": "exact official release date still unresolved",
+      "retry_after": "2026-07-29"
+    },
+    {
+      "artist": "Guerilla Warfare",
+      "title": "A Splash Of Color",
+      "status": "deferred",
+      "reason": "authoritative format and metadata not yet indexed",
+      "retry_after": "2026-07-29"
+    },
+    {
+      "artist": "Tiny Voices",
+      "title": "my mind's recession",
+      "status": "deferred",
+      "reason": "official date conflict remains unresolved",
+      "retry_after": "2026-07-29"
+    },
+    {
+      "artist": "Cascades",
+      "title": "A Hatred as Pure and Potent as Sunshine",
+      "status": "deferred",
+      "reason": "conflicting availability and future-date metadata",
+      "retry_after": "2026-07-29"
+    },
+    {
+      "artist": "Dance Gavin Dance",
+      "title": "Tree City Sessions 3",
+      "status": "deferred",
+      "reason": "official date conflict between discovery calendar and DSP metadata",
+      "retry_after": "2026-07-29"
+    },
+    {
+      "artist": "Avenged Sevenfold",
+      "title": "STATICA",
+      "status": "deferred",
+      "reason": "official date conflict between discovery calendar and DSP metadata",
+      "retry_after": "2026-07-29"
+    }
   ],
   "permanent_exclusions": [
     "Liturgy",
