@@ -352,7 +352,7 @@ footer a:hover{color:#fff}
       <i class="tk a"></i><i class="tk b"></i><i class="tk c"></i><i class="tk d"></i>
       <div class="meta">
         <span>[ CORE_RELEASES / 2026 ]</span>
-        <span class="rec"><i></i>v27.07.26 · atualizado</span>
+        <span class="rec"><i></i>v28.07.26 · atualizado</span>
       </div>
       <div class="heroTitle">
         <h1 class="ht" aria-label="Core Releases">
@@ -1038,6 +1038,56 @@ const OVR={
   ,"carceral|descendingreprisal":{cover:"https://cdn-images.dzcdn.net/images/cover/ce54f02bc22ea655bf7f92727283e751/1000x1000-000000-80-0-0.jpg",link:"https://www.deezer.com/album/1022267031"}
 };
 
+/* Links de álbum no Deezer validados separadamente das capas oficiais. */
+const DEEZER_DIRECT={
+  "apogean|wastewherelifebegins":"https://www.deezer.com/album/967268371",
+  "arson|arson":"https://www.deezer.com/album/1009126101",
+  "aultimatheoria|naoexistecura":"https://www.deezer.com/album/996697691",
+  "beyondcreation|theaura":"https://www.deezer.com/album/6485687",
+  "blacksites|foreternity":"https://www.deezer.com/album/944560821",
+  "borduna|algozes":"https://www.deezer.com/album/1023588901",
+  "bulletbane|oagoraquecobraviver":"https://www.deezer.com/album/985168091",
+  "cady|limitationsofthehumanform":"https://www.deezer.com/album/1035681202",
+  "cobentrice|rampantpulverization":"https://www.deezer.com/album/1010890281",
+  "cranialosteotomy|vortexofthedarkknowledge":"https://www.deezer.com/album/982803071",
+  "dazgak|stimpy":"https://www.deezer.com/album/981380841",
+  "dehumanizingitatrainworship|2dcomplex":"https://www.deezer.com/album/992099651",
+  "destructionofthehealer|auniversebereaved":"https://www.deezer.com/album/1001950061",
+  "diebesideyourhome|nothingevertrulyleaves":"https://www.deezer.com/album/1029877042",
+  "dysgnostic|endwhispers":"https://www.deezer.com/album/961311511",
+  "emptiness|nowherespeaks":"https://www.deezer.com/album/952678601",
+  "farfromalaska|farfromalaskasomnoseboaovivo":"https://www.deezer.com/album/961539501",
+  "frogmallet|consumedbyfrogs":"https://www.deezer.com/album/1007479171",
+  "gloam|inspiteofneverending":"https://www.deezer.com/album/1000993731",
+  "gloombringer|theweightofmarchinggraves":"https://www.deezer.com/album/1031599632",
+  "goethe|painwillfindyouagain":"https://www.deezer.com/album/999361461",
+  "healer|desolation":"https://www.deezer.com/album/977784731",
+  "hrftr|whatifthatsallthereis":"https://www.deezer.com/album/916733401",
+  "icesealedeyes|tape1faraway":"https://www.deezer.com/album/1008247901",
+  "instrumentofgod|thesunreflectsthecolourofyoureyes":"https://www.deezer.com/album/1033661382",
+  "laconist|wherebeingendsibegin":"https://www.deezer.com/album/1025008821",
+  "lefttodie|initiummortis":"https://www.deezer.com/album/942715041",
+  "noiraddiction|prettythingsdontlast":"https://www.deezer.com/album/1004000521",
+  "novareign|shiftingtheaxisoftheworld":"https://www.deezer.com/album/950547511",
+  "oathbreaker|rheiaredux":"https://www.deezer.com/album/963852491",
+  "ourchronicle|thegreyarea":"https://www.deezer.com/album/1011711431",
+  "planoreal|merito":"https://www.deezer.com/album/945800951",
+  "rancore|brio":"https://www.deezer.com/album/965570681",
+  "rancore|unhasedentesvalsadoimprevisivel":"https://www.deezer.com/album/943326591",
+  "repentance|retaliate":"https://www.deezer.com/album/973400981",
+  "rottingchrist|khronos":"https://www.deezer.com/album/11328730",
+  "sojourner|gateways":"https://www.deezer.com/album/989391691",
+  "spreadthedisease|thedarknessthedreadthesuffering":"https://www.deezer.com/album/1026046702",
+  "sweetteeth|thevoidthateatstheheart":"https://www.deezer.com/album/1022247341",
+  "tactusshift|perception":"https://www.deezer.com/album/1010131891",
+  "thehometeam|itlivesitchanges":"https://www.deezer.com/album/963820781",
+  "thepower|feverdreams":"https://www.deezer.com/album/1015664421",
+  "tyraelsascension|graveseeker":"https://www.deezer.com/album/1009986291",
+  "volubilis|theasterion":"https://www.deezer.com/album/1030129192",
+  "wailinstorms|thearsonist":"https://www.deezer.com/album/947252821",
+  "willinghands|theanatomyofanatomicheart":"https://www.deezer.com/album/1022499151"
+};
+
 const MESES=["","JANEIRO","FEVEREIRO","MARÇO","ABRIL","MAIO","JUNHO","JULHO","AGOSTO","SETEMBRO","OUTUBRO","NOVEMBRO","DEZEMBRO"];
 const CURTOS=["","JAN","FEV","MAR","ABR","MAI","JUN","JUL","AGO","SET","OUT","NOV","DEZ"];
 
@@ -1072,6 +1122,12 @@ function titleLoose(cand,target){
 }
 function artistOk(cand,target){return normA(cand)===normA(target);}
 function key(r){return norm(r.a)+"|"+norm(r.t)}
+function deezerReleaseLink(r){
+  const direct=DEEZER_DIRECT[key(r)];
+  if(direct)return direct;
+  const ov=OVR[key(r)];
+  return deezerDirectLink(ov&&ov.link);
+}
 /* ---------- icons ---------- */
 const IC={
 sp:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M7.4 9.7c3.1-.9 6.6-.7 9.4.8"/><path d="M8 12.5c2.5-.7 5.3-.5 7.6.7"/><path d="M8.6 15.2c2-.5 4-.4 5.8.5"/></svg>',
@@ -1126,9 +1182,10 @@ function applySortOrder(){
 
 function platHTML(r){
   const enc=encodeURIComponent((r.a+" "+r.t.replace(/[|]/g," ")).replace(/\s+/g," ").trim());
+  const dz=deezerReleaseLink(r);
   return '<div class="plat">'
     +'<a class="p-sp" target="_blank" rel="noopener" href="https://open.spotify.com/search/'+enc+(MOB?"":"/albums")+'" title="Buscar no Spotify" aria-label="Spotify: '+esc(r.a+" "+r.t)+'">'+IC.sp+"</a>"
-    +'<a class="p-dz" target="_blank" rel="noopener" href="https://www.deezer.com/search/'+enc+'/album" title="Buscar no Deezer" aria-label="Deezer: '+esc(r.a+" "+r.t)+'">'+IC.dz+"</a>"
+    +'<a class="p-dz" target="_blank" rel="noopener" href="'+(dz||"https://www.deezer.com/search/"+enc+"/album")+'" title="'+(dz?"Abrir álbum no Deezer":"Buscar no Deezer")+'" aria-label="Deezer: '+esc(r.a+" "+r.t)+'">'+IC.dz+"</a>"
     +'<a class="p-yt" target="_blank" rel="noopener" href="https://music.youtube.com/search?q='+enc+'" title="Buscar no YouTube Music" aria-label="YouTube Music: '+esc(r.a+" "+r.t)+'">'+IC.yt+"</a>"
   +"</div>";
 }
@@ -1447,7 +1504,7 @@ function applyArt(card,r,got,src){
   };
   img.src=got.cover;
   card.querySelector(".vlabel").style.setProperty("--art",'url("'+got.cover+'")');
-  const dzLink=!got.itlink&&deezerDirectLink(got.link);
+  const dzLink=deezerReleaseLink(r)||(!got.itlink&&deezerDirectLink(got.link));
   if(dzLink){const a=card.querySelector(".p-dz");a.href=dzLink;a.title="Abrir álbum no Deezer";r.link=dzLink;r.seed=dzLink}
   else if(got.link){r.link=r.link||got.link;r.seed=r.seed||got.link}
   if(src!=="L0"&&src!=="L1")AUD.push({r,src});
