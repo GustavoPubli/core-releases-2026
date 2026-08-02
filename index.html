@@ -215,6 +215,26 @@ section.mo{padding:clamp(46px,7vh,84px) 0 8px;scroll-margin-top:26px;position:re
 
 .chip{position:absolute;z-index:3;top:9px;left:9px;font-family:var(--mono);font-size:8.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#0b0b0d;background:#e8e8e8;border:1.5px solid #0b0b0d;box-shadow:2.5px 2.5px 0 var(--hard);padding:5px 7px 4px}
 
+.listen-toggle{position:absolute;z-index:6;top:8px;right:8px;width:28px;height:28px;display:grid;place-items:center;padding:0;
+  border:1.5px solid rgba(255,255,255,.9);border-radius:50%;background:rgba(7,7,9,.76);color:transparent;cursor:pointer;
+  box-shadow:0 2px 8px rgba(0,0,0,.58);font:700 16px/1 var(--mono);transition:background .16s,color .16s,transform .16s,border-color .16s;
+  touch-action:manipulation;-webkit-tap-highlight-color:transparent;backdrop-filter:blur(5px)}
+.listen-toggle:hover{transform:scale(1.06);border-color:#fff}
+.listen-toggle[aria-pressed="true"]{background:#f1f1f1;color:#0b0b0d;border-color:#f1f1f1}
+.listen-toggle:focus-visible,.rating-star:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.listen-toggle .checkmark{transform:translateY(-.5px)}
+
+.rating-control{position:absolute;z-index:6;left:8px;bottom:8px;display:flex;align-items:center;gap:1px;padding:3px 4px;
+  background:rgba(7,7,9,.72);border:1px solid rgba(255,255,255,.3);border-radius:2px;box-shadow:0 2px 8px rgba(0,0,0,.58);
+  backdrop-filter:blur(5px)}
+.rating-star{width:20px;height:24px;display:grid;place-items:center;padding:0;border:0;background:transparent;cursor:pointer;
+  color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.92);font:400 15px/1 sans-serif;transition:color .14s,transform .14s;
+  touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.rating-star:hover{transform:scale(1.12)}
+.rating-star.is-on{color:#fff;-webkit-text-stroke-color:#fff}
+.card.is-listened .sleeve img{filter:grayscale(1) brightness(.43) contrast(1.04)}
+.card.is-listened .sleeve .ph{filter:grayscale(1) brightness(.5)}
+
 @media (hover:hover){
   .card:hover .vpos{transform:translate3d(56%,0,0)}
   .card:hover .vinyl{animation-play-state:running}
@@ -326,6 +346,9 @@ footer a:hover{color:#fff}
   .card.active .sleeve{transform:translateZ(.01px) rotateX(6deg) translateY(3%)}
   .artist{font-size:15px}
   .album{font-size:15px}
+  .listen-toggle{top:7px;right:7px;width:28px;height:28px}
+  .rating-control{left:6px;bottom:6px;padding:3px}
+  .rating-star{width:19px;height:24px;font-size:14px}
   .stat{flex:1 1 46%;border-bottom:1.5px solid var(--bord)}
   .stat:nth-child(n+3){border-bottom:0}
   .stat:nth-child(2n){border-right:0}
@@ -1204,6 +1227,28 @@ function titleLoose(cand,target){
 }
 function artistOk(cand,target){return normA(cand)===normA(target);}
 function key(r){return norm(r.a)+"|"+norm(r.t)}
+const USER_STATE_KEY="core-releases-user-state-v1";
+function emptyUserState(){
+  return {listened:Object.create(null),ratings:Object.create(null),filters:{format:"all",listened:"all",rating:"all"}};
+}
+function loadUserState(){
+  const state=emptyUserState();
+  try{
+    const parsed=JSON.parse(localStorage.getItem(USER_STATE_KEY)||"null");
+    if(!parsed||typeof parsed!=="object")return state;
+    if(parsed.listened&&typeof parsed.listened==="object")Object.entries(parsed.listened).forEach(([k,v])=>{if(v===true)state.listened[k]=true});
+    if(parsed.ratings&&typeof parsed.ratings==="object")Object.entries(parsed.ratings).forEach(([k,v])=>{const n=Number(v);if(Number.isInteger(n)&&n>=1&&n<=5)state.ratings[k]=n});
+    const f=parsed.filters&&typeof parsed.filters==="object"?parsed.filters:{};
+    if(["all","alb","ep","oth"].includes(f.format))state.filters.format=f.format;
+    if(["all","listened","unlistened"].includes(f.listened))state.filters.listened=f.listened;
+    if(["all","unrated","1","2","3","4","5"].includes(String(f.rating)))state.filters.rating=String(f.rating);
+  }catch(e){}
+  return state;
+}
+let userState=loadUserState();
+function saveUserState(){try{localStorage.setItem(USER_STATE_KEY,JSON.stringify(userState))}catch(e){}}
+function isListened(r){return userState.listened[key(r)]===true}
+function releaseRating(r){return Number(userState.ratings[key(r)])||0}
 function deezerReleaseLink(r){
   const direct=DEEZER_DIRECT[key(r)];
   if(direct)return direct;
@@ -1271,12 +1316,19 @@ function platHTML(r){
     +'<a class="p-yt" target="_blank" rel="noopener" href="https://music.youtube.com/search?q='+enc+'" title="Buscar no YouTube Music" aria-label="YouTube Music: '+esc(r.a+" "+r.t)+'">'+IC.yt+"</a>"
   +"</div>";
 }
+function preferenceControlsHTML(r){
+  const listened=isListened(r),rating=releaseRating(r),label=esc(r.a+" · "+r.t);
+  const stars=[1,2,3,4,5].map(n=>'<button type="button" class="rating-star'+(n<=rating?' is-on':'')+'" data-rating="'+n+'" role="radio" aria-checked="'+(n===rating)+'" tabindex="'+((rating===n)||(!rating&&n===1)?0:-1)+'" aria-label="'+n+' de 5 estrelas para '+label+'" title="'+n+' de 5 estrelas"><span aria-hidden="true">★</span></button>').join("");
+  return '<button type="button" class="listen-toggle" aria-pressed="'+listened+'" aria-label="'+(listened?'Marcar como não escutado: ':'Marcar como escutado: ')+label+'" title="'+(listened?'Escutado':'Marcar como escutado')+'"><span class="checkmark" aria-hidden="true">✓</span></button>'
+    +'<div class="rating-control" role="radiogroup" aria-label="Avaliação de '+label+'">'+stars+'</div>';
+}
 function cardHTML(r){
-  return '<article class="card rv" data-i="'+r.i+'">'
+  return '<article class="card rv'+(isListened(r)?' is-listened':'')+'" data-i="'+r.i+'" data-user-key="'+esc(key(r))+'">'
     +'<div class="discwrap" title="'+esc(r.a+" — "+r.t)+'">'
       +'<div class="vpos"><div class="vinyl"><span class="vlabel"></span></div></div>'
       +'<div class="sleeve loading"><span class="shim"></span>'
         +(r.note?'<span class="chip">'+esc(r.note)+"</span>":"")
+        +preferenceControlsHTML(r)
         +'<img alt="Capa de '+esc(r.t)+' — '+esc(r.a)+'" loading="lazy" decoding="async" referrerpolicy="no-referrer">'
       +"</div>"
     +"</div>"
@@ -1298,6 +1350,52 @@ for(const m of months){
     +'<div class="grid">'+list.map(cardHTML).join("")+"</div></section>";
 }
 app.innerHTML=html;
+
+function syncCardPreference(card,r){
+  const listened=isListened(r),rating=releaseRating(r),label=r.a+" · "+r.t;
+  card.classList.toggle("is-listened",listened);
+  const listen=card.querySelector(".listen-toggle");
+  if(listen){
+    listen.setAttribute("aria-pressed",listened);
+    listen.setAttribute("aria-label",(listened?"Marcar como não escutado: ":"Marcar como escutado: ")+label);
+    listen.title=listened?"Escutado":"Marcar como escutado";
+  }
+  card.querySelectorAll(".rating-star").forEach(star=>{
+    const value=Number(star.dataset.rating);
+    star.classList.toggle("is-on",value<=rating);
+    star.setAttribute("aria-checked",value===rating);
+    star.tabIndex=(value===rating||(!rating&&value===1))?0:-1;
+  });
+}
+function setReleaseRating(card,r,value){
+  const k=key(r);
+  if(value)userState.ratings[k]=value;else delete userState.ratings[k];
+  saveUserState();syncCardPreference(card,r);applyFilters();
+}
+app.addEventListener("click",e=>{
+  const listen=e.target.closest(".listen-toggle");
+  if(listen){
+    e.preventDefault();e.stopPropagation();
+    const card=listen.closest(".card"),r=R[+card.dataset.i],k=key(r);
+    if(isListened(r))delete userState.listened[k];else userState.listened[k]=true;
+    saveUserState();syncCardPreference(card,r);applyFilters();return;
+  }
+  const star=e.target.closest(".rating-star");
+  if(star){
+    e.preventDefault();e.stopPropagation();
+    const card=star.closest(".card"),r=R[+card.dataset.i],value=Number(star.dataset.rating);
+    setReleaseRating(card,r,releaseRating(r)===value?0:value);
+  }
+});
+app.addEventListener("keydown",e=>{
+  const star=e.target.closest(".rating-star");if(!star||!["ArrowLeft","ArrowDown","ArrowRight","ArrowUp","Home","End"].includes(e.key))return;
+  e.preventDefault();e.stopPropagation();
+  const card=star.closest(".card"),r=R[+card.dataset.i];
+  let value=releaseRating(r)||1;
+  if(e.key==="Home")value=1;else if(e.key==="End")value=5;else value=Math.max(1,Math.min(5,value+(["ArrowRight","ArrowUp"].includes(e.key)?1:-1)));
+  setReleaseRating(card,r,value);
+  card.querySelector('.rating-star[data-rating="'+value+'"]').focus();
+});
 
 /* marquee */
 (function(){
@@ -1327,12 +1425,19 @@ document.getElementById("stats").innerHTML=
  +'<div class="stat"><b>'+nEp+'</b><span>EPs</span></div>'
  +'<div class="stat"><b>'+nOth+'</b><span>outros</span></div>';
 const FL=[["all","Todos",nAll],["alb","Álbuns",nAlb],["ep","EPs",nEp],["oth","Outros",nOth]];
-document.getElementById("filters").innerHTML=FL.map(f=>
-  '<button class="fbtn" data-f="'+f[0]+'" aria-pressed="'+(f[0]==="all")+'">'+f[1]+"<small>"+f[2]+"</small></button>").join("")
+const filtersEl=document.getElementById("filters");
+filtersEl.innerHTML=FL.map(f=>
+  '<button class="fbtn" data-f="'+f[0]+'" aria-pressed="'+(f[0]===userState.filters.format)+'">'+f[1]+"<small>"+f[2]+"</small></button>").join("")
+  +'<label class="sortCtl" for="listen-filter"><span>Escuta</span><select id="listen-filter" aria-label="Filtrar por escuta"><option value="all">Todos</option><option value="listened">Escutados</option><option value="unlistened">Não escutados</option></select></label>'
+  +'<label class="sortCtl" for="rating-filter"><span>Nota</span><select id="rating-filter" aria-label="Filtrar por avaliação"><option value="all">Todas</option><option value="unrated">Sem nota</option><option value="1">1 estrela</option><option value="2">2 estrelas</option><option value="3">3 estrelas</option><option value="4">4 estrelas</option><option value="5">5 estrelas</option></select></label>'
   +'<label class="sortCtl" for="sort-order"><span>Ordem</span><select id="sort-order" aria-label="Ordenar registros"><option value="asc">Antigos primeiro</option><option value="desc">Recentes primeiro</option></select></label>';
 
 const sortOrder=document.getElementById("sort-order");
+const listenedFilter=document.getElementById("listen-filter");
+const ratingFilter=document.getElementById("rating-filter");
 sortOrder.value=sortDir;
+listenedFilter.value=userState.filters.listened;
+ratingFilter.value=userState.filters.rating;
 applySortOrder();
 sortOrder.addEventListener("change",e=>{
   sortDir=e.target.value;
@@ -1340,11 +1445,15 @@ sortOrder.addEventListener("change",e=>{
   applySortOrder();
 });
 
-document.getElementById("filters").addEventListener("click",e=>{
-  const b=e.target.closest(".fbtn");if(!b)return;
-  document.querySelectorAll(".fbtn").forEach(x=>x.setAttribute("aria-pressed",x===b));
-  const p=PRED[b.dataset.f];
-  document.querySelectorAll(".card").forEach(c=>c.classList.toggle("hide",!p(R[+c.dataset.i])));
+function applyFilters(){
+  const formatPred=PRED[userState.filters.format]||PRED.all;
+  filtersEl.querySelectorAll(".fbtn").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===userState.filters.format));
+  document.querySelectorAll(".card").forEach(card=>{
+    const r=R[+card.dataset.i],listened=isListened(r),rating=releaseRating(r);
+    const listenedPass=userState.filters.listened==="all"||(userState.filters.listened==="listened"?listened:!listened);
+    const ratingPass=userState.filters.rating==="all"||(userState.filters.rating==="unrated"?!rating:rating===Number(userState.filters.rating));
+    card.classList.toggle("hide",!(formatPred(r)&&listenedPass&&ratingPass));
+  });
   document.querySelectorAll("section.mo").forEach(s=>{
     const n=s.querySelectorAll(".card:not(.hide)").length;
     s.style.display=n?"":"none";
@@ -1352,7 +1461,14 @@ document.getElementById("filters").addEventListener("click",e=>{
     const dk=document.querySelector('.dki[data-target="#'+s.id+'"]');
     if(dk)dk.style.display=n?"":"none";
   });
+}
+
+filtersEl.addEventListener("click",e=>{
+  const b=e.target.closest(".fbtn");if(!b)return;
+  userState.filters.format=b.dataset.f;saveUserState();applyFilters();
 });
+listenedFilter.addEventListener("change",e=>{userState.filters.listened=e.target.value;saveUserState();applyFilters()});
+ratingFilter.addEventListener("change",e=>{userState.filters.rating=e.target.value;saveUserState();applyFilters()});
 
 /* ============================================================
    DOCK (port vanilla do React Bits Dock) — navegação rápida
@@ -1363,6 +1479,7 @@ const dockItems=[{g:"↑",l:"Topo",t:"#top0"}]
   .concat([{sep:1},{g:"＋",l:"Sugerir",t:"#sugira"},{g:"IG",l:"@gustpires13",u:"https://instagram.com/gustpires13"}]);
 dock.innerHTML=dockItems.map(it=>it.sep?'<span class="dki sep" aria-hidden="true"></span>'
   :'<button class="dki" '+(it.t?'data-target="'+it.t+'"':'data-url="'+it.u+'"')+' aria-label="'+esc(it.l)+'">'+it.g+'<span class="lb">'+esc(it.l)+"</span></button>").join("");
+applyFilters();
 dock.addEventListener("click",e=>{
   const b=e.target.closest(".dki");if(!b||b.classList.contains("sep"))return;
   if(b.dataset.url){window.open(b.dataset.url,"_blank","noopener");return}
@@ -1476,6 +1593,7 @@ if(finePtr&&!reduced){
 
 /* toque/clique na capa puxa o vinil; links ficam apenas nos botoes das plataformas */
 document.addEventListener("click",e=>{
+  if(e.target.closest(".listen-toggle,.rating-control"))return;
   const dw=e.target.closest(".discwrap");
   if(!dw){document.querySelectorAll(".card.active").forEach(c=>c.classList.remove("active"));return}
   const card=dw.closest(".card");
