@@ -215,10 +215,11 @@ section.mo{padding:clamp(46px,7vh,84px) 0 8px;scroll-margin-top:26px;position:re
 
 .chip{position:absolute;z-index:3;top:9px;left:9px;font-family:var(--mono);font-size:8.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#0b0b0d;background:#e8e8e8;border:1.5px solid #0b0b0d;box-shadow:2.5px 2.5px 0 var(--hard);padding:5px 7px 4px}
 
-.listen-toggle{position:absolute;z-index:6;top:7px;right:7px;width:24px;height:24px;display:grid;place-items:center;padding:0;
+.listen-toggle{position:absolute;z-index:6;top:6px;right:6px;width:20px;height:20px;display:grid;place-items:center;padding:0;
   border:1.5px solid rgba(255,255,255,.9);border-radius:50%;background:rgba(7,7,9,.76);color:transparent;cursor:pointer;
-  box-shadow:0 2px 8px rgba(0,0,0,.58);font:700 13px/1 var(--mono);transition:background .16s,color .16s,transform .16s,border-color .16s;
+  box-shadow:0 2px 8px rgba(0,0,0,.58);font:700 11px/1 var(--mono);transition:background .16s,color .16s,transform .16s,border-color .16s;
   touch-action:manipulation;-webkit-tap-highlight-color:transparent;backdrop-filter:blur(5px)}
+.listen-toggle::before{content:"";position:absolute;inset:-5px;border-radius:50%}
 .listen-toggle:hover{transform:scale(1.06);border-color:#fff}
 .listen-toggle[aria-pressed="true"]{background:#f1f1f1;color:#0b0b0d;border-color:#f1f1f1}
 .listen-toggle:focus-visible,.rating-star:focus-visible{outline:2px solid #fff;outline-offset:2px}
@@ -346,7 +347,7 @@ footer a:hover{color:#fff}
   .card.active .sleeve{transform:translateZ(.01px) rotateX(6deg) translateY(3%)}
   .artist{font-size:15px}
   .album{font-size:15px}
-  .listen-toggle{top:6px;right:6px;width:24px;height:24px}
+  .listen-toggle{top:5px;right:5px;width:20px;height:20px}
   .rating-control{left:6px;bottom:6px;padding:3px}
   .rating-star{width:19px;height:24px;font-size:14px}
   .stat{flex:1 1 46%;border-bottom:1.5px solid var(--bord)}
