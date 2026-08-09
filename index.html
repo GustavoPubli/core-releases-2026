@@ -194,7 +194,7 @@ section.mo{padding:clamp(46px,7vh,84px) 0 8px;scroll-margin-top:26px;position:re
 /* ============ GRID ============ */
 .grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(auto-fill,minmax(216px,1fr));gap:clamp(30px,4vw,46px) clamp(20px,2.6vw,30px);padding-bottom:clamp(26px,4vh,44px)}
 
-.card{position:relative;content-visibility:auto;contain-intrinsic-size:auto 380px}
+.card{position:relative}
 .card:hover,.card.active{z-index:40}
 .card.hide{display:none}
 
@@ -461,10 +461,10 @@ footer a:hover{color:#fff}
       </div>
       <div class="fld"><label for="f-ano">Ano</label><input id="f-ano" name="ano" type="number" min="2020" max="2030" value="2026"></div>
       <div class="fld full"><label for="f-link">Link (Spotify, Deezer, YouTube…)</label><input id="f-link" name="link" type="url" placeholder="https://" autocomplete="off"></div>
-      <div class="form-actions"><button class="bbtn sbtn" type="submit">Enviar sugestão →</button><button class="bbtn" id="copy-suggestion" type="button">Copiar sugestão</button></div>
+      <div class="form-actions"><button class="bbtn sbtn" type="submit">Enviar sugestão →</button></div>
       <p class="fmsg" id="fmsg" aria-live="polite"></p>
     </form>
-    <p class="formnote">[ A sugestão abre pronta no seu aplicativo de e-mail. Se ele não abrir, use “Copiar sugestão”. Nenhum dado fica salvo nesta página. ]</p>
+    <p class="formnote">[ A sugestão abre pronta no seu aplicativo de e-mail. Nenhum dado fica salvo nesta página. ]</p>
   </div>
 </section>
 

@@ -20,8 +20,8 @@
       "t": "sherane",
       "k": "EP",
       "g": "metalcore / post-hardcore / emo",
-      "cover": "https://cdn-images.dzcdn.net/images/cover/118452a244c519ef78ffe8876cdc1bda/1000x1000-000000-80-0-0.jpg",
-      "sourceLink": "https://www.deezer.com/album/886389332"
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d7/7c/49/d77c4909-0ac4-b325-7b43-fdab047d0f0f/199938300488.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/sherane-ep/6793775795"
     },
     {
       "id": "josh|fortythousandbrothers",
@@ -2192,7 +2192,10 @@
       "t": "RESENT: Deluxe Edition",
       "k": "DELUXE",
       "g": "nu metal / modern metal",
-      "note": "DELUXE"
+      "note": "DELUXE",
+      "deezer": "https://www.deezer.com/album/967597141",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/faed1ccc588c32e254a8aa1391c4983d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/967597141"
     },
     {
       "id": "icesealedeyes|tape1faraway",
@@ -3993,7 +3996,10 @@
       "t": "Takeoffs & Landings",
       "k": "\u00c1LBUM",
       "g": "post-metal / progressive post-rock",
-      "q": "Din of Celestial Birds Takeoffs Landings"
+      "q": "Din of Celestial Birds Takeoffs Landings",
+      "deezer": "https://www.deezer.com/album/976862261",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/9914345cebd8bf3493225f6c21e6b1b6/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/976862261"
     },
     {
       "id": "citizen|halcyonblues",

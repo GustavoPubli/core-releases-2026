@@ -43,7 +43,6 @@ function artistOk(cand,target){return normA(cand)===normA(target);}
 function legacyKey(r){return norm(r.a)+"|"+norm(r.t)}
 const R=Object.freeze(RAW_RELEASES.map((record,i)=>Object.freeze({...record,id:record.id||legacyKey(record),i,m:parseInt(record.d.slice(3),10)})));
 function key(r){return r.id}
-const RELEASE_IDS=new Set(R.map(r=>r.id));
 const CACHE_KEY="core-releases-runtime-cache-v1",CACHE_TTL=7*24*60*60*1000;
 const validHttps=value=>{try{return new URL(value).protocol==="https:"}catch(e){return false}};
 function loadRuntimeCache(){
@@ -100,29 +99,6 @@ function loadUserState(){
 }
 let userState=loadUserState();
 function saveUserState(){try{localStorage.setItem(USER_STATE_KEY,JSON.stringify(userState))}catch(e){}}
-function exportPreferences(){
-  const payload={type:"core-releases-preferences",version:1,exportedAt:new Date().toISOString(),catalogVersion:CATALOG_META.updated,sortOrder:sortDir,userState};
-  const url=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)],{type:"application/json"}));
-  const link=document.createElement("a");link.href=url;link.download="core-releases-preferencias-"+(CATALOG_META.updated||"2026")+".json";
-  document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
-}
-async function importPreferences(file){
-  if(!file||file.size>1024*1024)throw new Error("Arquivo inválido ou maior que 1 MB.");
-  const payload=JSON.parse(await file.text());
-  if(!payload||payload.type!=="core-releases-preferences"||payload.version!==1||!payload.userState)throw new Error("Arquivo de preferências incompatível.");
-  const incoming=payload.userState,next=emptyUserState();
-  Object.assign(next.listened,userState.listened);Object.assign(next.ratings,userState.ratings);
-  if(incoming.listened&&typeof incoming.listened==="object")Object.entries(incoming.listened).forEach(([id,value])=>{if(RELEASE_IDS.has(id)&&value===true)next.listened[id]=true});
-  if(incoming.ratings&&typeof incoming.ratings==="object")Object.entries(incoming.ratings).forEach(([id,value])=>{const n=Number(value);if(RELEASE_IDS.has(id)&&Number.isInteger(n)&&n>=1&&n<=5)next.ratings[id]=n});
-  const filters=incoming.filters&&typeof incoming.filters==="object"?incoming.filters:{};
-  if(["all","alb","ep","oth"].includes(filters.format))next.filters.format=filters.format;else next.filters.format=userState.filters.format;
-  if(["all","listened","unlistened"].includes(filters.listened))next.filters.listened=filters.listened;else next.filters.listened=userState.filters.listened;
-  if(["all","unrated","1","2","3","4","5"].includes(String(filters.rating)))next.filters.rating=String(filters.rating);else next.filters.rating=userState.filters.rating;
-  userState=next;saveUserState();
-  if(payload.sortOrder==="asc"||payload.sortOrder==="desc"){
-    sortDir=payload.sortOrder;try{localStorage.setItem(SORT_KEY,sortDir)}catch(e){}
-  }
-}
 function isListened(r){return userState.listened[key(r)]===true}
 function releaseRating(r){return Number(userState.ratings[key(r)])||0}
 function deezerReleaseLink(r){
@@ -312,12 +288,9 @@ const FL=[["all","Todos",nAll],["alb","Álbuns",nAlb],["ep","EPs",nEp],["oth","O
 const filtersEl=document.getElementById("filters");
 filtersEl.innerHTML=FL.map(f=>
   '<button type="button" class="fbtn" data-f="'+f[0]+'" aria-pressed="'+(f[0]===userState.filters.format)+'">'+f[1]+"<small>"+f[2]+"</small></button>").join("")
-  +'<label class="sortCtl" for="listen-filter"><span>Escuta</span><select id="listen-filter" aria-label="Filtrar por escuta"><option value="all">Todos</option><option value="listened">Escutados</option><option value="unlistened">Não escutados</option></select></label>'
+  +'<label class="sortCtl" for="listen-filter"><span>Ouvidos</span><select id="listen-filter" aria-label="Filtrar por ouvidos"><option value="all">Todos</option><option value="listened">Sim</option><option value="unlistened">Não</option></select></label>'
   +'<label class="sortCtl" for="rating-filter"><span>Nota</span><select id="rating-filter" aria-label="Filtrar por avaliação"><option value="all">Todas</option><option value="unrated">Sem nota</option><option value="1">1 estrela</option><option value="2">2 estrelas</option><option value="3">3 estrelas</option><option value="4">4 estrelas</option><option value="5">5 estrelas</option></select></label>'
-  +'<label class="sortCtl" for="sort-order"><span>Ordem</span><select id="sort-order" aria-label="Ordenar registros"><option value="asc">Antigos primeiro</option><option value="desc">Recentes primeiro</option></select></label>'
-  +'<button type="button" class="fbtn" data-action="export">Exportar preferências</button>'
-  +'<button type="button" class="fbtn" data-action="import">Importar preferências</button>'
-  +'<input id="preferences-file" type="file" accept="application/json,.json" hidden>';
+  +'<label class="sortCtl" for="sort-order"><span>Ordem</span><select id="sort-order" aria-label="Ordenar registros"><option value="asc">Antigos primeiro</option><option value="desc">Recentes primeiro</option></select></label>';
 
 const sortOrder=document.getElementById("sort-order");
 const listenedFilter=document.getElementById("listen-filter");
@@ -351,24 +324,8 @@ function applyFilters(){
 }
 
 filtersEl.addEventListener("click",e=>{
-  const action=e.target.closest("[data-action]");
-  if(action){
-    if(action.dataset.action==="export")exportPreferences();
-    if(action.dataset.action==="import")document.getElementById("preferences-file").click();
-    return;
-  }
   const b=e.target.closest(".fbtn[data-f]");if(!b)return;
   userState.filters.format=b.dataset.f;saveUserState();applyFilters();
-});
-document.getElementById("preferences-file").addEventListener("change",async e=>{
-  const file=e.target.files&&e.target.files[0];if(!file)return;
-  try{
-    await importPreferences(file);
-    document.querySelectorAll(".card").forEach(card=>syncCardPreference(card,R[+card.dataset.i]));
-    listenedFilter.value=userState.filters.listened;ratingFilter.value=userState.filters.rating;sortOrder.value=sortDir;applySortOrder();applyFilters();
-    alert("Preferências importadas com sucesso.");
-  }catch(error){alert(error.message||"Não foi possível importar as preferências.")}
-  e.target.value="";
 });
 listenedFilter.addEventListener("change",e=>{userState.filters.listened=e.target.value;saveUserState();applyFilters()});
 ratingFilter.addEventListener("change",e=>{userState.filters.rating=e.target.value;saveUserState();applyFilters()});
@@ -533,25 +490,13 @@ function suggestionData(){
     +"Enviado pelo site CORE RELEASES.";
   return{art,alb,body,msg};
 }
-async function copySuggestion(){
-  const data=suggestionData();if(!data)return false;
-  try{
-    if(navigator.clipboard&&window.isSecureContext)await navigator.clipboard.writeText(data.body);
-    else{
-      const area=document.createElement("textarea");area.value=data.body;area.style.cssText="position:fixed;opacity:0;pointer-events:none";
-      document.body.appendChild(area);area.select();if(!document.execCommand("copy"))throw new Error("copy");area.remove();
-    }
-    data.msg.textContent="[ OK ] Sugestão copiada. Agora é só colar onde preferir.";return true;
-  }catch(e){data.msg.textContent="[ ! ] Não foi possível copiar automaticamente. Selecione e copie os campos manualmente.";return false}
-}
-document.getElementById("copy-suggestion").addEventListener("click",copySuggestion);
 document.getElementById("sform").addEventListener("submit",e=>{
   e.preventDefault();
   const data=suggestionData();if(!data)return;
   const addr=["gustpires13","gmail","com"];
   const to=addr[0]+"\u0040"+addr[1]+"."+addr[2];
   const subject=encodeURIComponent("Sugestão CORE RELEASES: "+data.art+" | "+data.alb);
-  data.msg.textContent="Tentando abrir seu aplicativo de e-mail. Se nada acontecer, use “Copiar sugestão”.";
+  data.msg.textContent="Tentando abrir seu aplicativo de e-mail.";
   window.location.href="mailto:"+to+"?subject="+subject+"&body="+encodeURIComponent(data.body);
 });
 
@@ -659,10 +604,11 @@ async function resolveArt(r){
   const card=document.querySelector('.card[data-i="'+r.i+'"]');
   if(!card)return;
   const state=stateOf(r);
+  if(r.cover){applyArt(card,r,{cover:r.cover,link:r.sourceLink||null},"L0");return}
   if(state.cover){applyArt(card,r,{cover:state.cover,link:state.link||null},"CACHE");return}
   const searchRelease=r.q?{...r,q:r.q}:r;
   const layers=[
-    ["L0",async()=>r.cover?{cover:r.cover,link:r.sourceLink||null}:r.deezerId?dzAlbumById(r.deezerId):null],
+    ["L0",async()=>r.deezerId?dzAlbumById(r.deezerId):null],
     ["L1",()=>dzSearch(searchRelease,false)],
     ["L2",()=>itSearch(searchRelease,false)],
     ["L3",()=>mbCAA(searchRelease)]
