@@ -1,0 +1,3955 @@
+{
+  "meta": {
+    "year": 2026,
+    "updated": "2026-08-02",
+    "schemaVersion": 1
+  },
+  "releases": [
+    {
+      "id": "palefaceswiss|thewilted",
+      "d": "02/01",
+      "a": "Paleface Swiss",
+      "t": "The Wilted",
+      "k": "EP",
+      "g": "deathcore / nu deathcore"
+    },
+    {
+      "id": "sherane|sherane",
+      "d": "03/01",
+      "a": "Sherane",
+      "t": "sherane",
+      "k": "EP",
+      "g": "metalcore / post-hardcore / emo",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/118452a244c519ef78ffe8876cdc1bda/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/886389332"
+    },
+    {
+      "id": "josh|fortythousandbrothers",
+      "d": "07/01",
+      "a": "josh",
+      "t": "Forty Thousand Brothers...",
+      "k": "EP",
+      "g": "metalcore revival / screamo",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/8e16ecc0c438e3ac74bedec16a7c273d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/891049692"
+    },
+    {
+      "id": "mydiarytoyou|youhaveawaywithlastwords",
+      "d": "07/01",
+      "a": "mydiarytoyou!",
+      "t": "You Have A Way With Last Words",
+      "k": "EP",
+      "g": "post-hardcore / emocore / screamo",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/4b9efa5afe3b753d1daace00d252139e/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/881052662"
+    },
+    {
+      "id": "soniaisdead|likefigsfromatree",
+      "d": "08/01",
+      "a": "sonia is dead",
+      "t": "like figs from a tree",
+      "k": "ÁLBUM",
+      "g": "screamo / post-hardcore / emo",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/dbc3742d88dc4db5b045e9f935f48613/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/886253812"
+    },
+    {
+      "id": "alterbridge|alterbridge",
+      "d": "09/01",
+      "a": "Alter Bridge",
+      "t": "Alter Bridge",
+      "k": "ÁLBUM",
+      "g": "hard rock moderno / alt metal"
+    },
+    {
+      "id": "bitedown|violentplayground",
+      "d": "09/01",
+      "a": "Bite Down",
+      "t": "Violent Playground",
+      "k": "ÁLBUM",
+      "g": "nu-deathcore / metalcore"
+    },
+    {
+      "id": "lionheart|valleyofdeathii",
+      "d": "09/01",
+      "a": "Lionheart",
+      "t": "Valley Of Death II",
+      "k": "ÁLBUM",
+      "g": "hardcore / metalcore"
+    },
+    {
+      "id": "calmandsecure|glassinthemouthofthesun",
+      "d": "09/01",
+      "a": "Calm and Secure",
+      "t": "Glass In The Mouth Of The Sun",
+      "k": "ÁLBUM",
+      "g": "metalcore / metallic hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/748cea5cb588a47f1ca16f81ef09c54a/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/891279052"
+    },
+    {
+      "id": "queenkona|longlive",
+      "d": "09/01",
+      "a": "QUEEN KONA",
+      "t": "LONG LIVE",
+      "k": "ÁLBUM",
+      "g": "metalcore / deathcore / djent",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/196a0e1c1f33826b05e211f8ea1bc08d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/873135802"
+    },
+    {
+      "id": "surefire|endorphins",
+      "d": "09/01",
+      "a": "Surefire",
+      "t": "Endorphins",
+      "k": "ÁLBUM",
+      "g": "metalcore / modern metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/afebc59cf66d794ef1f0bd40c443c29e/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/845421342"
+    },
+    {
+      "id": "takatak|influx",
+      "d": "09/01",
+      "a": "Takatak",
+      "t": "Influx",
+      "k": "ÁLBUM",
+      "g": "djent / progressive metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/463df324369999aefedf9f0846d34780/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/891196312"
+    },
+    {
+      "id": "sear|omerciful",
+      "d": "12/01",
+      "a": "Sear",
+      "t": "O Merciful",
+      "k": "ÁLBUM",
+      "g": "melodic hardcore / screamo / blackened hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/94cb7e85a70e5a983140e60f4d0b9afd/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/880712852"
+    },
+    {
+      "id": "silverfang|deathordevotion",
+      "d": "14/01",
+      "a": "Silver Fang",
+      "t": "Death or Devotion",
+      "k": "EP",
+      "g": "metalcore / hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/ee68978a1e6e4c6477b76822485f0238/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/897950002"
+    },
+    {
+      "id": "carrionvael|slayutterly",
+      "d": "16/01",
+      "a": "Carrion Vael",
+      "t": "Slay Utterly",
+      "k": "ÁLBUM",
+      "g": "deathcore / death metal moderno"
+    },
+    {
+      "id": "ovsulfur|endless",
+      "d": "16/01",
+      "a": "Ov Sulfur",
+      "t": "Endless",
+      "k": "ÁLBUM",
+      "g": "deathcore"
+    },
+    {
+      "id": "soen|reliance",
+      "d": "16/01",
+      "a": "Soen",
+      "t": "Reliance",
+      "k": "ÁLBUM",
+      "g": "prog metal moderno"
+    },
+    {
+      "id": "ipromisedtheworld|ipromisedtheworld",
+      "d": "16/01",
+      "a": "I Promised The World",
+      "t": "I Promised The World",
+      "k": "EP",
+      "g": "metalcore / post-hardcore"
+    },
+    {
+      "id": "thefuneralportrait|livefromsuffocatecity",
+      "d": "16/01",
+      "a": "The Funeral Portrait",
+      "t": "Live From Suffocate City",
+      "k": "ÁLBUM AO VIVO",
+      "g": "theatrical rock / gothic alt pesado",
+      "note": "AO VIVO"
+    },
+    {
+      "id": "coldnightforalligators|withallthatsleft",
+      "d": "16/01",
+      "a": "Cold Night For Alligators",
+      "t": "With All That's Left",
+      "k": "ÁLBUM",
+      "g": "progressive metalcore / djent",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/fa1cbda8420ad16e01c918b17e7c0aec/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/814189171"
+    },
+    {
+      "id": "dreamdrop|blackcastlept2",
+      "d": "16/01",
+      "a": "Dream Drop",
+      "t": "blackcastle: pt.2",
+      "k": "EP",
+      "g": "post-hardcore / emo / alternative heavy rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/c8dd2e5ec746961e4b08052f4ae5964c/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/854989242"
+    },
+    {
+      "id": "ratosdeporao|feijoadaacidentebrasil",
+      "d": "16/01",
+      "a": "Ratos de Porão",
+      "t": "Feijoada Acidente? - Brasil",
+      "k": "REISSUE",
+      "g": "hardcore / crossover",
+      "country": "BR",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/a8b977205aa11dad503dca136f6df29c/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/894245122"
+    },
+    {
+      "id": "sanityslip|sanityslip",
+      "d": "16/01",
+      "a": "Sanity Slip",
+      "t": "Sanity Slip",
+      "k": "EP",
+      "g": "metallic hardcore / death metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/cb01e11865b1bb4ef2c724d8d7ede1a5/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/897576162"
+    },
+    {
+      "id": "vexatious|emptythreat",
+      "d": "16/01",
+      "a": "Vexatious",
+      "t": "Empty Threat",
+      "k": "EP",
+      "g": "deathcore / metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/03bf4d2a042d41dfb5bbf9752fa72e5d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/884410122"
+    },
+    {
+      "id": "youthnovel|iwentthroughthisexperiencesmiling",
+      "d": "17/01",
+      "a": "Youth Novel",
+      "t": "I Went Through This Experience Smiling",
+      "k": "ÁLBUM",
+      "g": "screamo / post-hardcore / emo",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/296aaa99bf551d3d2db78e15ee8b523f/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/894203112"
+    },
+    {
+      "id": "palaceofmourning|palaceofmourning",
+      "d": "20/01",
+      "a": "Palace of Mourning",
+      "t": "Palace of Mourning",
+      "k": "EP",
+      "g": "metalcore / metallic hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/91b25bd94a7386be1d5197aaa5be8b17/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/893196912"
+    },
+    {
+      "id": "crystallake|theweightofsound",
+      "d": "23/01",
+      "a": "Crystal Lake",
+      "t": "The Weight Of Sound",
+      "k": "ÁLBUM",
+      "g": "metalcore / deathcore"
+    },
+    {
+      "id": "poppy|emptyhands",
+      "d": "23/01",
+      "a": "Poppy",
+      "t": "Empty Hands",
+      "k": "ÁLBUM",
+      "g": "metalcore / alt metal / industrial"
+    },
+    {
+      "id": "textures|genotype",
+      "d": "23/01",
+      "a": "Textures",
+      "t": "Genotype",
+      "k": "ÁLBUM",
+      "g": "djent / prog metal"
+    },
+    {
+      "id": "daggerthreat|bleedreboot",
+      "d": "23/01",
+      "a": "Dagger Threat",
+      "t": "bleed///reboot",
+      "k": "ÁLBUM",
+      "g": "nu metalcore / metallic hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/657840ef705722b978b426357007a8ef/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/815958281"
+    },
+    {
+      "id": "elwoodstray|descending",
+      "d": "23/01",
+      "a": "Elwood Stray",
+      "t": "Descending",
+      "k": "ÁLBUM",
+      "g": "metalcore / alternative metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/161a4ea7520d4858d9a7ec93985cf0d5/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/821862171"
+    },
+    {
+      "id": "falchi|solace",
+      "d": "23/01",
+      "a": "FALCHI",
+      "t": "Solace",
+      "k": "EP",
+      "g": "progressive metal instrumental / math rock",
+      "country": "BR",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/f2b09b2059a2d1a576d3437986e06d95/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/881328442"
+    },
+    {
+      "id": "iridium|hellisjustahalfwayhouse",
+      "d": "23/01",
+      "a": "Iridium",
+      "t": "HELL IS JUST A HALFWAY HOUSE",
+      "k": "ÁLBUM",
+      "g": "progressive metalcore / djent / alternative metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/abbb84c8fd95f48d04348b142823e659/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/881210062"
+    },
+    {
+      "id": "hanabie|hottopic",
+      "d": "28/01",
+      "a": "Hanabie.",
+      "t": "Hot Topic",
+      "k": "EP",
+      "g": "metalcore / modern metal"
+    },
+    {
+      "id": "ml|dreamcrush",
+      "d": "30/01",
+      "a": "MØL",
+      "t": "Dreamcrush",
+      "k": "ÁLBUM",
+      "g": "blackgaze / alt metal"
+    },
+    {
+      "id": "nightmarer|hellinterface",
+      "d": "30/01",
+      "a": "Nightmarer",
+      "t": "Hell Interface",
+      "k": "EP",
+      "g": "dissonant deathcore"
+    },
+    {
+      "id": "shields|deathandconnection",
+      "d": "30/01",
+      "a": "Shields",
+      "t": "Death & Connection",
+      "k": "ÁLBUM",
+      "g": "metalcore"
+    },
+    {
+      "id": "trashboat|evenifinevergetthere",
+      "d": "30/01",
+      "a": "Trash Boat",
+      "t": "Even If I Never Get There",
+      "k": "EP",
+      "g": "post-hardcore / punk pesado"
+    },
+    {
+      "id": "urne|settingfiretothesky",
+      "d": "30/01",
+      "a": "Urne",
+      "t": "Setting Fire To The Sky",
+      "k": "ÁLBUM",
+      "g": "sludge prog / modern metal"
+    },
+    {
+      "id": "406|thefrailtyofthecontortedhumanmind",
+      "d": "30/01",
+      "a": "406",
+      "t": "The Frailty Of The Contorted Human Mind",
+      "k": "ÁLBUM",
+      "g": "metalcore / deathcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/3eb64a33e3e72bf3baa9839dc1e5a9a4/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/902808512"
+    },
+    {
+      "id": "asleepinthewake|emergent",
+      "d": "30/01",
+      "a": "Asleep in the Wake",
+      "t": "Emergent",
+      "k": "EP",
+      "g": "post-hardcore / metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/2aacba18d3129f17b2a1d23f99bd59cb/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/900265042"
+    },
+    {
+      "id": "contrasts|falseidol",
+      "d": "30/01",
+      "a": "Contrasts",
+      "t": "False Idol",
+      "k": "EP",
+      "g": "modern metal / djent / metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/65c46d15cf4e3280f46b0b8abb55f163/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/874826532"
+    },
+    {
+      "id": "deadfish|labirintodamemoriadeluxe",
+      "d": "30/01",
+      "a": "Dead Fish",
+      "t": "Labirinto da Memória (Deluxe)",
+      "k": "DELUXE",
+      "g": "hardcore melódico",
+      "country": "BR",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/48cd3e264e0aace80701273f61d513f1/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/897578322"
+    },
+    {
+      "id": "fallingempires|thisistheend",
+      "d": "30/01",
+      "a": "Falling Empires",
+      "t": "This Is The End",
+      "k": "EP",
+      "g": "post-hardcore / emo",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/9b8ba38e91d4a69666b614cc6adbab41/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/887898982"
+    },
+    {
+      "id": "hatecomplex|dissonance",
+      "d": "30/01",
+      "a": "HATE COMPLEX",
+      "t": "Dissonance",
+      "k": "ÁLBUM",
+      "g": "nu metalcore / deathcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/6d30d1fd6e1f88de073afcdbd14892f8/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/842172232"
+    },
+    {
+      "id": "minusyouth|linescrossed",
+      "d": "30/01",
+      "a": "Minus Youth",
+      "t": "Lines Crossed",
+      "k": "ÁLBUM",
+      "g": "hardcore / metallic hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/8b63f2623d4cdba816193f4cb3c7437f/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/855203842"
+    },
+    {
+      "id": "ourmirage|fracturedminds",
+      "d": "30/01",
+      "a": "Our Mirage",
+      "t": "Fractured Minds",
+      "k": "ÁLBUM",
+      "g": "modern metalcore / nu metal / post-hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/b19edc701fdddd2210f42c8b0458d0f8/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/835119042"
+    },
+    {
+      "id": "ratosdeporao|feijoadaacidenteinternacional",
+      "d": "30/01",
+      "a": "Ratos de Porão",
+      "t": "Feijoada Acidente? - Internacional",
+      "k": "REISSUE",
+      "g": "hardcore / crossover",
+      "country": "BR",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/301183787538a21e6645689e4ca9252d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/892720882"
+    },
+    {
+      "id": "survivalist|aplaceforthosewhosufferalone",
+      "d": "30/01",
+      "a": "Survivalist",
+      "t": "A Place For Those Who Suffer, Alone",
+      "k": "ÁLBUM",
+      "g": "metalcore / deathcore / nu metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/61244eba6b2b52f35f84a3737845b0b8/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/867954322"
+    },
+    {
+      "id": "thehirscheffekt|derbrauch",
+      "d": "30/01",
+      "a": "The Hirsch Effekt",
+      "t": "Der Brauch",
+      "k": "ÁLBUM",
+      "g": "mathcore / progressive metal / post-hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/62f67d3bb57f4cc10de4edd54e00a4f4/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/830038351"
+    },
+    {
+      "id": "beforeiturn|immoralandmalevolenthappenings",
+      "d": "06/02",
+      "a": "Before I Turn",
+      "t": "Immoral and Malevolent Happenings",
+      "k": "ÁLBUM",
+      "g": "metalcore / deathcore"
+    },
+    {
+      "id": "karnivool|inverses",
+      "d": "06/02",
+      "a": "Karnivool",
+      "t": "In Verses",
+      "k": "ÁLBUM",
+      "g": "prog metal moderno"
+    },
+    {
+      "id": "lexlevel|origensdeluxe",
+      "d": "06/02",
+      "a": "Lex Level",
+      "t": "Origens (Deluxe)",
+      "k": "DELUXE",
+      "g": "metalcore / post-hardcore / hardcore brasileiro",
+      "note": "DELUXE",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/37126a55dac66a8c79cbe0993f40696c/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/912653421"
+    },
+    {
+      "id": "capsize|underahollowsky",
+      "d": "06/02",
+      "a": "Capsize",
+      "t": "Under a Hollow Sky",
+      "k": "EP",
+      "g": "post-hardcore / metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/6df1b12c8a4df03a00a3e67f823414f8/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/930775041"
+    },
+    {
+      "id": "penseandsomnosebo|pensesomnoseboaovivo",
+      "d": "12/02",
+      "a": "Pense & Som No Sebo",
+      "t": "Pense | Som No Sebo (Ao Vivo)",
+      "k": "EP AO VIVO",
+      "g": "hardcore melódico / post-hardcore brasileiro",
+      "note": "AO VIVO",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/44/95/bd/4495bdb3-80a5-b705-f1f9-b5cb25896ecc/33adfc8c-56b1-43ea-aac2-c71fa9cb3361.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/br/album/pense-som-no-sebo-ao-vivo-ep/1871619103"
+    },
+    {
+      "id": "angeldust|cold2thetouch",
+      "d": "13/02",
+      "a": "Angel Du$t",
+      "t": "Cold 2 The Touch",
+      "k": "ÁLBUM",
+      "g": "hardcore / alt rock pesado"
+    },
+    {
+      "id": "thebrowning|burnthisworldevolved",
+      "d": "13/02",
+      "a": "The Browning",
+      "t": "Burn This World [Evolved]",
+      "k": "ÁLBUM",
+      "g": "electronicore / deathcore"
+    },
+    {
+      "id": "converge|loveisnotenough",
+      "d": "13/02",
+      "a": "Converge",
+      "t": "Love Is Not Enough",
+      "k": "ÁLBUM",
+      "g": "metalcore / mathcore"
+    },
+    {
+      "id": "spaceofvariations|poisonedart",
+      "d": "13/02",
+      "a": "Space Of Variations",
+      "t": "Poisoned Art",
+      "k": "ÁLBUM",
+      "g": "metalcore moderno"
+    },
+    {
+      "id": "storyoftheyear|arson",
+      "d": "13/02",
+      "a": "Story Of The Year",
+      "t": "A.R.S.O.N.",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / alternative rock pesado"
+    },
+    {
+      "id": "glassbone|ruthlesssavagery",
+      "d": "13/02",
+      "a": "Glassbone",
+      "t": "Ruthless Savagery",
+      "k": "EP",
+      "g": "metallic hardcore / death metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/aef8419895bc67cd5ce6aef072ee515d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/898233202"
+    },
+    {
+      "id": "unseenfaith|fracturedwill",
+      "d": "13/02",
+      "a": "Unseen Faith",
+      "t": "Fractured Will",
+      "k": "EP",
+      "g": "deathcore / progressive metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/7b89dc97600ab5f8f1572d6802d19bd3/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/826446661"
+    },
+    {
+      "id": "killingpace|hcpm",
+      "d": "16/02",
+      "a": "Killing Pace",
+      "t": "HCPM",
+      "k": "ÁLBUM",
+      "g": "hardcore / metallic hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/f08b53c5a973025f85ac4e1b7da7fba1/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/905570162"
+    },
+    {
+      "id": "abstracted|hiraeth",
+      "d": "20/02",
+      "a": "Abstracted",
+      "t": "Hiraeth",
+      "k": "ÁLBUM",
+      "g": "prog death / tech metal"
+    },
+    {
+      "id": "chainedtothebottomoftheocean|letusnotspeakofthembutlookandpasson",
+      "d": "20/02",
+      "a": "Chained To The Bottom Of The Ocean",
+      "t": "Let Us Not Speak of Them But Look and Pass On",
+      "k": "EP",
+      "g": "sludge / hardcore pesado"
+    },
+    {
+      "id": "mothica|somewhereinbetween",
+      "d": "20/02",
+      "a": "Mothica",
+      "t": "Somewhere In Between",
+      "k": "EP",
+      "g": "alt rock pesado / modern heavy"
+    },
+    {
+      "id": "sylosis|thenewflesh",
+      "d": "20/02",
+      "a": "Sylosis",
+      "t": "The New Flesh",
+      "k": "ÁLBUM",
+      "g": "modern metal / thrash / metalcore"
+    },
+    {
+      "id": "wormshepherd|dawnoftheiconoclast",
+      "d": "20/02",
+      "a": "Worm Shepherd",
+      "t": "Dawn Of The Iconoclast",
+      "k": "EP",
+      "g": "symphonic deathcore"
+    },
+    {
+      "id": "clawfinger|beforewealldie",
+      "d": "20/02",
+      "a": "Clawfinger",
+      "t": "Before We All Die",
+      "k": "ÁLBUM",
+      "g": "rap metal / nu metal"
+    },
+    {
+      "id": "abovebelow|iguessitwasnowhere",
+      "d": "20/02",
+      "a": "Above, Below",
+      "t": "I Guess It Was Nowhere",
+      "k": "ÁLBUM",
+      "g": "progressive metalcore / djent",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/885a4a87e0612fe1146a6dee8ba16469/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/907519432"
+    },
+    {
+      "id": "diesect|hidefromthelight",
+      "d": "20/02",
+      "a": "DIESECT",
+      "t": "HIDE FROM THE LIGHT",
+      "k": "DELUXE",
+      "g": "nu metalcore / metalcore / industrial deathcore",
+      "note": "DELUXE",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/a3eeb0cf15c5223b8259a40aca57cdc6/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/719507001"
+    },
+    {
+      "id": "fjrt|belleepoque",
+      "d": "20/02",
+      "a": "FJØRT",
+      "t": "belle époque",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / emo pesado",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/d203dd7efca454e02f15b4e3e5973fc5/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/854490612"
+    },
+    {
+      "id": "fleshcreep|weneedyoutobleed",
+      "d": "20/02",
+      "a": "FLESH CREEP",
+      "t": "WE NEED YOU TO BLEED",
+      "k": "ÁLBUM",
+      "g": "metallic hardcore / death metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/2d048d4fa08418546e87c64f64c11f21/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/902005722"
+    },
+    {
+      "id": "foreword|exposition",
+      "d": "20/02",
+      "a": "Foreword",
+      "t": "Exposition",
+      "k": "EP",
+      "g": "metalcore / alternative metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/35abfb6a6ef199ed8fd679335b25a719/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/878506992"
+    },
+    {
+      "id": "goodtiger|themostnegativedayoftheyear",
+      "d": "20/02",
+      "a": "Good Tiger",
+      "t": "The Most Negative Day of the Year",
+      "k": "ÁLBUM",
+      "g": "progressive metal / post-hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/a93dfed29bb0f0e3dc5a25246e6200a5/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/886438642"
+    },
+    {
+      "id": "mirrorcell|longnightsinlovescape",
+      "d": "20/02",
+      "a": "Mirrorcell",
+      "t": "Long Nights In Lovescape",
+      "k": "ÁLBUM",
+      "g": "alternative metal / nu metalcore / shoegaze metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/371a8d22bccd301720323e5f526b3a43/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/838612332"
+    },
+    {
+      "id": "theveerunion|reinvention",
+      "d": "20/02",
+      "a": "The Veer Union",
+      "t": "Reinvention",
+      "k": "ÁLBUM",
+      "g": "alternative metal / modern hard rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/f5efff1105f4e8c6ff4a03636a81ce9d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/767395251"
+    },
+    {
+      "id": "traumaray|carnival",
+      "d": "20/02",
+      "a": "trauma ray",
+      "t": "Carnival",
+      "k": "EP",
+      "g": "shoegaze metal / emo / doom",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/faa4f9da025ae4b5e18785f2064d7977/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/845481262"
+    },
+    {
+      "id": "hrftr|whatifthatsallthereis",
+      "d": "21/02",
+      "a": "HRFTR",
+      "t": "What If That's All There Is",
+      "k": "ÁLBUM",
+      "g": "nu metalcore / alternative metal",
+      "deezer": "https://www.deezer.com/album/916733401",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/91/ce/cb/91cecb0c-d221-dde9-a34f-6d1369e5612d/cover.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/what-if-thats-all-there-is/1876548580"
+    },
+    {
+      "id": "thegloominthecorner|royaldiscordance",
+      "d": "27/02",
+      "a": "The Gloom In The Corner",
+      "t": "Royal Discordance",
+      "k": "ÁLBUM",
+      "g": "metalcore moderno"
+    },
+    {
+      "id": "varials|wherethelightleaves",
+      "d": "27/02",
+      "a": "Varials",
+      "t": "Where The Light Leaves",
+      "k": "ÁLBUM",
+      "g": "metalcore / hardcore"
+    },
+    {
+      "id": "finalgasp|newdaysymptoms",
+      "d": "27/02",
+      "a": "Final Gasp",
+      "t": "New Day Symptoms",
+      "k": "ÁLBUM",
+      "g": "hardcore / death rock"
+    },
+    {
+      "id": "nothing|ashorthistoryofdecay",
+      "d": "27/02",
+      "a": "Nothing",
+      "t": "A Short History Of Decay",
+      "k": "ÁLBUM",
+      "g": "shoegaze pesado / alt rock"
+    },
+    {
+      "id": "robzombie|thegreatsatan",
+      "d": "27/02",
+      "a": "Rob Zombie",
+      "t": "The Great Satan",
+      "k": "ÁLBUM",
+      "g": "industrial metal / alt metal"
+    },
+    {
+      "id": "blackwaterdrowning|obscuresorrows",
+      "d": "27/02",
+      "a": "Blackwater Drowning",
+      "t": "OBSCURE SORROWS",
+      "k": "ÁLBUM",
+      "g": "metalcore / death metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/7b7e7f57f284f3ce5777efd9097f2827/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/835765122"
+    },
+    {
+      "id": "fromsheeptowolves|ephemeris",
+      "d": "27/02",
+      "a": "From Sheep to Wolves",
+      "t": "Ephemeris",
+      "k": "ÁLBUM",
+      "g": "metalcore / modern metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/c17a1e2a937de64718ac21677f66066d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/649006171"
+    },
+    {
+      "id": "impluvium|echoesofadyingcosmos",
+      "d": "27/02",
+      "a": "Impluvium",
+      "t": "Echoes of a Dying Cosmos",
+      "k": "EP",
+      "g": "progressive metal / djent / metalcore",
+      "country": "BR",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/394500e62c4c9242032a806d1052d45d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/908123612"
+    },
+    {
+      "id": "matador|abovebelowandso",
+      "d": "27/02",
+      "a": "Matador",
+      "t": "Above, Below and So",
+      "k": "ÁLBUM",
+      "g": "sludge / post-metal / hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/f9dcea88ea22335ade898a52a6bb5bcb/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/849616912"
+    },
+    {
+      "id": "doprotestoaresistencia|aea",
+      "d": "02/03",
+      "a": "Do Protesto à Resistência",
+      "t": "A.E.A.",
+      "k": "ÁLBUM",
+      "g": "rapcore / hardcore / crossover brasileiro",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/dce00bd57048f6c0823845329d7fc387/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/934408531"
+    },
+    {
+      "id": "deadfish|20anosdezeroeumaovivo",
+      "d": "04/03",
+      "a": "Dead Fish",
+      "t": "20 Anos de Zero e Um (Ao Vivo)",
+      "k": "ÁLBUM AO VIVO",
+      "g": "hardcore melódico",
+      "note": "AO VIVO",
+      "country": "BR",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/54e1407ffb60dcee895caf438b1801d1/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/925666991"
+    },
+    {
+      "id": "erra|silenceoutlivestheearth",
+      "d": "06/03",
+      "a": "ERRA",
+      "t": "silence outlives the earth",
+      "k": "ÁLBUM",
+      "g": "progressive metalcore / djent"
+    },
+    {
+      "id": "lostsociety|hellisastateofmind",
+      "d": "06/03",
+      "a": "Lost Society",
+      "t": "Hell Is A State Of Mind",
+      "k": "ÁLBUM",
+      "g": "modern metal"
+    },
+    {
+      "id": "filth|welcometoshelltown",
+      "d": "06/03",
+      "a": "Filth",
+      "t": "Welcome To Shell Town",
+      "k": "EP",
+      "g": "nu metalcore / deathcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/34f59c9f25d81abe665b13b9c18381fe/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/896007282"
+    },
+    {
+      "id": "ajewellersdeath|thinelupus",
+      "d": "08/03",
+      "a": "A Jeweller's Death",
+      "t": "Thine Lupus.",
+      "k": "ÁLBUM",
+      "g": "alternative metal / metalcore",
+      "country": "BR",
+      "cover": "https://f4.bcbits.com/img/a0668351411_10.jpg",
+      "sourceLink": "https://ajewellersdeath.bandcamp.com/album/thine-lupus"
+    },
+    {
+      "id": "mauled|whenyoureyesareshut",
+      "d": "12/03",
+      "a": "Mauled",
+      "t": "When Your Eyes Are Shut",
+      "k": "EP",
+      "g": "deathcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/6a4de142ebcf7b7cc765bd2e4d50c710/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/895898622"
+    },
+    {
+      "id": "lambofgod|intooblivion",
+      "d": "13/03",
+      "a": "Lamb Of God",
+      "t": "Into Oblivion",
+      "k": "ÁLBUM",
+      "g": "groove metal / modern metal"
+    },
+    {
+      "id": "unitytx|somewhereinbetween",
+      "d": "13/03",
+      "a": "UnityTX",
+      "t": "Somewhere, In Between…",
+      "k": "ÁLBUM",
+      "g": "nu metalcore / rap metal"
+    },
+    {
+      "id": "viciousrain|theanatomyofsurviving",
+      "d": "13/03",
+      "a": "Vicious Rain",
+      "t": "The Anatomy Of Surviving",
+      "k": "ÁLBUM",
+      "g": "metalcore moderno"
+    },
+    {
+      "id": "bleedingthrough|thisislivethisismurderous",
+      "d": "13/03",
+      "a": "Bleeding Through",
+      "t": "This Is Live, This Is Murderous",
+      "k": "ÁLBUM AO VIVO",
+      "g": "metalcore / blackened metalcore",
+      "note": "AO VIVO",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/62be0c2b91ddb982d7cf8696b455b839/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/931098701"
+    },
+    {
+      "id": "boundinfear|amindtoosicktoheal",
+      "d": "13/03",
+      "a": "Bound in Fear",
+      "t": "A Mind Too Sick To Heal",
+      "k": "ÁLBUM",
+      "g": "deathcore / downtempo",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/0f68fee86d7be0dfde820872d677746d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/834688642"
+    },
+    {
+      "id": "wieldedsteel|sinsofyourdomain",
+      "d": "13/03",
+      "a": "Wielded Steel",
+      "t": "Sins Of Your Domain",
+      "k": "ÁLBUM",
+      "g": "metallic hardcore / metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/56ec9f10badde3c6a33ce847e751960e/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/897622332"
+    },
+    {
+      "id": "emphuria|inevitavel",
+      "d": "19/03",
+      "a": "Emphuria",
+      "t": "Inevitável",
+      "k": "ÁLBUM",
+      "g": "nu metal / metalcore brasileiro",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/4cc9a4049a29cec992085db9de5c75d9/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/934843411"
+    },
+    {
+      "id": "greatamericanghost|tragedyofthecommonsreconstructed",
+      "d": "19/03",
+      "a": "Great American Ghost",
+      "t": "Tragedy of The Commons (Reconstructed)",
+      "k": "ÁLBUM REIMAGINADO",
+      "g": "metallic hardcore / metalcore",
+      "note": "RECONSTRUÍDO",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/9764510482bb84c96f83f28f1dd80946/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/935954811"
+    },
+    {
+      "id": "gaerea|loss",
+      "d": "20/03",
+      "a": "Gaerea",
+      "t": "Loss",
+      "k": "ÁLBUM",
+      "g": "extreme metal moderno / post-black"
+    },
+    {
+      "id": "lostinhollywood|lostinhollywood",
+      "d": "20/03",
+      "a": "Lost In Hollywood",
+      "t": "Lost In Hollywood",
+      "k": "ÁLBUM",
+      "g": "modern metalcore"
+    },
+    {
+      "id": "poisonthewell|peaceinplace",
+      "d": "20/03",
+      "a": "Poison The Well",
+      "t": "Peace In Place",
+      "k": "ÁLBUM",
+      "g": "metalcore / post-hardcore"
+    },
+    {
+      "id": "rancore|unhasedentesvalsadoimprevisivel",
+      "d": "25/03",
+      "a": "RANCORE",
+      "t": "UNHAS E DENTES / VALSA DO IMPREVISÍVEL",
+      "k": "EP",
+      "g": "post-hardcore / hardcore / alt rock brasileiro",
+      "deezer": "https://www.deezer.com/album/943326591",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ca/48/9d/ca489d49-c7d4-e670-597e-58572f45fdde/5063916767974_cover.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/br/album/unhas-e-dentes-valsa-do-imprevis%C3%ADvel-ep/1886450353"
+    },
+    {
+      "id": "chamber|thisisgoodbye",
+      "d": "27/03",
+      "a": "Chamber",
+      "t": "This Is Goodbye…",
+      "k": "ÁLBUM",
+      "g": "metalcore / mathcore"
+    },
+    {
+      "id": "lifecycles|nooneescapesdeath",
+      "d": "27/03",
+      "a": "Life Cycles",
+      "t": "No One Escapes Death",
+      "k": "EP",
+      "g": "hardcore / metalcore"
+    },
+    {
+      "id": "moodring|deathfetish",
+      "d": "27/03",
+      "a": "Moodring",
+      "t": "Death Fetish",
+      "k": "ÁLBUM",
+      "g": "alt metal / shoegaze metal"
+    },
+    {
+      "id": "samuraipizzacats|pressstart",
+      "d": "27/03",
+      "a": "Samurai Pizza Cats",
+      "t": "Press Start",
+      "k": "ÁLBUM",
+      "g": "electronicore / metalcore"
+    },
+    {
+      "id": "threatsignal|revelations",
+      "d": "27/03",
+      "a": "Threat Signal",
+      "t": "Revelations",
+      "k": "ÁLBUM",
+      "g": "melodic metalcore / groove"
+    },
+    {
+      "id": "blacklabelsociety|enginesofdemolition",
+      "d": "27/03",
+      "a": "Black Label Society",
+      "t": "Engines Of Demolition",
+      "k": "ÁLBUM",
+      "g": "heavy metal / hard rock moderno"
+    },
+    {
+      "id": "donbroco|nightmaretripping",
+      "d": "27/03",
+      "a": "Don Broco",
+      "t": "Nightmare Tripping",
+      "k": "ÁLBUM",
+      "g": "nu metal / metalcore / alt rock"
+    },
+    {
+      "id": "popevil|whatremainsmidnightedition",
+      "d": "27/03",
+      "a": "Pop Evil",
+      "t": "What Remains (Midnight Edition)",
+      "k": "DELUXE",
+      "g": "alt metal / hard rock moderno",
+      "note": "DELUXE"
+    },
+    {
+      "id": "partycannon|subjectedtoapartying",
+      "d": "27/03",
+      "a": "Party Cannon",
+      "t": "Subjected To A Partying",
+      "k": "ÁLBUM",
+      "g": "brutal death / slam / deathcore adjacent",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/db80d2da39e3a1092f9408bfc65ef327/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/898313202"
+    },
+    {
+      "id": "corrosionofconformity|goodgodbaadman",
+      "d": "03/04",
+      "a": "Corrosion Of Conformity",
+      "t": "Good God/Baad Man",
+      "k": "ÁLBUM",
+      "g": "sludge / groove / hardcore adjacent"
+    },
+    {
+      "id": "dust|thoughtsofafallingman",
+      "d": "03/04",
+      "a": "Dust",
+      "t": "Thoughts Of A Falling Man",
+      "k": "ÁLBUM",
+      "g": "groove metal / metalcore"
+    },
+    {
+      "id": "noterrorinthebang|existence",
+      "d": "03/04",
+      "a": "No Terror In The Bang",
+      "t": "Existence",
+      "k": "EP",
+      "g": "cinematic modern metal"
+    },
+    {
+      "id": "nervosa|slavemachine",
+      "d": "03/04",
+      "a": "Nervosa",
+      "t": "Slave Machine",
+      "k": "ÁLBUM",
+      "g": "thrash moderno / death-thrash"
+    },
+    {
+      "id": "lantlos|nowhereinbetweenforever",
+      "d": "03/04",
+      "a": "Lantlôs",
+      "t": "Nowhere In Between Forever",
+      "k": "ÁLBUM",
+      "g": "blackgaze / post-metal"
+    },
+    {
+      "id": "entershikari|loseyourself",
+      "d": "09/04",
+      "a": "Enter Shikari",
+      "t": "Lose Your Self",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / electronicore / alternative metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/3c2476873fea78a1cd1fea96ca133e7f/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/944212421"
+    },
+    {
+      "id": "archspire|toofasttodie",
+      "d": "10/04",
+      "a": "Archspire",
+      "t": "Too Fast To Die",
+      "k": "ÁLBUM",
+      "g": "tech death / extreme metal"
+    },
+    {
+      "id": "aseverythingunfolds|didyouasktobesetfree",
+      "d": "10/04",
+      "a": "As Everything Unfolds",
+      "t": "Did You Ask To Be Set Free?",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / alt metal"
+    },
+    {
+      "id": "bilmuri|kindahard",
+      "d": "10/04",
+      "a": "Bilmuri",
+      "t": "KINDA HARD",
+      "k": "ÁLBUM",
+      "g": "alt metal / post-hardcore / emo pesado"
+    },
+    {
+      "id": "bodysnatcher|hellisherehellishome",
+      "d": "10/04",
+      "a": "Bodysnatcher",
+      "t": "Hell Is Here, Hell Is Home",
+      "k": "ÁLBUM",
+      "g": "deathcore / beatdown"
+    },
+    {
+      "id": "bringmethehorizon|liveinsaopaulo",
+      "d": "10/04",
+      "a": "Bring Me The Horizon",
+      "t": "L.I.V.E. In São Paulo",
+      "k": "ÁLBUM AO VIVO",
+      "g": "alt metal / metalcore",
+      "note": "AO VIVO"
+    },
+    {
+      "id": "levels|thiswillmakeyoufeelagain",
+      "d": "10/04",
+      "a": "Levels",
+      "t": "This Will Make You Feel Again",
+      "k": "ÁLBUM",
+      "g": "metalcore moderno"
+    },
+    {
+      "id": "themechanist|syntheticsun",
+      "d": "10/04",
+      "a": "The Mechanist",
+      "t": "Synthetic Sun",
+      "k": "ÁLBUM",
+      "g": "metalcore / djent / tech metal / industrial metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/fbbd3c97131de8014214b99948e9f35d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/935881361"
+    },
+    {
+      "id": "obeythekraken|apocrypha",
+      "d": "10/04",
+      "a": "Obey The Kraken",
+      "t": "Apocrypha",
+      "k": "EP",
+      "g": "deathcore"
+    },
+    {
+      "id": "inferi|heavenwept",
+      "d": "10/04",
+      "a": "Inferi",
+      "t": "Heaven Wept",
+      "k": "ÁLBUM",
+      "g": "tech death / extreme metal"
+    },
+    {
+      "id": "lordofthelost|opvsnoirvol3",
+      "d": "10/04",
+      "a": "Lord Of The Lost",
+      "t": "Opvs Noir Vol. 3",
+      "k": "ÁLBUM",
+      "g": "dark rock / industrial gótico"
+    },
+    {
+      "id": "planoreal|merito",
+      "d": "10/04",
+      "a": "planoreal",
+      "t": "Mérito",
+      "k": "EP",
+      "g": "post-hardcore / metalcore brasileiro",
+      "deezer": "https://www.deezer.com/album/945800951",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2f/68/e0/2f68e080-5b00-1f68-de48-6d713412f26f/7891162285090.png/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/br/album/m%C3%A9rito-ep/1887489540"
+    },
+    {
+      "id": "loverarely|paintravels",
+      "d": "10/04",
+      "a": "Love Rarely",
+      "t": "Pain Travels",
+      "k": "ÁLBUM",
+      "g": "mathcore / post-hardcore / emo",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/9bc5489130d8f9df7fb58ca5e3a22183/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/892926672"
+    },
+    {
+      "id": "mire|palereflection",
+      "d": "10/04",
+      "a": "Mire",
+      "t": "Pale Reflection",
+      "k": "ÁLBUM",
+      "g": "progressive metalcore / groove / djent",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/138f40e34757ce7e5ced03f854fea3d7/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/898623342"
+    },
+    {
+      "id": "toucheamore|stagefour10yearanniversaryedition",
+      "d": "10/04",
+      "a": "Touché Amoré",
+      "t": "Stage Four (10 Year Anniversary Edition)",
+      "k": "REISSUE",
+      "g": "post-hardcore / emo",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/a3bdb2ecc69ffc36b43c9177abe8c1a8/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/915390451"
+    },
+    {
+      "id": "wargasmuk|wargasmliveinlondon2025",
+      "d": "10/04",
+      "a": "WARGASM (UK)",
+      "t": "Wargasm - Live in London 2025",
+      "k": "ÁLBUM AO VIVO",
+      "g": "nu metal / industrial / alternative metal",
+      "note": "AO VIVO",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/a4f51ba03768534826f3dc4e529ce965/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/918426091"
+    },
+    {
+      "id": "metadedemim|acidentes",
+      "d": "16/04",
+      "a": "Metade de Mim",
+      "t": "ACIDENTES",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / metalcore brasileiro",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/a2b9e3a60b796af23d54f5a7ac96c4f2/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/961512801"
+    },
+    {
+      "id": "midwinter|aloveihopewillhauntmeforever",
+      "d": "16/04",
+      "a": "Midwinter",
+      "t": "A Love I Hope Will Haunt Me Forever",
+      "k": "ÁLBUM",
+      "g": "atmospheric metalcore / progressive metalcore / thall",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/2cbf97c38067f352b28e739333a7d874/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/955634191"
+    },
+    {
+      "id": "giffromgod|dissimulation",
+      "d": "17/04",
+      "a": ".gif from god",
+      "t": "Dissimulation",
+      "k": "ÁLBUM",
+      "g": "mathcore / screamo pesado"
+    },
+    {
+      "id": "fromashestonew|reflections",
+      "d": "17/04",
+      "a": "From Ashes To New",
+      "t": "Reflections",
+      "k": "ÁLBUM",
+      "g": "nu metal / modern metal"
+    },
+    {
+      "id": "nekrogoblikon|theboilingsea",
+      "d": "17/04",
+      "a": "Nekrogoblikon",
+      "t": "The Boiling Sea",
+      "k": "EP",
+      "g": "melodeath / modern metal"
+    },
+    {
+      "id": "slipknot|allhopeisgone",
+      "d": "17/04",
+      "a": "Slipknot",
+      "t": "All Hope Is Gone",
+      "k": "REISSUE",
+      "g": "nu metal / alt metal",
+      "note": "REISSUE"
+    },
+    {
+      "id": "thelasttensecondsoflife|thedeadones",
+      "d": "17/04",
+      "a": "The Last Ten Seconds Of Life",
+      "t": "The Dead Ones",
+      "k": "ÁLBUM",
+      "g": "deathcore"
+    },
+    {
+      "id": "wagewar|itcallsmebyname",
+      "d": "17/04",
+      "a": "Wage War",
+      "t": "It Calls Me By Name",
+      "k": "EP",
+      "g": "metalcore moderno"
+    },
+    {
+      "id": "lookoutsideyourwindow|lookoutsideyourwindow",
+      "d": "18/04",
+      "a": "Look Outside Your Window",
+      "t": "Look Outside Your Window",
+      "k": "ÁLBUM DE ARQUIVO",
+      "g": "experimental alt rock / Slipknot adjacent",
+      "cover": "https://shop.lookoutsideyourwindow.com/cdn/shop/files/LOYW-850079803190.jpg?v=1778029525&width=1200",
+      "sourceLink": "https://shop.lookoutsideyourwindow.com/collections/all"
+    },
+    {
+      "id": "vomitforth|inthenameofthefather",
+      "d": "23/04",
+      "a": "Vomit Forth",
+      "t": "IN THE NAME OF THE FATHER",
+      "k": "EP",
+      "g": "brutal death / deathcore adjacent",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/3ba943a7c086f781c5ee64e663ac0b2a/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/936926771"
+    },
+    {
+      "id": "theamityaffliction|houseofcards",
+      "d": "24/04",
+      "a": "The Amity Affliction",
+      "t": "House Of Cards",
+      "k": "ÁLBUM",
+      "g": "metalcore / post-hardcore"
+    },
+    {
+      "id": "armedforapocalypse|theearthisbreathingbeneathme",
+      "d": "24/04",
+      "a": "Armed For Apocalypse",
+      "t": "The Earth Is Breathing Beneath Me",
+      "k": "ÁLBUM",
+      "g": "sludge / metalcore"
+    },
+    {
+      "id": "atthegates|theghostofafuturedead",
+      "d": "24/04",
+      "a": "At The Gates",
+      "t": "The Ghost Of A Future Dead",
+      "k": "ÁLBUM",
+      "g": "melodeath / metalcore adjacent"
+    },
+    {
+      "id": "atreyu|theendisnottheend",
+      "d": "24/04",
+      "a": "Atreyu",
+      "t": "The End Is Not The End",
+      "k": "ÁLBUM",
+      "g": "metalcore / alt metal"
+    },
+    {
+      "id": "knifebride|sorryabouttheplague",
+      "d": "24/04",
+      "a": "Knife Bride",
+      "t": "sorry about the plague",
+      "k": "ÁLBUM",
+      "g": "metalcore"
+    },
+    {
+      "id": "plini|anunnameabledesire",
+      "d": "24/04",
+      "a": "Plini",
+      "t": "An Unnameable Desire",
+      "k": "ÁLBUM",
+      "g": "progressive metal / djent / jazz fusion instrumental",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/c1b7190e92e819e46e7caf88c0050000/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/961679091"
+    },
+    {
+      "id": "portrayalofguilt|beginningoftheend",
+      "d": "24/04",
+      "a": "Portrayal Of Guilt",
+      "t": "…Beginning Of The End",
+      "k": "ÁLBUM",
+      "g": "blackened hardcore / screamo"
+    },
+    {
+      "id": "romancandle|unadulterated",
+      "d": "24/04",
+      "a": "Roman Candle",
+      "t": "Unadulterated",
+      "k": "ÁLBUM",
+      "g": "screamo / metalcore adjacent"
+    },
+    {
+      "id": "sepultura|thecloudofunknowing",
+      "d": "24/04",
+      "a": "Sepultura",
+      "t": "The Cloud Of Unknowing",
+      "k": "EP",
+      "g": "thrash / groove metal"
+    },
+    {
+      "id": "terror|stillsuffer",
+      "d": "24/04",
+      "a": "Terror",
+      "t": "Still Suffer",
+      "k": "ÁLBUM",
+      "g": "hardcore / metalcore adjacent"
+    },
+    {
+      "id": "thesaddestlandscape|alonewithheaven",
+      "d": "24/04",
+      "a": "The Saddest Landscape",
+      "t": "Alone With Heaven",
+      "k": "ÁLBUM",
+      "g": "screamo / post-hardcore"
+    },
+    {
+      "id": "rodox|rodoxasmelhores",
+      "d": "24/04",
+      "a": "Rodox",
+      "t": "Rodox - As Melhores",
+      "k": "COMPILAÇÃO",
+      "g": "hardcore / nu metal / rapcore",
+      "country": "BR",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/5abd50ca1318db80b5016acf42fb7a92/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/965401961"
+    },
+    {
+      "id": "sugarspine|soulbeforespirit",
+      "d": "24/04",
+      "a": "Sugar Spine",
+      "t": "Soul Before Spirit",
+      "k": "EP",
+      "g": "nu metalcore / metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/08197976d3181bb95b5bc4a67dcbd856/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/912702391"
+    },
+    {
+      "id": "waste|theweightofeverything",
+      "d": "24/04",
+      "a": "Waste",
+      "t": "The Weight Of Everything",
+      "k": "EP",
+      "g": "deathcore / metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/5eddc46cb477a0b39d576ec00b3d3fe7/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/860692802"
+    },
+    {
+      "id": "rancore|brio",
+      "d": "30/04",
+      "a": "RANCORE",
+      "t": "BRIO",
+      "k": "ÁLBUM",
+      "g": "hardcore / metalcore brasileiro",
+      "deezer": "https://www.deezer.com/album/965570681",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1f/cd/02/1fcd02d8-8fbf-8544-69b1-150afdcb45d1/5063960632631_cover.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/br/album/brio/1894883421"
+    },
+    {
+      "id": "cagefight|exuvia",
+      "d": "01/05",
+      "a": "Cage Fight",
+      "t": "Exuvia",
+      "k": "ÁLBUM",
+      "g": "hardcore / thrash / metalcore"
+    },
+    {
+      "id": "cognizance|inlightnoshape",
+      "d": "01/05",
+      "a": "Cognizance",
+      "t": "In Light, No Shape",
+      "k": "ÁLBUM",
+      "g": "tech death / deathcore adjacent"
+    },
+    {
+      "id": "dreamondreamer|heavens",
+      "d": "01/05",
+      "a": "Dream On Dreamer",
+      "t": "Heavens",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / metalcore melódico"
+    },
+    {
+      "id": "hastetheday|dissenter",
+      "d": "01/05",
+      "a": "Haste The Day",
+      "t": "Dissenter",
+      "k": "ÁLBUM",
+      "g": "metalcore"
+    },
+    {
+      "id": "obeyer|pallor",
+      "d": "01/05",
+      "a": "Obeyer",
+      "t": "Pallor",
+      "k": "EP",
+      "g": "modern metalcore / djent"
+    },
+    {
+      "id": "sevendust|one",
+      "d": "01/05",
+      "a": "Sevendust",
+      "t": "One",
+      "k": "ÁLBUM",
+      "g": "nu metal / alt metal"
+    },
+    {
+      "id": "vctms|painprocessingii",
+      "d": "01/05",
+      "a": "VCTMS",
+      "t": "pain processing II",
+      "k": "EP",
+      "g": "nu metalcore"
+    },
+    {
+      "id": "detachtheislands|concretejungle",
+      "d": "01/05",
+      "a": "Detach the Islands",
+      "t": "Concrete Jungle",
+      "k": "EP",
+      "g": "mathcore / post-hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/c2da2c9800c9f19781938456f707b585/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/970582111"
+    },
+    {
+      "id": "fbcandbaka|tamborescafezaisfuzisguaranaseoutrasbrasilidades",
+      "d": "01/05",
+      "a": "FBC & BAKA",
+      "t": "TAMBORES, CAFEZAIS, FUZIS, GUARANAS E OUTRAS BRASILIDADES",
+      "k": "ÁLBUM",
+      "g": "hardcore / nu metal / rapcore",
+      "country": "BR",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/39/61/9e/39619ef2-f600-fbf5-130b-5f3a014cab31/0.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/br/album/tambores-cafezais-fuzis-guaranas-e-outras-brasilidades/1895285355"
+    },
+    {
+      "id": "darkous|oni2",
+      "d": "05/05",
+      "a": "Darko US",
+      "t": "Oni 2",
+      "k": "ÁLBUM",
+      "g": "deathcore / experimental metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/23a15ddafaf4a28c4f866206530a76df/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/971438361"
+    },
+    {
+      "id": "blackveilbrides|vindicate",
+      "d": "08/05",
+      "a": "Black Veil Brides",
+      "t": "VINDICATE",
+      "k": "ÁLBUM",
+      "g": "hard rock / alt metal / scene rock"
+    },
+    {
+      "id": "frozensoul|noplaceofwarmth",
+      "d": "08/05",
+      "a": "Frozen Soul",
+      "t": "No Place Of Warmth",
+      "k": "ÁLBUM",
+      "g": "death metal / hardcore adjacent"
+    },
+    {
+      "id": "haggardcat|thepainthatorbitslife",
+      "d": "08/05",
+      "a": "Haggard Cat",
+      "t": "The Pain That Orbits Life",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / noise rock"
+    },
+    {
+      "id": "ingested|denigration",
+      "d": "08/05",
+      "a": "Ingested",
+      "t": "Denigration",
+      "k": "ÁLBUM",
+      "g": "deathcore / brutal death"
+    },
+    {
+      "id": "karmanjakah|diamondmorning",
+      "d": "08/05",
+      "a": "Karmanjakah",
+      "t": "Diamond morning",
+      "k": "ÁLBUM",
+      "g": "progressive metal / djent / thall",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/51e441d94cb66e86d9cd6eedf799587f/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/926279131"
+    },
+    {
+      "id": "thenarrator|phosphor",
+      "d": "08/05",
+      "a": "The Narrator",
+      "t": "Phosphor",
+      "k": "ÁLBUM",
+      "g": "metalcore"
+    },
+    {
+      "id": "sace6|brutalist",
+      "d": "08/05",
+      "a": "sace6",
+      "t": "brutalist",
+      "k": "ÁLBUM",
+      "g": "nu metal / alt metal"
+    },
+    {
+      "id": "idlethreat|youllforgetthesun",
+      "d": "08/05",
+      "a": "Idle Threat",
+      "t": "You'll Forget The Sun",
+      "k": "ÁLBUM",
+      "g": "post-hardcore melódico"
+    },
+    {
+      "id": "farfromalaska|farfromalaskasomnoseboaovivo",
+      "d": "08/05",
+      "a": "Far From Alaska",
+      "t": "Far From Alaska | Som no Sebo (Ao Vivo)",
+      "k": "EP AO VIVO",
+      "g": "alternative rock / post-hardcore brasileiro",
+      "note": "AO VIVO",
+      "deezer": "https://www.deezer.com/album/961539501",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/51/d1/6c51d1dc-ef55-8a49-43a7-cd4f344c569a/0.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/br/album/far-from-alaska-som-no-sebo-ao-vivo-ep/1893410761"
+    },
+    {
+      "id": "blackpantera|resistenciaaovivonocircovoador",
+      "d": "08/05",
+      "a": "Black Pantera",
+      "t": "Resistência! Ao Vivo no Circo Voador",
+      "k": "ÁLBUM AO VIVO",
+      "g": "crossover / hardcore / groove metal brasileiro",
+      "note": "AO VIVO",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/f2d7348e42d5a1b6fbc0ef479a86dea5/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/961632941"
+    },
+    {
+      "id": "alt|nevermore",
+      "d": "15/05",
+      "a": "alt.",
+      "t": "Nevermore",
+      "k": "EP",
+      "g": "alternative metal / metalcore moderno"
+    },
+    {
+      "id": "held|grey",
+      "d": "15/05",
+      "a": "Held.",
+      "t": "Grey",
+      "k": "ÁLBUM",
+      "g": "modern rock / alt metal"
+    },
+    {
+      "id": "junglerot|cruelfaceofwar",
+      "d": "15/05",
+      "a": "Jungle Rot",
+      "t": "Cruel Face Of War",
+      "k": "ÁLBUM",
+      "g": "death metal / hardcore adjacent"
+    },
+    {
+      "id": "periphery|apalewhitedot",
+      "d": "15/05",
+      "a": "Periphery",
+      "t": "A Pale White Dot",
+      "k": "ÁLBUM",
+      "g": "djent / progressive metal"
+    },
+    {
+      "id": "portnoir|thedarkwekeep",
+      "d": "15/05",
+      "a": "Port Noir",
+      "t": "The Dark We Keep",
+      "k": "ÁLBUM",
+      "g": "alt metal / prog rock pesado"
+    },
+    {
+      "id": "propain|stonecoldanger",
+      "d": "15/05",
+      "a": "Pro-Pain",
+      "t": "Stone Cold Anger",
+      "k": "ÁLBUM",
+      "g": "hardcore / metalcore adjacent"
+    },
+    {
+      "id": "selfdeception|oneofus",
+      "d": "15/05",
+      "a": "Self Deception",
+      "t": "One Of Us",
+      "k": "ÁLBUM",
+      "g": "modern metal / alt metal"
+    },
+    {
+      "id": "sotao|hardcoredegafieira",
+      "d": "15/05",
+      "a": "Sótão",
+      "t": "Hardcore de Gafieira",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / metalcore / emo / música brasileira",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/5682f5a3fbce16065923aeef20d75b61/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/978800981"
+    },
+    {
+      "id": "astaticlullaby|anddontforgettobreathelive",
+      "d": "15/05",
+      "a": "A Static Lullaby",
+      "t": "...And Don't Forget To Breathe (Live)",
+      "k": "ÁLBUM AO VIVO",
+      "g": "post-hardcore / metalcore",
+      "note": "AO VIVO",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/72bc7965df73b27a143e862de973b2af/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/969098711"
+    },
+    {
+      "id": "mirar|gradusadparnassum",
+      "d": "16/05",
+      "a": "Mirar",
+      "t": "Gradus ad Parnassum",
+      "k": "EP",
+      "g": "thall / djent / prog extremo"
+    },
+    {
+      "id": "asfixiasocial|messbigger",
+      "d": "21/05",
+      "a": "Asfixia Social",
+      "t": "Mess Bigger",
+      "k": "ÁLBUM",
+      "g": "hardcore / rapcore / metal",
+      "country": "BR",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/398ad84956a3cad04d071f73a352ebe5/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/972555121"
+    },
+    {
+      "id": "marmozets|cowardice",
+      "d": "22/05",
+      "a": "Marmozets",
+      "t": "CO.WAR.DICE",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / alt rock pesado"
+    },
+    {
+      "id": "yourspiritdies|itiswell",
+      "d": "22/05",
+      "a": "Your Spirit Dies",
+      "t": "It Is Well…",
+      "k": "EP",
+      "g": "metallic hardcore / metalcore"
+    },
+    {
+      "id": "xcomm|timetoburn",
+      "d": "22/05",
+      "a": "XCOMM",
+      "t": "Time To Burn",
+      "k": "ÁLBUM",
+      "g": "hardcore / metalcore adjacent"
+    },
+    {
+      "id": "blighttown|numalaise",
+      "d": "22/05",
+      "a": "Blight Town",
+      "t": "Nu Malaise",
+      "k": "EP",
+      "g": "mathcore / metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/fd2d65fd4b1988e63464bd514476baf1/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/984197481"
+    },
+    {
+      "id": "dressedinblood|darknesswithin",
+      "d": "22/05",
+      "a": "Dressed In Blood",
+      "t": "Darkness Within",
+      "k": "EP",
+      "g": "atmospheric metal / groove metal / metalcore",
+      "country": "BR",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/4534c84ee8df90dcf3c67c858d23ff20/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/965673351"
+    },
+    {
+      "id": "dancegavindance|treecitysessions3",
+      "d": "22/05",
+      "a": "Dance Gavin Dance",
+      "t": "Tree City Sessions 3",
+      "k": "ÁLBUM AO VIVO",
+      "g": "post-hardcore / progressive post-hardcore / swancore",
+      "note": "AO VIVO",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/0c7ab1b201cd07751c1348db0cfde152/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/953048991"
+    },
+    {
+      "id": "erdve|epigrama",
+      "d": "29/05",
+      "a": "Erdve",
+      "t": "Epigrama",
+      "k": "ÁLBUM",
+      "g": "hardcore / sludge"
+    },
+    {
+      "id": "saintagnes|yourgodfearingdaysareabouttobegin",
+      "d": "29/05",
+      "a": "Saint Agnes",
+      "t": "Your God Fearing Days Are About To Begin",
+      "k": "ÁLBUM",
+      "g": "alt metal / industrial rock"
+    },
+    {
+      "id": "shinedown|ei8ht",
+      "d": "29/05",
+      "a": "Shinedown",
+      "t": "Ei8ht",
+      "k": "ÁLBUM",
+      "g": "hard rock / modern rock pesado"
+    },
+    {
+      "id": "staticdress|injuryepisode",
+      "d": "29/05",
+      "a": "Static Dress",
+      "t": "Injury Episode",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / metalcore"
+    },
+    {
+      "id": "oathbreaker|rheiaredux",
+      "d": "29/05",
+      "a": "Oathbreaker",
+      "t": "Rheia (Redux)",
+      "k": "ÁLBUM",
+      "g": "blackened hardcore / post-metal",
+      "note": "REDUX",
+      "deezer": "https://www.deezer.com/album/963852491",
+      "cover": "https://f4.bcbits.com/img/a0408336144_10.jpg",
+      "sourceLink": "https://oathbreakerband.bandcamp.com/album/rheia-redux"
+    },
+    {
+      "id": "devintownsend|themoth",
+      "d": "29/05",
+      "a": "Devin Townsend",
+      "t": "The Moth",
+      "k": "ÁLBUM",
+      "g": "prog metal moderno"
+    },
+    {
+      "id": "sparta|cutasilhouette",
+      "d": "29/05",
+      "a": "Sparta",
+      "t": "Cut A Silhouette",
+      "k": "ÁLBUM",
+      "g": "post-hardcore"
+    },
+    {
+      "id": "bulletbane|oagoraquecobraviver",
+      "d": "29/05",
+      "a": "Bullet Bane",
+      "t": "O AGORA QUE COBRA VIVER",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / metalcore brasileiro",
+      "deezer": "https://www.deezer.com/album/985168091",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/25/b8/b825b8f6-2864-f13c-b45a-de6b02fd27cb/5063961315151_cover.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/br/album/o-agora-que-cobra-viver/6770408781"
+    },
+    {
+      "id": "balmora|thesegravenhalls",
+      "d": "29/05",
+      "a": "Balmora",
+      "t": "These Graven Halls",
+      "k": "ÁLBUM",
+      "g": "melodic metalcore / metalcore revival",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/a316cb6eb45d5f5bab679ae7d07da619/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/997114261"
+    },
+    {
+      "id": "lufeh|overwhelmed",
+      "d": "29/05",
+      "a": "LUFEH",
+      "t": "OVERWHELMED",
+      "k": "ÁLBUM",
+      "g": "progressive rock / progressive metal",
+      "country": "BR",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/a4ca0fdc5314ba9e398450199c5bc899/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/987832331"
+    },
+    {
+      "id": "wyrmhaven|seasonsofgloom",
+      "d": "29/05",
+      "a": "Wyrmhaven",
+      "t": "Seasons of Gloom",
+      "k": "ÁLBUM",
+      "g": "deathcore / melodic death metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/4c5127958626d301074a3dba93f236f2/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/923151761"
+    },
+    {
+      "id": "augustburnsred|seasonofsurrender",
+      "d": "05/06",
+      "a": "August Burns Red",
+      "t": "Season Of Surrender",
+      "k": "ÁLBUM",
+      "g": "metalcore"
+    },
+    {
+      "id": "converge|humofhurt",
+      "d": "05/06",
+      "a": "Converge",
+      "t": "Hum Of Hurt",
+      "k": "ÁLBUM",
+      "g": "metalcore / mathcore / noise rock"
+    },
+    {
+      "id": "evanescence|sanctuary",
+      "d": "05/06",
+      "a": "Evanescence",
+      "t": "Sanctuary",
+      "k": "ÁLBUM",
+      "g": "gothic/alternative metal"
+    },
+    {
+      "id": "guilttrip|armourofangels",
+      "d": "05/06",
+      "a": "Guilt Trip",
+      "t": "Armour Of Angels",
+      "k": "ÁLBUM",
+      "g": "hardcore / metalcore"
+    },
+    {
+      "id": "drowningpool|sinner",
+      "d": "05/06",
+      "a": "Drowning Pool",
+      "t": "Sinner",
+      "k": "REISSUE",
+      "g": "nu metal",
+      "note": "REISSUE"
+    },
+    {
+      "id": "100demons|embracetheblacklight",
+      "d": "05/06",
+      "a": "100 Demons",
+      "t": "Embrace The Black Light",
+      "k": "ÁLBUM",
+      "g": "metallic hardcore / metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/12f1b44ee8fd8a1cc9cba995a303805c/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/962324831"
+    },
+    {
+      "id": "austincarlile|2die4",
+      "d": "12/06",
+      "a": "Austin Carlile",
+      "t": "2die4",
+      "k": "ÁLBUM",
+      "g": "nu metal / rap metal / alternative metal / metalcore adjacent",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/23137d778c7f0dddf9344816cfc453e2/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/938844101"
+    },
+    {
+      "id": "genghistron|signalfire",
+      "d": "12/06",
+      "a": "Genghis Tron",
+      "t": "Signal Fire",
+      "k": "ÁLBUM",
+      "g": "experimental metal / mathcore adjacent"
+    },
+    {
+      "id": "gideon|4x4",
+      "d": "12/06",
+      "a": "Gideon",
+      "t": "4x4",
+      "k": "EP",
+      "g": "metalcore / hardcore"
+    },
+    {
+      "id": "sleepingwithsirens|anendinginitself",
+      "d": "12/06",
+      "a": "Sleeping With Sirens",
+      "t": "An Ending In Itself",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / alt rock pesado"
+    },
+    {
+      "id": "stitchedupheart|medusa",
+      "d": "12/06",
+      "a": "Stitched Up Heart",
+      "t": "Medusa",
+      "k": "ÁLBUM",
+      "g": "alternative metal / electronic"
+    },
+    {
+      "id": "fitforaking|bloodpact",
+      "d": "12/06",
+      "a": "Fit For A King",
+      "t": "Blood Pact",
+      "k": "EP",
+      "g": "metalcore"
+    },
+    {
+      "id": "whatliesbelow|monolith",
+      "d": "12/06",
+      "a": "What Lies Below",
+      "t": "Monolith",
+      "k": "EP",
+      "g": "progressive metalcore"
+    },
+    {
+      "id": "stillremains|spiritbreaker",
+      "d": "12/06",
+      "a": "Still Remains",
+      "t": "Spirit Breaker",
+      "k": "EP",
+      "g": "metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/de3018b16b644158c0f3d8d4aa0d2352/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/976948911"
+    },
+    {
+      "id": "prompts|parasitedream",
+      "d": "16/06",
+      "a": "Prompts",
+      "t": "Parasite Dream",
+      "k": "ÁLBUM",
+      "g": "metalcore / nu metalcore / electronicore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/a067d1a0f6aa11249bcf5403ee58cdb1/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/990420881"
+    },
+    {
+      "id": "endseeker|coffinborn",
+      "d": "19/06",
+      "a": "Endseeker",
+      "t": "Coffin Born",
+      "k": "EP",
+      "g": "death metal moderno"
+    },
+    {
+      "id": "therewerewires|vessel",
+      "d": "19/06",
+      "a": "There Were Wires",
+      "t": "Vessel",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / noise rock"
+    },
+    {
+      "id": "gracie|missmisfortunately",
+      "d": "26/06",
+      "a": "Gracie",
+      "t": "Miss Misfortunately",
+      "k": "ÁLBUM",
+      "g": "emo / alt rock pesado"
+    },
+    {
+      "id": "junius|sotera",
+      "d": "26/06",
+      "a": "Junius",
+      "t": "Sotera",
+      "k": "ÁLBUM",
+      "g": "post-metal / alt metal"
+    },
+    {
+      "id": "monumentofmisanthropy|washingtonstatecharm",
+      "d": "26/06",
+      "a": "Monument Of Misanthropy",
+      "t": "Washington State Charm",
+      "k": "ÁLBUM",
+      "g": "brutal death / deathcore adjacent"
+    },
+    {
+      "id": "muse|thewowsignal",
+      "d": "26/06",
+      "a": "Muse",
+      "t": "The Wow! Signal",
+      "k": "ÁLBUM",
+      "g": "alt rock / hard rock adjacent"
+    },
+    {
+      "id": "nimda|hatredreignsi",
+      "d": "26/06",
+      "a": "Nimda",
+      "t": "HATRED REIGNS I",
+      "k": "EP",
+      "g": "deathcore / electronicore"
+    },
+    {
+      "id": "theprettyreckless|deargod",
+      "d": "26/06",
+      "a": "The Pretty Reckless",
+      "t": "Dear God",
+      "k": "ÁLBUM",
+      "g": "hard rock / alt metal adjacent"
+    },
+    {
+      "id": "siamese|dissolution",
+      "d": "26/06",
+      "a": "Siamese",
+      "t": "Dissolution",
+      "k": "ÁLBUM",
+      "g": "metalcore / alt metal"
+    },
+    {
+      "id": "thehometeam|itlivesitchanges",
+      "d": "26/06",
+      "a": "The Home Team",
+      "t": "It Lives, It Changes",
+      "k": "ÁLBUM REIMAGINADO",
+      "g": "heavy pop / pop rock / post-hardcore adjacent",
+      "note": "REIMAGINADO",
+      "deezer": "https://www.deezer.com/album/963820781",
+      "cover": "https://thrillerrecords.com/cdn/shop/articles/The_Home_Team_-_It_Lives_It_Changes_7a17fff1-ac9e-47aa-81bc-7f0cbf4034cb_1000x.jpg?v=1782494959",
+      "sourceLink": "https://thrillerrecords.com/blogs/news/the-home-team-share-reimagined-album-it-lives-it-changes"
+    },
+    {
+      "id": "zao|pillars",
+      "d": "26/06",
+      "a": "Zao",
+      "t": "Pillars",
+      "k": "EP DE COVERS",
+      "g": "metalcore / metallic hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/2dba7d8dd832ac56f5f500311693c1d1/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/972433381"
+    },
+    {
+      "id": "defalla|kingzobullshitbackinfulleffect92",
+      "d": "30/06",
+      "a": "Defalla",
+      "t": "KINGZOBULLSHITBACKINFULLEFFECT92",
+      "k": "REISSUE",
+      "g": "crossover / alternative metal / rap metal / hardcore brasileiro",
+      "country": "BR",
+      "note": "REISSUE",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/592f4c83992654ca8a06ba9aeec48b49/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1011700491"
+    },
+    {
+      "id": "arson|arson",
+      "d": "01/07",
+      "a": "Arson",
+      "t": "Arson",
+      "k": "ÁLBUM",
+      "g": "hardcore",
+      "deezer": "https://www.deezer.com/album/1009126101",
+      "cover": "https://f4.bcbits.com/img/a0577176587_10.jpg",
+      "sourceLink": "https://newmoralityzine.bandcamp.com/album/arson"
+    },
+    {
+      "id": "dealer|taboo",
+      "d": "01/07",
+      "a": "Dealer",
+      "t": "Taboo",
+      "k": "EP",
+      "g": "nu metalcore / metalcore"
+    },
+    {
+      "id": "koh|goldendeath",
+      "d": "01/07",
+      "a": "KOH",
+      "t": "Golden Death",
+      "k": "EP",
+      "g": "progressive metalcore / djent"
+    },
+    {
+      "id": "sleeptheory|emotionalsupportcarepackage",
+      "d": "02/07",
+      "a": "Sleep Theory",
+      "t": "(E)motional (S)upport (C)are (P)ackage",
+      "k": "EP DE COVERS",
+      "g": "modern rock / alt metal adjacent",
+      "note": "COVERS"
+    },
+    {
+      "id": "ded|resentdeluxeedition",
+      "d": "03/07",
+      "a": "DED",
+      "t": "RESENT: Deluxe Edition",
+      "k": "DELUXE",
+      "g": "nu metal / modern metal",
+      "note": "DELUXE"
+    },
+    {
+      "id": "icesealedeyes|tape1faraway",
+      "d": "03/07",
+      "a": "Ice Sealed Eyes",
+      "t": "Tape 1: Far Away",
+      "k": "EP",
+      "g": "alternative metal / metalcore",
+      "deezer": "https://www.deezer.com/album/1008247901",
+      "cover": "https://arising-empire.com/cms/uploads/release_tape-1-far-away_293.jpg",
+      "sourceLink": "https://arising-empire.com/artists/ice-sealed-eyes/acid-tears"
+    },
+    {
+      "id": "riskit|mercyfornone",
+      "d": "03/07",
+      "a": "Risk It",
+      "t": "Mercy For None",
+      "k": "ÁLBUM",
+      "g": "hardcore"
+    },
+    {
+      "id": "moonspell|farfromgod",
+      "d": "03/07",
+      "a": "Moonspell",
+      "t": "Far From God",
+      "k": "ÁLBUM",
+      "g": "gothic metal"
+    },
+    {
+      "id": "allpacas|jorge",
+      "d": "03/07",
+      "a": "Allpacas",
+      "t": "Jorge",
+      "k": "ÁLBUM",
+      "g": "melodic hardcore / post-punk",
+      "country": "BR",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/64b3e72c813b0b7cf7f9f000075c620b/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1013577011"
+    },
+    {
+      "id": "cholera|theanswertoinfectionredux",
+      "d": "03/07",
+      "a": "Cholera",
+      "t": "The Answer To Infection Redux",
+      "k": "REISSUE",
+      "g": "deathcore / grindcore / MySpace deathcore",
+      "note": "REISSUE",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/2547b35003169ac194a9abbbeed765ef/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1023071111"
+    },
+    {
+      "id": "domkilote|darkmoon",
+      "d": "06/07",
+      "a": "Domkilote",
+      "t": "Dark Moon",
+      "k": "EP",
+      "g": "modern metal brasileiro",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/a95476b0b4c244876396b4259e8920c1/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1023212671"
+    },
+    {
+      "id": "aultimatheoria|naoexistecura",
+      "d": "07/07",
+      "a": "A Última Theoria",
+      "t": "Não Existe Cura",
+      "k": "ÁLBUM",
+      "g": "metalcore / hardcore brasileiro",
+      "deezer": "https://www.deezer.com/album/996697691",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f5/9e/39/f59e3951-c882-261a-dbca-2cdde9d62de7/824296826270_cover.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/br/album/n%C3%A3o-existe-cura/6775906620"
+    },
+    {
+      "id": "decider|syntheticpain",
+      "d": "07/07",
+      "a": "DECIDER",
+      "t": "Synthetic Pain",
+      "k": "ÁLBUM",
+      "g": "alternative metal / electronic / metalcore"
+    },
+    {
+      "id": "fromthispointon|unfiled",
+      "d": "07/07",
+      "a": "From This Point On",
+      "t": "Unfiled",
+      "k": "EP",
+      "g": "nu metalcore / hardcore"
+    },
+    {
+      "id": "rozemary|itshardernowtobreathe",
+      "d": "08/07",
+      "a": "rozemary",
+      "t": "it's harder now to breathe",
+      "k": "EP",
+      "g": "metalcore / post-hardcore"
+    },
+    {
+      "id": "asoceansdivide|selftitled",
+      "d": "09/07",
+      "a": "As Oceans Divide",
+      "t": "Self-Titled",
+      "k": "EP",
+      "g": "melodic metalcore / progressive metal",
+      "cover": "https://f4.bcbits.com/img/a1825470628_5.jpg",
+      "sourceLink": "https://asoceansdivideband.bandcamp.com/album/self-titled"
+    },
+    {
+      "id": "destructionofthehealer|auniversebereaved",
+      "d": "09/07",
+      "a": "Destruction Of The Healer",
+      "t": "A Universe Bereaved",
+      "k": "ÁLBUM",
+      "g": "progressive melodeath / deathcore adjacent",
+      "deezer": "https://www.deezer.com/album/1001950061",
+      "cover": "https://f4.bcbits.com/img/a2344654135_10.jpg",
+      "sourceLink": "https://grindheadrecords.bandcamp.com/album/a-universe-bereaved"
+    },
+    {
+      "id": "fromthisdayforward|trygatekeepingthis",
+      "d": "09/07",
+      "a": "From This Day Forward",
+      "t": "TRY GATEKEEPING THIS",
+      "k": "EP",
+      "g": "metalcore / metallic hardcore"
+    },
+    {
+      "id": "seiran|genesis",
+      "d": "09/07",
+      "a": "Seiran",
+      "t": "Genesis",
+      "k": "EP",
+      "g": "progressive metalcore / alternative metal"
+    },
+    {
+      "id": "thepower|feverdreams",
+      "d": "09/07",
+      "a": "The Power",
+      "t": "Fever Dreams",
+      "k": "ÁLBUM",
+      "g": "emotive hardcore / melodic hardcore",
+      "deezer": "https://www.deezer.com/album/1015664421",
+      "cover": "https://f4.bcbits.com/img/a4001300973_5.jpg",
+      "sourceLink": "https://thepowermd.bandcamp.com/album/fever-dreams"
+    },
+    {
+      "id": "2silent|whererosesweepdeluxe",
+      "d": "10/07",
+      "a": "2SILENT",
+      "t": "WHERE ROSES WEEP (DELUXE)",
+      "k": "DELUXE",
+      "g": "metalcore / post-hardcore",
+      "note": "DELUXE"
+    },
+    {
+      "id": "afraid|cantstopwhatscoming",
+      "d": "10/07",
+      "a": "afraid.",
+      "t": "Can't Stop What's Coming",
+      "k": "EP",
+      "g": "nu metalcore / alternative metal"
+    },
+    {
+      "id": "apogean|wastewherelifebegins",
+      "d": "10/07",
+      "a": "Apogean",
+      "t": "Waste Where Life Begins",
+      "k": "ÁLBUM",
+      "g": "progressive / technical death metal",
+      "deezer": "https://www.deezer.com/album/967268371",
+      "cover": "https://f4.bcbits.com/img/a3473979453_5.jpg",
+      "sourceLink": "https://apogean.bandcamp.com/album/waste-where-life-begins"
+    },
+    {
+      "id": "arisefromworms|ableedingtreehangingselfdestruction",
+      "d": "10/07",
+      "a": "Arise From Worms",
+      "t": "A Bleeding Tree Hanging Self Destruction",
+      "k": "ÁLBUM",
+      "g": "progressive / technical death metal"
+    },
+    {
+      "id": "beyonddeviation|entities",
+      "d": "10/07",
+      "a": "Beyond Deviation",
+      "t": "Entities",
+      "k": "EP",
+      "g": "downtempo deathcore"
+    },
+    {
+      "id": "bringmethehorizon|countyourblessingsrepented",
+      "d": "10/07",
+      "a": "Bring Me The Horizon",
+      "t": "Count Your Blessings | Repented",
+      "k": "ÁLBUM REGRAVADO",
+      "g": "deathcore / metalcore",
+      "note": "REGRAVADO"
+    },
+    {
+      "id": "cancerbats|batsabbathworship",
+      "d": "10/07",
+      "a": "Cancer Bats",
+      "t": "Bat Sabbath | Worship",
+      "k": "EP",
+      "g": "sludge metal / hardcore / stoner metal"
+    },
+    {
+      "id": "cranialosteotomy|vortexofthedarkknowledge",
+      "d": "10/07",
+      "a": "Cranial Osteotomy",
+      "t": "Vortex of the Dark Knowledge",
+      "k": "ÁLBUM",
+      "g": "brutal / technical death metal",
+      "deezer": "https://www.deezer.com/album/982803071",
+      "cover": "https://f4.bcbits.com/img/a2495911535_5.jpg",
+      "sourceLink": "https://comatosemusic.bandcamp.com/album/vortex-of-the-dark-knowledge"
+    },
+    {
+      "id": "deadwitxh|miseryisalltherage",
+      "d": "10/07",
+      "a": "Deadwitxh",
+      "t": "Misery Is All The Rage",
+      "k": "ÁLBUM",
+      "g": "metalcore / alternative metal"
+    },
+    {
+      "id": "dehumanizingitatrainworship|2dcomplex",
+      "d": "10/07",
+      "a": "Dehumanizing Itatrain Worship",
+      "t": "二次元コンプレックス 2D Complex",
+      "k": "ÁLBUM",
+      "g": "slamming brutal death metal / deathcore",
+      "deezer": "https://www.deezer.com/album/992099651",
+      "cover": "https://f4.bcbits.com/img/a4074481493_10.jpg",
+      "sourceLink": "https://stillbirthrecords.bandcamp.com/album/2d-complex"
+    },
+    {
+      "id": "devildriver|strikeandkill",
+      "d": "10/07",
+      "a": "DevilDriver",
+      "t": "Strike And Kill",
+      "k": "ÁLBUM",
+      "g": "groove metal / modern metal"
+    },
+    {
+      "id": "dysgnostic|endwhispers",
+      "d": "10/07",
+      "a": "Dysgnostic",
+      "t": "End Whispers",
+      "k": "ÁLBUM",
+      "g": "dissonant / technical death metal",
+      "deezer": "https://www.deezer.com/album/961311511",
+      "cover": "https://f4.bcbits.com/img/a1692318862_5.jpg",
+      "sourceLink": "https://dysgnostic.bandcamp.com/album/end-whispers"
+    },
+    {
+      "id": "evaunderfire|villainous",
+      "d": "10/07",
+      "a": "Eva Under Fire",
+      "t": "Villainous",
+      "k": "ÁLBUM",
+      "g": "hard rock / alternative metal"
+    },
+    {
+      "id": "frogmallet|consumedbyfrogs",
+      "d": "10/07",
+      "a": "Frog Mallet",
+      "t": "Consumed By Frogs",
+      "k": "ÁLBUM",
+      "g": "slamming brutal death metal / deathcore",
+      "deezer": "https://www.deezer.com/album/1007479171",
+      "cover": "https://f4.bcbits.com/img/a1857568394_10.jpg",
+      "sourceLink": "https://frogmallet.bandcamp.com/album/consumed-by-frogs"
+    },
+    {
+      "id": "goethe|painwillfindyouagain",
+      "d": "10/07",
+      "a": "GOETHE",
+      "t": "Pain Will Find You Again",
+      "k": "EP",
+      "g": "hardcore / metallic hardcore",
+      "deezer": "https://www.deezer.com/album/999361461",
+      "cover": "https://f4.bcbits.com/img/a1587537116_10.jpg",
+      "sourceLink": "https://goetheau.bandcamp.com/album/pain-will-find-you-again"
+    },
+    {
+      "id": "healer|desolation",
+      "d": "10/07",
+      "a": "Healer",
+      "t": "Desolation",
+      "k": "EP",
+      "g": "sludge metal / stoner metal / hardcore",
+      "deezer": "https://www.deezer.com/album/977784731",
+      "cover": "https://f4.bcbits.com/img/a3522367861_5.jpg",
+      "sourceLink": "https://healer3.bandcamp.com/album/desolation"
+    },
+    {
+      "id": "heavenalone|whatiwouldgivetobesomewhereelse",
+      "d": "10/07",
+      "a": "heaven // alone",
+      "t": "what i would give to be somewhere else",
+      "k": "EP",
+      "g": "post-hardcore / shoegaze"
+    },
+    {
+      "id": "ifthesetreescouldtalk|thehiddenhand",
+      "d": "10/07",
+      "a": "If These Trees Could Talk",
+      "t": "The Hidden Hand",
+      "k": "ÁLBUM",
+      "g": "post-metal / instrumental rock"
+    },
+    {
+      "id": "liasis|heyisthisyours",
+      "d": "10/07",
+      "a": "Liasis",
+      "t": "Hey! Is This Yours?",
+      "k": "EP",
+      "g": "mathcore / post-hardcore"
+    },
+    {
+      "id": "magmaocean|unwantedgift",
+      "d": "10/07",
+      "a": "Magma Ocean",
+      "t": "Unwanted Gift",
+      "k": "EP",
+      "g": "metalcore / alternative metal"
+    },
+    {
+      "id": "mychemicalromance|dangerdaysthetruelivesofthefabulouskilljoysdeluxeedition",
+      "d": "10/07",
+      "a": "My Chemical Romance",
+      "t": "Danger Days: The True Lives Of The Fabulous Killjoys (Deluxe Edition)",
+      "k": "DELUXE",
+      "g": "emo / alternative rock / post-hardcore",
+      "note": "DELUXE"
+    },
+    {
+      "id": "nocure|itisgoingtogetdark",
+      "d": "10/07",
+      "a": "No Cure",
+      "t": "It Is Going To Get Dark",
+      "k": "ÁLBUM",
+      "g": "hardcore / metalcore"
+    },
+    {
+      "id": "ofthebetrayer|usurper",
+      "d": "10/07",
+      "a": "Of The Betrayer",
+      "t": "Usurper",
+      "k": "EP",
+      "g": "symphonic deathcore"
+    },
+    {
+      "id": "peacemakerfl|spillyourguts",
+      "d": "10/07",
+      "a": "Peacemaker FL",
+      "t": "Spill Your Guts",
+      "k": "ÁLBUM",
+      "g": "deathcore"
+    },
+    {
+      "id": "radura|acque",
+      "d": "10/07",
+      "a": "Radura",
+      "t": "ACQUE",
+      "k": "ÁLBUM",
+      "g": "emo / post-hardcore / screamo / post-rock",
+      "cover": "https://f4.bcbits.com/img/a1323132970_5.jpg",
+      "sourceLink": "https://radura.bandcamp.com/album/acque"
+    },
+    {
+      "id": "rememori|",
+      "d": "10/07",
+      "a": "reMEMORI",
+      "t": "僕が不可避な運命に遭った日",
+      "k": "ÁLBUM",
+      "g": "emo / post-hardcore / screamo / shoegaze",
+      "cover": "https://f4.bcbits.com/img/a1475006604_5.jpg",
+      "sourceLink": "https://rememori.bandcamp.com/album/--3"
+    },
+    {
+      "id": "rottingchrist|khronos",
+      "d": "10/07",
+      "a": "Rotting Christ",
+      "t": "Khronos",
+      "k": "REEDIÇÃO",
+      "g": "gothic black metal / dark metal",
+      "deezer": "https://www.deezer.com/album/11328730",
+      "cover": "https://shopusa.season-of-mist.com/cdn/shop/files/Rotting-Christ-Khronos-DOUBLE-LP-Gatefold-66249-1-1778491701.jpg?v=1778491834",
+      "sourceLink": "https://shopusa.season-of-mist.com/rotting-christ-khronos-double-lp-gatefold"
+    },
+    {
+      "id": "showmethebody|alonetogether",
+      "d": "10/07",
+      "a": "Show Me The Body",
+      "t": "Alone Together",
+      "k": "ÁLBUM",
+      "g": "hardcore / noise rock / punk"
+    },
+    {
+      "id": "snag|allthecagesholdinguswillonedayturntodust",
+      "d": "10/07",
+      "a": "Snag",
+      "t": "All The Cages Holding Us Will One Day Turn To Dust",
+      "k": "ÁLBUM",
+      "g": "screamo / post-hardcore"
+    },
+    {
+      "id": "sojourner|gateways",
+      "d": "10/07",
+      "a": "Sojourner",
+      "t": "Gateways",
+      "k": "ÁLBUM",
+      "g": "gothic / atmospheric metal",
+      "deezer": "https://www.deezer.com/album/989391691",
+      "cover": "https://f4.bcbits.com/img/a0921057343_5.jpg",
+      "sourceLink": "https://sojournermetal.bandcamp.com/album/gateways"
+    },
+    {
+      "id": "soulprison|themoreiseethemoreibleed",
+      "d": "10/07",
+      "a": "Soulprison",
+      "t": "The More I See, The More I Bleed",
+      "k": "ÁLBUM",
+      "g": "metallic hardcore"
+    },
+    {
+      "id": "spreadthedisease|thedarknessthedreadthesuffering",
+      "d": "10/07",
+      "a": "Spread the Disease",
+      "t": "The Darkness. The Dread. The Suffering.",
+      "k": "ÁLBUM",
+      "g": "blackened hardcore / metalcore / deathcore",
+      "deezer": "https://www.deezer.com/album/1026046702",
+      "cover": "https://f4.bcbits.com/img/a3303118789_5.jpg",
+      "sourceLink": "https://hypaethralrecords.bandcamp.com/album/the-darkness-the-dread-the-suffering"
+    },
+    {
+      "id": "theplotinyou|theplotinyou",
+      "d": "10/07",
+      "a": "The Plot In You",
+      "t": "The Plot In You",
+      "k": "ÁLBUM",
+      "g": "metalcore / post-hardcore / alternative metal"
+    },
+    {
+      "id": "trust|thesescattereddreams",
+      "d": "10/07",
+      "a": "Trust.",
+      "t": "These Scattered Dreams",
+      "k": "ÁLBUM",
+      "g": "metalcore"
+    },
+    {
+      "id": "volubilis|theasterion",
+      "d": "10/07",
+      "a": "Volubilis",
+      "t": "Theasterion",
+      "k": "ÁLBUM",
+      "g": "progressive / technical death metal",
+      "deezer": "https://www.deezer.com/album/1030129192",
+      "cover": "https://f4.bcbits.com/img/a2853641589_5.jpg",
+      "sourceLink": "https://volubilisband.bandcamp.com/album/theasterion"
+    },
+    {
+      "id": "voids|deathblow",
+      "d": "10/07",
+      "a": "Voids",
+      "t": "DeathBlow",
+      "k": "EP",
+      "g": "metalcore / alternative metal"
+    },
+    {
+      "id": "wailinstorms|thearsonist",
+      "d": "10/07",
+      "a": "Wailin Storms",
+      "t": "The Arsonist",
+      "k": "ÁLBUM",
+      "g": "gothic heavy rock / doom rock",
+      "deezer": "https://www.deezer.com/album/947252821",
+      "cover": "https://f4.bcbits.com/img/a2542435856_5.jpg",
+      "sourceLink": "https://wailinstorms.bandcamp.com/album/the-arsonist"
+    },
+    {
+      "id": "whatliesbelow|iletitconsumeme",
+      "d": "10/07",
+      "a": "What Lies Below",
+      "t": "I Let It Consume Me",
+      "k": "ÁLBUM",
+      "g": "progressive metalcore / djent"
+    },
+    {
+      "id": "wreckage|lifeondisplay",
+      "d": "10/07",
+      "a": "Wreckage",
+      "t": "Life On Display",
+      "k": "ÁLBUM",
+      "g": "hardcore"
+    },
+    {
+      "id": "finalrestingplace|thirdworldtribunal",
+      "d": "10/07",
+      "a": "FINAL RESTING PLACE",
+      "t": "THIRD WORLD TRIBUNAL",
+      "k": "ÁLBUM",
+      "g": "metallic hardcore / deathcore / beatdown",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/959ffcac3fb2eabefe88ed5ae4d01acf/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1023761251"
+    },
+    {
+      "id": "willinghands|theanatomyofanatomicheart",
+      "d": "13/07",
+      "a": "Willing Hands",
+      "t": "The Anatomy of an Atomic Heart",
+      "k": "ÁLBUM",
+      "g": "metalcore / deathcore / mathcore",
+      "deezer": "https://www.deezer.com/album/1022499151",
+      "cover": "https://f4.bcbits.com/img/a0886511484_5.jpg",
+      "sourceLink": "https://willinghands.bandcamp.com/album/the-anatomy-of-an-atomic-heart"
+    },
+    {
+      "id": "postdeathsoundtrack|barrenmotherofall",
+      "d": "14/07",
+      "a": "Post Death Soundtrack",
+      "t": "BARREN MOTHER OF ALL",
+      "k": "ÁLBUM",
+      "g": "industrial metal / gothic rock / noise",
+      "cover": "https://f4.bcbits.com/img/a3982277630_5.jpg",
+      "sourceLink": "https://postdeathsoundtrack.bandcamp.com/album/barren-mother-of-all"
+    },
+    {
+      "id": "sweetteeth|thevoidthateatstheheart",
+      "d": "15/07",
+      "a": "Sweet Teeth",
+      "t": "The Void That Eats The Heart",
+      "k": "ÁLBUM",
+      "g": "hardcore punk / power pop punk / alternative rock",
+      "deezer": "https://www.deezer.com/album/1022247341",
+      "cover": "https://f4.bcbits.com/img/a2325718350_10.jpg",
+      "sourceLink": "https://scenepolice.bandcamp.com/album/sweet-teeth-the-void-that-eats-the-heart-pre-order"
+    },
+    {
+      "id": "youth|",
+      "d": "15/07",
+      "a": "youth",
+      "t": "あとずさり",
+      "k": "ÁLBUM",
+      "g": "emo / alternative rock / math rock",
+      "cover": "https://f4.bcbits.com/img/a3216743341_5.jpg",
+      "sourceLink": "https://stiffslack.bandcamp.com/album/--3"
+    },
+    {
+      "id": "carceral|descendingreprisal",
+      "d": "15/07",
+      "a": "Carceral",
+      "t": "Descending Reprisal",
+      "k": "ÁLBUM",
+      "g": "grindcore / technical death / powerviolence",
+      "country": "BR",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/ce54f02bc22ea655bf7f92727283e751/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1022267031"
+    },
+    {
+      "id": "gloam|inspiteofneverending",
+      "d": "16/07",
+      "a": "Gloam",
+      "t": "In Spite Of Never Ending",
+      "k": "EP",
+      "g": "shoegaze / alternative metal",
+      "deezer": "https://www.deezer.com/album/1000993731",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cf/0b/43/cf0b4353-e124-0dda-d3b6-6a62c5cbe316/1200214293956.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/in-spite-of-never-ending-ep/6778262670"
+    },
+    {
+      "id": "noiraddiction|prettythingsdontlast",
+      "d": "16/07",
+      "a": "Noir Addiction",
+      "t": "Pretty Things Don't Last",
+      "k": "EP",
+      "g": "industrial rock / alternative rock",
+      "deezer": "https://www.deezer.com/album/1004000521",
+      "cover": "https://f4.bcbits.com/img/a4115453781_10.jpg",
+      "sourceLink": "https://noiraddiction.bandcamp.com/album/pretty-things-dont-last"
+    },
+    {
+      "id": "soakingwet|soakingwet",
+      "d": "16/07",
+      "a": "Soaking Wet",
+      "t": "Soaking Wet",
+      "k": "ÁLBUM",
+      "g": "stoner metal / heavy rock",
+      "cover": "https://f4.bcbits.com/img/a671112285_10.jpg",
+      "sourceLink": "https://soakingwet.bandcamp.com/album/soaking-wet"
+    },
+    {
+      "id": "advents|abittertruthyoucantundo",
+      "d": "17/07",
+      "a": "Advents",
+      "t": "A Bitter Truth You Can't Undo",
+      "k": "ÁLBUM",
+      "g": "metalcore / alternative metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/bfb7bab09f80d364b43caed101a4b1b2/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/951806331"
+    },
+    {
+      "id": "asitis|asitis",
+      "d": "17/07",
+      "a": "AS IT IS",
+      "t": "As It Is",
+      "k": "ÁLBUM",
+      "g": "emo / pop punk / alternative rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/42beeb745488870ae71687750a00d403/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/939303711"
+    },
+    {
+      "id": "beyondcreation|theaura",
+      "d": "17/07",
+      "a": "Beyond Creation",
+      "t": "The Aura",
+      "k": "REEDIÇÃO",
+      "g": "progressive / technical death metal",
+      "note": "REEDIÇÃO",
+      "deezer": "https://www.deezer.com/album/6485687",
+      "cover": "https://www.season-of-mist.com/wp-content/uploads/2026/04/SOM299-Beyond-Creation-3000x3000-300dpi-RGB-scaled.jpg",
+      "sourceLink": "https://www.season-of-mist.com/news/beyond-creation-2026-04-13/"
+    },
+    {
+      "id": "blacksites|foreternity",
+      "d": "17/07",
+      "a": "Black Sites",
+      "t": "For Eternity",
+      "k": "ÁLBUM",
+      "g": "progressive metal / gothic metal",
+      "deezer": "https://www.deezer.com/album/944560821",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4e/67/b8/4e67b82c-4371-8d59-7e4d-f97c150247a5/859734617288_cover.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/for-eternity/1886873250"
+    },
+    {
+      "id": "boundaries|yearningtheunbeautifulafter",
+      "d": "17/07",
+      "a": "Boundaries",
+      "t": "Yearning: The unbeautiful after",
+      "k": "ÁLBUM",
+      "g": "metalcore / post-hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/6ee75d0f24f1afe4b319248f2b47ce56/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1030656292"
+    },
+    {
+      "id": "clonedapparition|parallelwiththesun",
+      "d": "17/07",
+      "a": "Cloned Apparition",
+      "t": "Parallel with the Sun",
+      "k": "ÁLBUM",
+      "g": "alternative metal / grunge",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/7c2d493112494213ba740ee1c69978ca/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1019955191"
+    },
+    {
+      "id": "cascades|ahatredaspureandpotentassunshine",
+      "d": "17/07",
+      "a": "Cascades",
+      "t": "A Hatred as Pure and Potent as Sunshine",
+      "k": "ÁLBUM",
+      "g": "metalcore / post-hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/096bc66a405b005f9d3a600f65b0c0c3/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1023309421"
+    },
+    {
+      "id": "constrain|1999",
+      "d": "17/07",
+      "a": "Constrain",
+      "t": "1999",
+      "k": "EP",
+      "g": "metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/069ae1a5de116ed803bb7bfa2ea9316c/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1024458571"
+    },
+    {
+      "id": "cus|brokenbutalive",
+      "d": "17/07",
+      "a": "Cus",
+      "t": "Broken but Alive",
+      "k": "ÁLBUM",
+      "g": "progressive metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/ddc9ae9ab893f927fdb8b56697b87e7a/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/920966871"
+    },
+    {
+      "id": "devilhusk|goretechintimidator",
+      "d": "17/07",
+      "a": "DEVILHUSK",
+      "t": "GORETECH: INTIMIDATOR",
+      "k": "EP",
+      "g": "nu metalcore / electronicore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/dc2d8739ddf32e21fd89a60d3beb9f1d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1025222982"
+    },
+    {
+      "id": "drver|innocentdeath",
+      "d": "17/07",
+      "a": "Drøver",
+      "t": "Innocent Death",
+      "k": "EP",
+      "g": "metalcore / hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/18bfe2d7af7ce3302e9756a0041cd635/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/928315371"
+    },
+    {
+      "id": "eatenbysharks|theundertowofhate",
+      "d": "17/07",
+      "a": "Eaten by Sharks",
+      "t": "The Undertow Of Hate",
+      "k": "ÁLBUM",
+      "g": "deathcore / technical death metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/41e7c82d1df78e75b6774e42badb173e/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/960037221"
+    },
+    {
+      "id": "emptiness|nowherespeaks",
+      "d": "17/07",
+      "a": "Emptiness",
+      "t": "Nowhere Speaks",
+      "k": "ÁLBUM",
+      "g": "death metal / avant-garde metal",
+      "deezer": "https://www.deezer.com/album/952678601",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a5/9a/29/a59a29ef-7852-45d7-5e18-ffa604aea231/822603018783.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/nowhere-speaks/1890009530"
+    },
+    {
+      "id": "fleshcreep|glimmer",
+      "d": "17/07",
+      "a": "FLESH CREEP",
+      "t": "Glimmer",
+      "k": "EP",
+      "g": "hardcore / punk",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/468748ac1f37b0bae3e61ac8950b8dac/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/976224901"
+    },
+    {
+      "id": "fumingmouth|theringingbell",
+      "d": "17/07",
+      "a": "Fuming Mouth",
+      "t": "The Ringing Bell",
+      "k": "ÁLBUM",
+      "g": "metallic hardcore / death metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/d839aa3a7b2813b0c573c91dc47b3148/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/988210081"
+    },
+    {
+      "id": "godsend|thetragedyofloss",
+      "d": "17/07",
+      "a": "Gods End",
+      "t": "The Tragedy Of Loss",
+      "k": "EP",
+      "g": "hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/57f2c338ecb0f47c4ea91dfa665706e9/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/993747061"
+    },
+    {
+      "id": "haken|inafeverdream",
+      "d": "17/07",
+      "a": "Haken",
+      "t": "in a fever dream",
+      "k": "EP",
+      "g": "progressive metal / alternative metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/beb5a628a912478cd4becb64a085dbeb/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1003588741"
+    },
+    {
+      "id": "headautomatica|decadencedeluxeedition",
+      "d": "17/07",
+      "a": "Head Automatica",
+      "t": "Decadence [Deluxe Edition]",
+      "k": "DELUXE",
+      "g": "alternative rock / post-hardcore adjacent",
+      "note": "DELUXE",
+      "cover": "https://omnivorerecordings.com/wp-content/uploads/2026/03/Head-Automatica-Decadence-OV-622.jpg",
+      "sourceLink": "https://omnivorerecordings.com/shop/decadence/"
+    },
+    {
+      "id": "herheadsonfire|aminotyourgirl",
+      "d": "17/07",
+      "a": "Her Head's On Fire",
+      "t": "Am I Not Your Girl?",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / alternative rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/c5f0a75b2fdaba6867b33eea9b2da362/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/955117711"
+    },
+    {
+      "id": "ichooseviolence|anenemytolifeitself",
+      "d": "17/07",
+      "a": "I Choose Violence",
+      "t": "An Enemy To Life Itself",
+      "k": "EP",
+      "g": "deathcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/59bf9829897e42cf86a38419033390b9/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1013071021"
+    },
+    {
+      "id": "laconist|wherebeingendsibegin",
+      "d": "17/07",
+      "a": "Laconist",
+      "t": "Where Being Ends, I Begin",
+      "k": "EP",
+      "g": "brutal death metal / grindcore brasileiro",
+      "deezer": "https://www.deezer.com/album/1025008821",
+      "cover": "https://f4.bcbits.com/img/a992544787_10.jpg",
+      "sourceLink": "https://laconist333.bandcamp.com/album/where-being-ends-i-begin"
+    },
+    {
+      "id": "lefttodie|initiummortis",
+      "d": "17/07",
+      "a": "Left to Die",
+      "t": "Initium Mortis",
+      "k": "ÁLBUM",
+      "g": "death metal / death metal clássico reimaginado",
+      "deezer": "https://www.deezer.com/album/942715041",
+      "cover": "https://f4.bcbits.com/img/a3047945518_5.jpg",
+      "sourceLink": "https://lefttodiedeathmetal.bandcamp.com/album/initium-mortis"
+    },
+    {
+      "id": "loathe|astrangertoyou",
+      "d": "17/07",
+      "a": "Loathe",
+      "t": "A Stranger To You",
+      "k": "ÁLBUM",
+      "g": "alternative metal / metalcore / shoegaze",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/1d2e302f7e697868124019b5b9477693/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/965629011"
+    },
+    {
+      "id": "lostvitalspark|themotionparadox",
+      "d": "17/07",
+      "a": "Lost Vital Spark",
+      "t": "The Motion Paradox",
+      "k": "EP",
+      "g": "melodic death metal / modern metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/a307b931fdf427c2c0a750f161a1f512/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1019260381"
+    },
+    {
+      "id": "mangledcarpenter|betweenbloodandsilence",
+      "d": "17/07",
+      "a": "Mangled Carpenter",
+      "t": "Between Blood and Silence",
+      "k": "EP",
+      "g": "deathgrind / grindcore / deathcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/fc83cf741dee667f435c88c3d96c964b/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1004753111"
+    },
+    {
+      "id": "motionlessinwhite|decades",
+      "d": "17/07",
+      "a": "Motionless In White",
+      "t": "Decades",
+      "k": "ÁLBUM",
+      "g": "metalcore / alternative metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/f3288a6f7c152c14d2e354640b75e7ee/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/976493181"
+    },
+    {
+      "id": "novareign|shiftingtheaxisoftheworld",
+      "d": "17/07",
+      "a": "Novareign",
+      "t": "Shifting the Axis of the World",
+      "k": "ÁLBUM",
+      "g": "progressive metal / power metal",
+      "deezer": "https://www.deezer.com/album/950547511",
+      "cover": "https://f4.bcbits.com/img/a2373439267_10.jpg",
+      "sourceLink": "https://novareign.bandcamp.com/album/shifting-the-axis-of-the-world"
+    },
+    {
+      "id": "ourchronicle|thegreyarea",
+      "d": "17/07",
+      "a": "Our Chronicle",
+      "t": "The Grey Area",
+      "k": "EP",
+      "g": "alternative metal",
+      "deezer": "https://www.deezer.com/album/1011711431",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0c/bd/87/0cbd875e-66f4-9cf8-0b57-50b2f9343d66/712132026673_cover.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/the-grey-area-ep/6782968444"
+    },
+    {
+      "id": "poisonthepreacher|thingsiwant",
+      "d": "17/07",
+      "a": "Poison the Preacher",
+      "t": "Things I Want",
+      "k": "EP",
+      "g": "hardcore / thrash / crossover",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/f40e5b1dbbfe5e15d5a42c66ee85d972/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/963074801"
+    },
+    {
+      "id": "protestthehero|within",
+      "d": "17/07",
+      "a": "Protest The Hero",
+      "t": "Within",
+      "k": "ÁLBUM",
+      "g": "progressive metal / progressive metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/97eaa4f44412f82803275d7978c304ee/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/988136701"
+    },
+    {
+      "id": "psycroptic|thepulseofannihilation",
+      "d": "17/07",
+      "a": "Psycroptic",
+      "t": "The Pulse of Annihilation",
+      "k": "ÁLBUM",
+      "g": "technical death metal / progressive death metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/5a0604bb8d82b6049038a393850f7df9/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/950906611"
+    },
+    {
+      "id": "quicksand|bringonthepsychics",
+      "d": "17/07",
+      "a": "Quicksand",
+      "t": "Bring On The Psychics",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / alternative metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/87f994809d5d8ef5331dec151798e728/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/950692951"
+    },
+    {
+      "id": "redmethod|vol1asinlife",
+      "d": "17/07",
+      "a": "Red Method",
+      "t": "Vol 1: As In Life",
+      "k": "EP",
+      "g": "nu metal / nu metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/bb59d02ed43644f44cca483d5715f55a/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1007026141"
+    },
+    {
+      "id": "reflections|crystaleyes",
+      "d": "17/07",
+      "a": "Reflections",
+      "t": "Crystal Eyes",
+      "k": "ÁLBUM",
+      "g": "progressive metalcore / djent / deathcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/4c3eaee168d5b9fbc2e00841ef6c379a/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1011700051"
+    },
+    {
+      "id": "repentance|retaliate",
+      "d": "17/07",
+      "a": "Repentance",
+      "t": "Retaliate",
+      "k": "ÁLBUM",
+      "g": "metalcore / groove metal",
+      "deezer": "https://www.deezer.com/album/973400981",
+      "cover": "https://f4.bcbits.com/img/a1452968974_5.jpg",
+      "sourceLink": "https://repentanceband.bandcamp.com/album/retaliate"
+    },
+    {
+      "id": "tesla|homage",
+      "d": "17/07",
+      "a": "Tesla",
+      "t": "Homage",
+      "k": "ÁLBUM",
+      "g": "modern hard rock / heavy metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/1a8ff439d61ad272e881dd4f44bd6f6e/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/953373131"
+    },
+    {
+      "id": "themenzingers|everythingieversaw",
+      "d": "17/07",
+      "a": "The Menzingers",
+      "t": "Everything I Ever Saw",
+      "k": "ÁLBUM",
+      "g": "emo / alternative rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/8240d060db3b55e1f4313166fed89ad3/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/952679661"
+    },
+    {
+      "id": "underauburnskies|diminisherofhope",
+      "d": "17/07",
+      "a": "Under Auburn Skies",
+      "t": "Diminisher of Hope",
+      "k": "EP",
+      "g": "metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/d35be8da5e03189dd8df34e248c3eb37/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/982493771"
+    },
+    {
+      "id": "valiantheartsandgalleons|fablesvol1",
+      "d": "17/07",
+      "a": "Valiant Hearts & Galleons",
+      "t": "Fables, Vol. 1",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / progressive rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/3cf66318bba3ba36f311fe31ee2ee148/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1022657091"
+    },
+    {
+      "id": "blackwinter|ifgodjustgavemeonemorechance",
+      "d": "17/07",
+      "a": "Black Winter",
+      "t": "If God Just Gave Me One More Chance...",
+      "k": "ÁLBUM",
+      "g": "metalcore / melodic metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/58f7c15cbe7ae7bc24d009a3cd6768eb/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1022012891"
+    },
+    {
+      "id": "tactusshift|perception",
+      "d": "17/07",
+      "a": "Tactus Shift",
+      "t": "Perception",
+      "k": "EP",
+      "g": "progressive metal / mathcore",
+      "deezer": "https://www.deezer.com/album/1010131891",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/60/47/be/6047be52-2871-10d1-4406-980d59fbc72c/artwork.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/perception-ep/6782685444"
+    },
+    {
+      "id": "borduna|algozes",
+      "d": "18/07",
+      "a": "Borduna",
+      "t": "Algozes",
+      "k": "EP",
+      "g": "post-hardcore / alternative rock",
+      "deezer": "https://www.deezer.com/album/1023588901",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/74/51/51/745151ef-2ba6-4886-777e-929a9573dfbc/0631685086029.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/algozes-ep/6788814187"
+    },
+    {
+      "id": "cobentrice|rampantpulverization",
+      "d": "20/07",
+      "a": "Cobentrice",
+      "t": "Rampant Pulverization",
+      "k": "ÁLBUM",
+      "g": "slamming brutal death metal / goregrind / grindcore",
+      "deezer": "https://www.deezer.com/album/1010890281",
+      "cover": "https://f4.bcbits.com/img/a2346006905_10.jpg",
+      "sourceLink": "https://coyoterecords.bandcamp.com/album/rampant-pulverization"
+    },
+    {
+      "id": "diebesideyourhome|nothingevertrulyleaves",
+      "d": "20/07",
+      "a": "diebesideyourhome",
+      "t": "nothing ever truly leaves",
+      "k": "EP",
+      "g": "metalcore",
+      "deezer": "https://www.deezer.com/album/1029877042",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/05/95/fc/0595fcb3-a89c-1796-ffb2-e289bad2f50e/cover.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/nothing-ever-truly-leaves-ep/6791266508"
+    },
+    {
+      "id": "cady|limitationsofthehumanform",
+      "d": "21/07",
+      "a": "Cady",
+      "t": "Limitations of the Human Form",
+      "k": "ÁLBUM",
+      "g": "screamo / emoviolence / metalcore",
+      "deezer": "https://www.deezer.com/album/1035681202",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/03/f5/d2/03f5d2d4-c597-ff4c-5bc7-621d311caeca/991048503748.png/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/limitations-of-the-human-form/6793292468"
+    },
+    {
+      "id": "manuelgardnerfernandes|volumevii",
+      "d": "21/07",
+      "a": "Manuel Gardner Fernandes",
+      "t": "Volume VII",
+      "k": "ÁLBUM",
+      "g": "instrumental progressive metal / djent / math rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/defe3e5ac1f6949f73b93d89ad636776/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1029745902"
+    },
+    {
+      "id": "scarchamber|uglyontheinside",
+      "d": "21/07",
+      "a": "Scar Chamber",
+      "t": "Ugly On The Inside",
+      "k": "ÁLBUM",
+      "g": "modern hard rock / heavy metal",
+      "cover": "https://f4.bcbits.com/img/a4102283649_5.jpg",
+      "sourceLink": "https://bravewordsrecords.bandcamp.com/album/ugly-on-the-inside"
+    },
+    {
+      "id": "tinyvoices|mymindsrecession",
+      "d": "21/07",
+      "a": "Tiny Voices",
+      "t": "my mind's recession",
+      "k": "EP",
+      "g": "emo / midwest emo / pop punk",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/d205d5135c25544fb3dedd6193070bb9/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1031506262"
+    },
+    {
+      "id": "instrumentofgod|thesunreflectsthecolourofyoureyes",
+      "d": "22/07",
+      "a": "Instrument of God",
+      "t": "The Sun Reflects the Colour of Your Eyes",
+      "k": "EP",
+      "g": "metalcore / hardcore",
+      "deezer": "https://www.deezer.com/album/1033661382",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/9b/f1/d99bf182-1c3e-61f4-0bb7-fbce6910efa1/artwork.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/the-sun-reflects-the-colour-of-your-eyes-ep/6792777619"
+    },
+    {
+      "id": "sunswarm|thosewhodonotbuildmustburn",
+      "d": "22/07",
+      "a": "SUNSWARM",
+      "t": "THOSE WHO DO NOT BUILD MUST BURN",
+      "k": "ÁLBUM",
+      "g": "industrial post-metal / sludge / alternative metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/067fd99eca067fc9dcbf01041b62958d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/999823751"
+    },
+    {
+      "id": "gloombringer|theweightofmarchinggraves",
+      "d": "23/07",
+      "a": "Gloombringer",
+      "t": "The Weight of Marching Graves",
+      "k": "EP",
+      "g": "deathcore / slam",
+      "deezer": "https://www.deezer.com/album/1031599632",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/df/36/c8/df36c853-515b-064e-aff4-9dec411a95bc/712132087230_cover.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/the-weight-of-marching-graves-ep/6791996325"
+    },
+    {
+      "id": "litosth|dreaming",
+      "d": "23/07",
+      "a": "Litosth",
+      "t": "Dreaming",
+      "k": "ÁLBUM",
+      "g": "dark metal / melodic black-death / extreme metal moderno brasileiro",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/525238e18b4914491967d955cc615c15/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1002027531"
+    },
+    {
+      "id": "avengedsevenfold|statica",
+      "d": "23/07",
+      "a": "Avenged Sevenfold",
+      "t": "STATICA",
+      "k": "EP",
+      "g": "alternative metal / progressive metal / experimental metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/47d5693a46ec59583060bb809b9d83ba/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1036598382"
+    },
+    {
+      "id": "asightinveracity|filmburns",
+      "d": "24/07",
+      "a": "A Sight in Veracity",
+      "t": "Film Burns",
+      "k": "ÁLBUM",
+      "g": "alternative metal / metalcore / nu gaze",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/1c78912e47b0394ffd7896b5a91ff6a6/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1015959171"
+    },
+    {
+      "id": "bleachedcross|wrath",
+      "d": "24/07",
+      "a": "Bleached Cross",
+      "t": "Wrath",
+      "k": "ÁLBUM",
+      "g": "darkwave / blackened post-hardcore / industrial",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/e0bc14d8e179cb798ac7b935a8f688db/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/971457441"
+    },
+    {
+      "id": "castiel|allreturnstohollowandsilence",
+      "d": "24/07",
+      "a": "Castiel",
+      "t": "All Returns to Hollow and Silence",
+      "k": "EP",
+      "g": "deathcore / downtempo",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/17f89780e6a92bbba6c8e768ed9d92ac/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/926486751"
+    },
+    {
+      "id": "changingplacesinthefire|changingplacesinthefire",
+      "d": "24/07",
+      "a": "Changing Places In The Fire",
+      "t": "Changing Places In The Fire",
+      "k": "ÁLBUM",
+      "g": "post-metal / progressive alternative metal / art rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/f7cefb2d31e380d07100e7c1fbb3eac1/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/926466841"
+    },
+    {
+      "id": "combichrist|thevenominthemouthofgod",
+      "d": "24/07",
+      "a": "Combichrist",
+      "t": "The Venom In The Mouth Of God",
+      "k": "ÁLBUM",
+      "g": "industrial metal / alternative metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/43dfba2a11e74effc4aecbeb145b9ef5/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/947418851"
+    },
+    {
+      "id": "dazgak|stimpy",
+      "d": "24/07",
+      "a": "DazGak!",
+      "t": "Stimpy",
+      "k": "EP",
+      "g": "post-hardcore / emo",
+      "deezer": "https://www.deezer.com/album/981380841",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/e2/22/9de222b6-1472-d39d-c045-6bf3d910ba68/820233303682.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/stimpy-ep/6768726216"
+    },
+    {
+      "id": "embodiment|cryptomorph",
+      "d": "24/07",
+      "a": "Embodiment",
+      "t": "Cryptomorph",
+      "k": "EP",
+      "g": "progressive deathcore / tech death / metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/04a004155928c546333909852de9797c/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1028374342"
+    },
+    {
+      "id": "lockstep|iknowwhatisaw",
+      "d": "24/07",
+      "a": "Lockstep",
+      "t": "I Know What I Saw",
+      "k": "ÁLBUM",
+      "g": "shoegaze metal / doom / alternative heavy rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/c0966efd91f93c8ffb2e1b15a4e3cb99/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/972560911"
+    },
+    {
+      "id": "madball|notyourkingdom",
+      "d": "24/07",
+      "a": "Madball",
+      "t": "Not Your Kingdom",
+      "k": "ÁLBUM",
+      "g": "hardcore / metallic hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/f31f700fab490c5a3b59ce92174aa07d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/962031021"
+    },
+    {
+      "id": "mimibarks|dreamstateoffear",
+      "d": "24/07",
+      "a": "Mimi Barks",
+      "t": "Dreamstate of Fear",
+      "k": "EP",
+      "g": "alternative metal / doom trap / nu metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/da4128434108313cb17b1cb2508a2b42/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1028862102"
+    },
+    {
+      "id": "newforms|nothingssacredanymore",
+      "d": "24/07",
+      "a": "New Forms",
+      "t": "Nothing's Sacred Anymore",
+      "k": "EP",
+      "g": "emoviolence / screamo / post-hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/1baf9efc9acaf604992ac82bf5dfbead/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/987450251"
+    },
+    {
+      "id": "nightdive|thiswillend",
+      "d": "24/07",
+      "a": "nightdive",
+      "t": "This Will End",
+      "k": "EP",
+      "g": "alternative metal / electronic post-hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/6eeecfe536b04b31d6e075cc216e04f4/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/966405801"
+    },
+    {
+      "id": "stab|lostinmaine",
+      "d": "24/07",
+      "a": "Stab",
+      "t": "Lost In Maine",
+      "k": "ÁLBUM",
+      "g": "melodic hardcore / hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/9b41f4f369088887e6bd1652ad992152/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/970664221"
+    },
+    {
+      "id": "caelestia|revelationsinblack",
+      "d": "24/07",
+      "a": "Caelestia",
+      "t": "Revelations In Black",
+      "k": "ÁLBUM",
+      "g": "modern extreme metal / melodic black-death",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/94b47e4c28a7009f5bd80f85a9742495/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/977194281"
+    },
+    {
+      "id": "divulsive|spawnedinviscera",
+      "d": "24/07",
+      "a": "Divulsive",
+      "t": "Spawned In Viscera",
+      "k": "ÁLBUM",
+      "g": "brutal death / slam / technical death",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/f45c91f25eb77242715bfe415f856714/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/982803031"
+    },
+    {
+      "id": "meshuggah|catchthirtythree20thanniversaryedition2026remastered",
+      "d": "24/07",
+      "a": "Meshuggah",
+      "t": "Catch Thirtythree: 20th Anniversary Edition (2026 Remastered)",
+      "k": "REISSUE",
+      "g": "djent / progressive metal",
+      "note": "REISSUE",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/dd3515686d43d72c1397b3cc7fd5bd3e/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/981539081"
+    },
+    {
+      "id": "meshuggah|destroyeraseimprove30thanniversaryedition2026remastered",
+      "d": "24/07",
+      "a": "Meshuggah",
+      "t": "Destroy Erase Improve: 30th Anniversary Edition (2026 Remastered)",
+      "k": "REISSUE",
+      "g": "djent / progressive metal",
+      "note": "REISSUE",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/1721dd509d699f383eb5804ba3049a48/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/981539151"
+    },
+    {
+      "id": "northseaechoes|howtocastashadow",
+      "d": "24/07",
+      "a": "North Sea Echoes",
+      "t": "How to Cast a Shadow",
+      "k": "ÁLBUM",
+      "g": "progressive metal / atmospheric heavy rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/b27fece7d74f5e0662cfa302aed6157c/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/966498791"
+    },
+    {
+      "id": "rezn|cyclesintheinfinitedream",
+      "d": "24/07",
+      "a": "REZN",
+      "t": "Cycles in the Infinite Dream",
+      "k": "ÁLBUM",
+      "g": "doom / psychedelic metal / prog / shoegaze",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/5aba52bc5d4677cda718f073a4b7bc30/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/960067931"
+    },
+    {
+      "id": "ripper|towardsrebirth",
+      "d": "24/07",
+      "a": "Ripper",
+      "t": "Towards Rebirth",
+      "k": "ÁLBUM",
+      "g": "death-thrash / extreme metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/df26790cc0728c8170b889b6d5f57ddb/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1035648632"
+    },
+    {
+      "id": "sallowmoth|hydrophilousbrood",
+      "d": "24/07",
+      "a": "Sallow Moth",
+      "t": "Hydrophilous Brood",
+      "k": "ÁLBUM",
+      "g": "progressive death / technical death",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/7f428b61b69255a44e48c655090e3dbb/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/974094061"
+    },
+    {
+      "id": "squelching|squelching",
+      "d": "24/07",
+      "a": "Squelching",
+      "t": "Squelching",
+      "k": "ÁLBUM",
+      "g": "brutal death / slam",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/0e75520e775ca21eebb9521abe0b51ec/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1009005311"
+    },
+    {
+      "id": "thehu|hun",
+      "d": "24/07",
+      "a": "The HU",
+      "t": "HUN",
+      "k": "ÁLBUM",
+      "g": "folk metal / modern hard rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/e2bbf539bb2ff879280ea187e517130c/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/976486601"
+    },
+    {
+      "id": "tyraelsascension|graveseeker",
+      "d": "24/07",
+      "a": "Tyraels Ascension",
+      "t": "Grave Seeker",
+      "k": "ÁLBUM",
+      "g": "melodic death / groove metal / metalcore",
+      "deezer": "https://www.deezer.com/album/1009986291",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c1/be/34/c1be34df-9bab-838b-416d-6d54b9d9dd90/artwork.jpg/1000x1000bb.jpg",
+      "sourceLink": "https://music.apple.com/us/album/grave-seeker/6782613983"
+    },
+    {
+      "id": "maydayparade|sugar",
+      "d": "24/07",
+      "a": "Mayday Parade",
+      "t": "Sugar",
+      "k": "ÁLBUM",
+      "g": "emo / pop punk / alternative rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/bc177d7a9108e41dd5914b13246f6b73/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/943622601"
+    },
+    {
+      "id": "waterparks|jinx",
+      "d": "24/07",
+      "a": "Waterparks",
+      "t": "JINX",
+      "k": "ÁLBUM",
+      "g": "alternative rock / pop punk / scene adjacent",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/60cd8e10660a4af0475bd4f58fa0ffe4/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/967865511"
+    },
+    {
+      "id": "guerrillawarfare|asplashofcolor",
+      "d": "24/07",
+      "a": "Guerrilla Warfare",
+      "t": "A SPLASH OF COLOR",
+      "k": "ÁLBUM",
+      "g": "nu metal / rap metal / hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/3305a9654d063d6f7f2e0f4f31e5b3c6/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1023662121"
+    },
+    {
+      "id": "hearth|demo",
+      "d": "24/07",
+      "a": "HEARTH",
+      "t": "Demo",
+      "k": "EP",
+      "g": "metalcore revival / metallic hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/0d19f494662b0728f24eeea301b7f923/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1034508962"
+    },
+    {
+      "id": "beneathallmercy|genesis",
+      "d": "25/07",
+      "a": "BENEATH ALL MERCY",
+      "t": "GENESIS",
+      "k": "EP",
+      "g": "metalcore / hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/ddd5f79fb7e949430cb7b00da5740ee3/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1036653322"
+    },
+    {
+      "id": "weepingangel|intoodeep",
+      "d": "25/07",
+      "a": "Weeping Angel",
+      "t": "In Too Deep",
+      "k": "ÁLBUM",
+      "g": "progressive metalcore / djent",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/b4516bb214278b2ee314b40c300cf994/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1023015411"
+    },
+    {
+      "id": "deathonimpact|itwasmeikilledthemessengerboy",
+      "d": "28/07",
+      "a": "death_on_impact",
+      "t": "It Was Me!.. I Killed the Messenger Boy",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / emo / screamo",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/2725f66f4ef6d1c42527dc6957b2153a/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1014167291"
+    },
+    {
+      "id": "longgoodbye|awhisperedpromiseoffailure",
+      "d": "29/07",
+      "a": "Long Goodbye",
+      "t": "A Whispered Promise of Failure",
+      "k": "EP",
+      "g": "metalcore / post-hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/35ee6e6df0b2df1a482f00e6f0c1fe3e/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1034706382"
+    },
+    {
+      "id": "cryout|sw4g",
+      "d": "30/07",
+      "a": "Cryout",
+      "t": "SW4G",
+      "k": "EP",
+      "g": "nu-hardcore / beatdown",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/c0c775e6a27d5b91e5cdd4e64484c285/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1036617912"
+    },
+    {
+      "id": "allt|ataraxia",
+      "d": "31/07",
+      "a": "Allt",
+      "t": "Ataraxia",
+      "k": "ÁLBUM",
+      "g": "progressive metalcore / djent / thall",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/32774ae1bf93edad8c9e48db69a4c7b7/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/978652191"
+    },
+    {
+      "id": "anatomyofhabit|pairedsentinels",
+      "d": "31/07",
+      "a": "Anatomy of Habit",
+      "t": "Paired Sentinels",
+      "k": "ÁLBUM",
+      "g": "doom / post-punk / shoegaze",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/8f51811de75f8ea9cf8ac35627015ea4/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/986134931"
+    },
+    {
+      "id": "bedtimemagic|liedownwithdogs",
+      "d": "31/07",
+      "a": "BEDTIMEMAGIC",
+      "t": "Lie Down With Dogs",
+      "k": "ÁLBUM",
+      "g": "noise rock / mathcore / post-hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/5f82a91297eb4b31022b011c2f324fbf/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1043249722"
+    },
+    {
+      "id": "begotten|thethingsiwishicouldchange",
+      "d": "31/07",
+      "a": "Begotten",
+      "t": "The Things I Wish I Could Change",
+      "k": "EP",
+      "g": "nu metalcore / alternative metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/12a7ad02abb7d0a50312e24e74d6cc54/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1008584271"
+    },
+    {
+      "id": "bornindissonance|itsahorrorbeingalive",
+      "d": "31/07",
+      "a": "Born In Dissonance",
+      "t": "It's a Horror Being Alive",
+      "k": "EP",
+      "g": "metalcore / deathcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/32365c3ea09fbbdf78f3ed06442e0538/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/975890341"
+    },
+    {
+      "id": "complexant|apex",
+      "d": "31/07",
+      "a": "Complexant",
+      "t": "Apex",
+      "k": "ÁLBUM",
+      "g": "blackened death / progressive death",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/37f3752f354d2c354356e53b3db6fa78/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1029776602"
+    },
+    {
+      "id": "deadvectors|caveslam",
+      "d": "31/07",
+      "a": "DeadVectors",
+      "t": "CAVESLAM",
+      "k": "EP",
+      "g": "deathcore / djent experimental",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/dd9c365c3612637ef70c3c71f96e8e4d/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1036731032"
+    },
+    {
+      "id": "disfiguringthegoddess|bloom",
+      "d": "31/07",
+      "a": "Disfiguring The Goddess",
+      "t": "Bloom",
+      "k": "ÁLBUM",
+      "g": "electronic deathcore / slam",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/2fc8480158f703ecb3aaca298f9675af/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/950799691"
+    },
+    {
+      "id": "doghouserose|borntobreakeven",
+      "d": "31/07",
+      "a": "Doghouse Rose",
+      "t": "Born To Break Even",
+      "k": "ÁLBUM",
+      "g": "pop punk / melodic punk",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/f2f6d2c508f4afb1b6abbbac6729964a/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/987535601"
+    },
+    {
+      "id": "dumbwaiter|change",
+      "d": "31/07",
+      "a": "Dumb Waiter",
+      "t": "Change",
+      "k": "ÁLBUM",
+      "g": "noise rock / mathcore / post-hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/a65b6d601f1fd3eeedd19907aeb9b5ea/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/977220021"
+    },
+    {
+      "id": "endera|abloomingdoom",
+      "d": "31/07",
+      "a": "ENDERA",
+      "t": "A Blooming Doom",
+      "k": "EP",
+      "g": "metalcore / deathcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/e8257fa919caeef0e6b345d0bc7d5bab/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1001841751"
+    },
+    {
+      "id": "enox|polarize",
+      "d": "31/07",
+      "a": "ENOX",
+      "t": "Polarize",
+      "k": "ÁLBUM",
+      "g": "progressive metalcore / djent / nu metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/45344878b4d82de89a683195ffe1ebf8/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/964046351"
+    },
+    {
+      "id": "fivefingerdeathpunch|legacy",
+      "d": "31/07",
+      "a": "Five Finger Death Punch",
+      "t": "Legacy",
+      "k": "ÁLBUM",
+      "g": "groove / alternative metal / modern hard rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/8b60262bd1cf481c36978dd58fb02584/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1009868371"
+    },
+    {
+      "id": "framinghanley|doyoufeelguiltybeingok",
+      "d": "31/07",
+      "a": "Framing Hanley",
+      "t": "do you feel guilty being ok?",
+      "k": "ÁLBUM",
+      "g": "alternative rock pesado / post-grunge",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/2baf8e560543b2682aa35467a1703b5a/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1008253331"
+    },
+    {
+      "id": "frontieres|remanencedeluxe",
+      "d": "31/07",
+      "a": "Frontières",
+      "t": "Rémanence (Deluxe)",
+      "k": "DELUXE",
+      "g": "metalcore / nu metalcore",
+      "note": "DELUXE",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/76021bad6e586a73838510a56ccb9b94/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1039416242"
+    },
+    {
+      "id": "futurepalace|resurgence",
+      "d": "31/07",
+      "a": "Future Palace",
+      "t": "Resurgence",
+      "k": "ÁLBUM",
+      "g": "alternative metal / metalcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/f655d8465daab628f651bd6ed0fb6a78/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/980309171"
+    },
+    {
+      "id": "greenday|nimrodsoriginalsoundtrack",
+      "d": "31/07",
+      "a": "Green Day",
+      "t": "Nimrods Original Soundtrack",
+      "k": "COMPILAÇÃO",
+      "g": "pop punk / alternative rock",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/34cdd5fd0fa81ea57c19ca8249c94f4b/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1015788371"
+    },
+    {
+      "id": "lalu|amythmakersdemise",
+      "d": "31/07",
+      "a": "Lalu",
+      "t": "A Mythmaker's Demise",
+      "k": "ÁLBUM",
+      "g": "progressive metal / art rock pesado",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/66942664239c4811ae6c666045572aee/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/980355861"
+    },
+    {
+      "id": "laniidae|laniidae",
+      "d": "31/07",
+      "a": "Laniidae",
+      "t": "Laniidae",
+      "k": "ÁLBUM",
+      "g": "metalcore / alternative metal",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/482f08bd3575339e2df5083c8345e884/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1018277221"
+    },
+    {
+      "id": "playingwithknives|thepricewepay",
+      "d": "31/07",
+      "a": "Playing With Knives",
+      "t": "The Price We Pay",
+      "k": "EP",
+      "g": "metalcore / melodic hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/e49d56d90da1cbd37551ab9059558860/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/990997271"
+    },
+    {
+      "id": "rxbandits|andthebattlebegun20thanniversaryedition",
+      "d": "31/07",
+      "a": "Rx Bandits",
+      "t": "...And The Battle Begun (20th Anniversary Edition)",
+      "k": "REISSUE",
+      "g": "progressive post-hardcore / ska punk",
+      "note": "REISSUE",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/7d8c15aa027145c1d2b0646cfecce712/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1033261352"
+    },
+    {
+      "id": "saidanddone|venturacountystraightedge",
+      "d": "31/07",
+      "a": "Said and Done",
+      "t": "Ventura County Straight Edge",
+      "k": "EP",
+      "g": "metallic hardcore",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/aafc7c8d77f4ee9c2f522bdf922027c1/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1015461261"
+    },
+    {
+      "id": "southpawflhc|thestandard",
+      "d": "31/07",
+      "a": "Southpaw FLHC",
+      "t": "The Standard",
+      "k": "ÁLBUM",
+      "g": "hardcore / beatdown",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/cbe11c6a4c0a233518022ef7b25466c6/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/931476531"
+    },
+    {
+      "id": "thebody|masterweperishexpanded",
+      "d": "31/07",
+      "a": "The Body",
+      "t": "Master, We Perish (Expanded)",
+      "k": "REISSUE",
+      "g": "sludge / noise / experimental metal",
+      "note": "REISSUE",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/9f87080390194749bfdd4da4fb45cf74/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/970819861"
+    },
+    {
+      "id": "thesaltpalecollective|andgodsaidnothing",
+      "d": "31/07",
+      "a": "The Salt Pale Collective",
+      "t": "...and God said nothing",
+      "k": "ÁLBUM",
+      "g": "sludge / post-metal / death-doom",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/fc11b493af7361391ed3a240f329448a/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1006102401"
+    },
+    {
+      "id": "torus|takemehome",
+      "d": "31/07",
+      "a": "Torus",
+      "t": "Take Me Home",
+      "k": "EP",
+      "g": "grunge / alternative heavy rock / stoner",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/9fec91db0b568255f5ac9f686509be2f/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/997113501"
+    },
+    {
+      "id": "unprocessed|angelinstrumental",
+      "d": "31/07",
+      "a": "Unprocessed",
+      "t": "Angel (Instrumental)",
+      "k": "ÁLBUM",
+      "g": "instrumental progressive metal / djent",
+      "note": "INSTRUMENTAL",
+      "cover": "https://cdn-images.dzcdn.net/images/cover/08e27e199a4b9e77c4a93f8d67344c99/1000x1000-000000-80-0-0.jpg",
+      "sourceLink": "https://www.deezer.com/album/1040181522"
+    },
+    {
+      "id": "rawshock|hardtodeathep",
+      "d": "01/08",
+      "a": "Rawshock",
+      "t": "Hard to Death EP",
+      "k": "EP",
+      "g": "beatdown hardcore / metalcore",
+      "cover": "https://f4.bcbits.com/img/a0851113037_10.jpg",
+      "sourceLink": "https://rawshock1998.bandcamp.com/album/hard-to-death-ep"
+    }
+  ]
+}
