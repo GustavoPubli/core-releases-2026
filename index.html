@@ -342,8 +342,9 @@ footer a:hover{color:#fff}
   display:flex;align-items:flex-end;gap:9px;height:62px;padding:0 10px 9px;
   background:rgba(14,14,17,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
   border:1.5px solid var(--bord);border-radius:4px;box-shadow:5px 5px 0 var(--hard),-4px -4px 12px rgba(255,255,255,.03);
-  overflow-x:auto;overflow-y:visible;scrollbar-width:none;
+  overflow-x:auto;overflow-y:visible;scrollbar-width:none;visibility:hidden;opacity:0;transition:opacity .18s ease;
 }
+.dockP.ready{visibility:visible;opacity:1}
 .dockP::-webkit-scrollbar{display:none}
 .dki{
   position:relative;flex:0 0 auto;width:42px;height:42px;display:grid;place-items:center;cursor:pointer;

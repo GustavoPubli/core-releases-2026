@@ -339,6 +339,7 @@ const dockItems=[{g:"↑",l:"Topo",t:"#top0"}]
   .concat([{sep:1},{g:"＋",l:"Sugerir",t:"#sugira"},{g:"IG",l:"@gustpires13",u:"https://instagram.com/gustpires13"}]);
 dock.innerHTML=dockItems.map(it=>it.sep?'<span class="dki sep" aria-hidden="true"></span>'
   :'<button class="dki" '+(it.t?'data-target="'+it.t+'"':'data-url="'+it.u+'"')+' aria-label="'+esc(it.l)+'">'+it.g+'<span class="lb">'+esc(it.l)+"</span></button>").join("");
+dock.classList.add("ready");
 applyFilters();
 dock.addEventListener("click",e=>{
   const b=e.target.closest(".dki");if(!b||b.classList.contains("sep"))return;
