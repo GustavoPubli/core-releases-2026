@@ -1,7 +1,7 @@
 {
   "meta": {
     "year": 2026,
-    "updated": "2026-08-02",
+    "updated": "2026-08-09",
     "schemaVersion": 1
   },
   "releases": [
@@ -3685,7 +3685,7 @@
       "k": "ÁLBUM",
       "g": "doom / post-punk / shoegaze",
       "cover": "https://cdn-images.dzcdn.net/images/cover/8f51811de75f8ea9cf8ac35627015ea4/1000x1000-000000-80-0-0.jpg",
-      "sourceLink": "https://www.deezer.com/album/986134931"
+      "sourceLink": "https://anatomyofhabit.bandcamp.com/album/paired-sentinels"
     },
     {
       "id": "bedtimemagic|liedownwithdogs",
@@ -3695,7 +3695,7 @@
       "k": "ÁLBUM",
       "g": "noise rock / mathcore / post-hardcore",
       "cover": "https://cdn-images.dzcdn.net/images/cover/5f82a91297eb4b31022b011c2f324fbf/1000x1000-000000-80-0-0.jpg",
-      "sourceLink": "https://www.deezer.com/album/1043249722"
+      "sourceLink": "https://theghostisclearrecords.bandcamp.com/album/lie-down-with-dogs"
     },
     {
       "id": "begotten|thethingsiwishicouldchange",
@@ -3942,14 +3942,68 @@
       "sourceLink": "https://www.deezer.com/album/1040181522"
     },
     {
-      "id": "rawshock|hardtodeathep",
-      "d": "01/08",
-      "a": "Rawshock",
-      "t": "Hard to Death EP",
+      "id": "electriccallboy|tanzneid",
+      "d": "07/08",
+      "a": "Electric Callboy",
+      "t": "TANZNEID",
+      "k": "\u00c1LBUM",
+      "g": "electronicore / metalcore / modern metal",
+      "q": "Electric Callboy TANZNEID"
+    },
+    {
+      "id": "cancerbats|givemedirt",
+      "d": "07/08",
+      "a": "Cancer Bats",
+      "t": "Give Me Dirt",
+      "k": "\u00c1LBUM",
+      "g": "hardcore / metalcore / sludge metal",
+      "q": "Cancer Bats Give Me Dirt"
+    },
+    {
+      "id": "initiate|withlovewithrage",
+      "d": "07/08",
+      "a": "Initiate",
+      "t": "With Love // With Rage",
       "k": "EP",
-      "g": "beatdown hardcore / metalcore",
-      "cover": "https://f4.bcbits.com/img/a0851113037_10.jpg",
-      "sourceLink": "https://rawshock1998.bandcamp.com/album/hard-to-death-ep"
+      "g": "melodic hardcore / metallic hardcore / post-hardcore",
+      "q": "Initiate With Love With Rage"
+    },
+    {
+      "id": "ceremony|tellmeyourdream",
+      "d": "07/08",
+      "a": "Ceremony",
+      "t": "Tell Me Your Dream",
+      "k": "\u00c1LBUM",
+      "g": "hardcore / post-hardcore / post-punk",
+      "q": "Ceremony Tell Me Your Dream"
+    },
+    {
+      "id": "negativeframe|breaktheice",
+      "d": "07/08",
+      "a": "Negative Frame",
+      "t": "Break The Ice",
+      "k": "\u00c1LBUM",
+      "g": "metallic hardcore / metalcore",
+      "q": "Negative Frame Break The Ice"
+    },
+    {
+      "id": "dinofcelestialbirds|takeoffslandings",
+      "d": "07/08",
+      "a": "Din of Celestial Birds",
+      "t": "Takeoffs & Landings",
+      "k": "\u00c1LBUM",
+      "g": "post-metal / progressive post-rock",
+      "q": "Din of Celestial Birds Takeoffs Landings"
+    },
+    {
+      "id": "citizen|halcyonblues",
+      "d": "07/08",
+      "a": "Citizen",
+      "t": "Halcyon Blues",
+      "k": "\u00c1LBUM",
+      "g": "post-hardcore / emo / alternative rock",
+      "q": "Citizen Halcyon Blues",
+      "sec": "s"
     }
   ]
 }
