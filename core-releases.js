@@ -45,6 +45,13 @@ const R=Object.freeze(RAW_RELEASES.map((record,i)=>Object.freeze({...record,id:r
 function key(r){return r.id}
 const CACHE_KEY="core-releases-runtime-cache-v1",CACHE_TTL=7*24*60*60*1000;
 const validHttps=value=>{try{return new URL(value).protocol==="https:"}catch(e){return false}};
+function normalizeSpotifyUrl(value){
+  if(!validHttps(value))return null;
+  try{
+    const u=new URL(value),match=u.pathname.match(/^\/((?:intl-[a-z-]+\/)?)album\/([^/]+)/i);
+    return match?"https://open.spotify.com/intl-pt/album/"+match[2]:value;
+  }catch(e){return value}
+}
 function loadRuntimeCache(){
   if(AUDIT)return Object.create(null);
   try{
@@ -56,7 +63,10 @@ function loadRuntimeCache(){
 const cachedRuntime=loadRuntimeCache();
 const runtimeState=new Map(R.map(r=>{
   const cached=cachedRuntime[r.id]||{},state={artState:0};
-  for(const field of ["cover","link","seed","sp","yt","deezer"]){if(validHttps(cached[field]))state[field]=cached[field]}
+  for(const field of ["cover","link","seed","yt","deezer"]){if(validHttps(cached[field]))state[field]=cached[field]}
+  const catalogSpotify=normalizeSpotifyUrl(r.spotifyLink||((r.sourceLink||"").includes("open.spotify.com")?r.sourceLink:null));
+  const cachedSpotify=normalizeSpotifyUrl(cached.sp);
+  if(catalogSpotify||cachedSpotify)state.sp=catalogSpotify||cachedSpotify;
   return[r.id,state];
 }));
 const stateOf=r=>runtimeState.get(r.id);
@@ -159,11 +169,11 @@ function applySortOrder(){
 
 function platHTML(r){
   const enc=encodeURIComponent((r.a+" "+r.t.replace(/[|]/g," ")).replace(/\s+/g," ").trim());
-  const dz=deezerReleaseLink(r),state=stateOf(r);
-  const spotify=state.sp||("https://open.spotify.com/search/"+enc+(MOB?"":"/albums"));
+  const dz=deezerReleaseLink(r),state=stateOf(r),catalogSpotify=normalizeSpotifyUrl(r.spotifyLink);
+  const spotify=catalogSpotify||state.sp||("https://open.spotify.com/search/"+enc+(MOB?"":"/albums")),hasSpotify=Boolean(catalogSpotify||state.sp);
   const youtube=state.yt||("https://music.youtube.com/search?q="+enc);
   return '<div class="plat">'
-    +'<a class="p-sp" target="_blank" rel="noopener" href="'+spotify+'" title="'+(state.sp?"Abrir álbum no Spotify":"Buscar no Spotify")+'" aria-label="Spotify: '+esc(r.a+" "+r.t)+'">'+IC.sp+"</a>"
+    +'<a class="p-sp" target="_blank" rel="noopener" href="'+spotify+'" title="'+(hasSpotify?"Abrir álbum no Spotify":"Buscar no Spotify")+'" aria-label="Spotify: '+esc(r.a+" "+r.t)+'">'+IC.sp+"</a>"
     +'<a class="p-dz" target="_blank" rel="noopener" href="'+(dz||"https://www.deezer.com/search/"+enc+"/album")+'" title="'+(dz?"Abrir álbum no Deezer":"Buscar no Deezer")+'" aria-label="Deezer: '+esc(r.a+" "+r.t)+'">'+IC.dz+"</a>"
     +'<a class="p-yt" target="_blank" rel="noopener" href="'+youtube+'" title="'+(state.yt?"Abrir no YouTube Music":"Buscar no YouTube Music")+'" aria-label="YouTube Music: '+esc(r.a+" "+r.t)+'">'+IC.yt+"</a>"
   +"</div>";
@@ -238,6 +248,18 @@ app.addEventListener("click",e=>{
     const card=star.closest(".card"),r=R[+card.dataset.i],value=Number(star.dataset.rating);
     setReleaseRating(card,r,releaseRating(r)===value?0:value);
   }
+});
+app.addEventListener("click",e=>{
+  const link=e.target.closest(".p-sp");
+  if(!link)return;
+  const card=link.closest(".card"),r=card&&R[+card.dataset.i];
+  if(!r||stateOf(r).sp)return;
+  e.preventDefault();e.stopPropagation();
+  const fallback=link.href,popup=window.open("about:blank","_blank");
+  Promise.resolve(resolveStream(r)).catch(()=>{}).finally(()=>{
+    const target=stateOf(r).sp||fallback;
+    if(popup&&!popup.closed)popup.location.replace(target);else window.location.href=target;
+  });
 });
 app.addEventListener("keydown",e=>{
   const star=e.target.closest(".rating-star");if(!star||!["ArrowLeft","ArrowDown","ArrowRight","ArrowUp","Home","End"].includes(e.key))return;
@@ -668,7 +690,7 @@ async function resolveStream(r){
   const seed=await ensureSeed(r);
   if(!seed)return;
   const got=await odesli(seed);
-  if(validHttps(got.sp))state.sp=got.sp;
+  if(validHttps(got.sp))state.sp=normalizeSpotifyUrl(got.sp)||got.sp;
   if(validHttps(got.yt))state.yt=got.yt;
   persistRuntimeSoon();upgradeLinks(r);
 }

@@ -3962,7 +3962,8 @@
       "t": "TANZNEID",
       "k": "\u00c1LBUM",
       "g": "electronicore / metalcore / modern metal",
-      "q": "Electric Callboy TANZNEID"
+      "q": "Electric Callboy TANZNEID",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/4rpZ2o8pnwhR3MxkcQ3F5Q"
     },
     {
       "id": "cancerbats|givemedirt",
@@ -4020,7 +4021,8 @@
       "k": "\u00c1LBUM",
       "g": "post-hardcore / emo / alternative rock",
       "q": "Citizen Halcyon Blues",
-      "sec": "s"
+      "sec": "s",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/3vUBcLeVjcC2HIztGj0T7F"
     }
   ]
 }
