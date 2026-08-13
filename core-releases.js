@@ -170,10 +170,10 @@ function applySortOrder(){
 function platHTML(r){
   const enc=encodeURIComponent((r.a+" "+r.t.replace(/[|]/g," ")).replace(/\s+/g," ").trim());
   const dz=deezerReleaseLink(r),state=stateOf(r),catalogSpotify=normalizeSpotifyUrl(r.spotifyLink);
-  const spotify=catalogSpotify||state.sp||("https://open.spotify.com/search/"+enc+(MOB?"":"/albums")),hasSpotify=Boolean(catalogSpotify||state.sp);
+  const spotify=catalogSpotify||"",hasSpotify=Boolean(catalogSpotify);
   const youtube=state.yt||("https://music.youtube.com/search?q="+enc);
   return '<div class="plat">'
-    +'<a class="p-sp" target="_blank" rel="noopener" href="'+spotify+'" title="'+(hasSpotify?"Abrir álbum no Spotify":"Buscar no Spotify")+'" aria-label="Spotify: '+esc(r.a+" "+r.t)+'">'+IC.sp+"</a>"
+    +'<a class="p-sp" target="_blank" rel="noopener" '+(hasSpotify?'href="'+spotify+'"':'aria-disabled="true"')+' title="'+(hasSpotify?"Abrir álbum no Spotify":"Álbum ainda não confirmado no Spotify")+'" aria-label="Spotify: '+esc(r.a+" "+r.t)+'">'+IC.sp+"</a>"
     +'<a class="p-dz" target="_blank" rel="noopener" href="'+(dz||"https://www.deezer.com/search/"+enc+"/album")+'" title="'+(dz?"Abrir álbum no Deezer":"Buscar no Deezer")+'" aria-label="Deezer: '+esc(r.a+" "+r.t)+'">'+IC.dz+"</a>"
     +'<a class="p-yt" target="_blank" rel="noopener" href="'+youtube+'" title="'+(state.yt?"Abrir no YouTube Music":"Buscar no YouTube Music")+'" aria-label="YouTube Music: '+esc(r.a+" "+r.t)+'">'+IC.yt+"</a>"
   +"</div>";
@@ -248,18 +248,6 @@ app.addEventListener("click",e=>{
     const card=star.closest(".card"),r=R[+card.dataset.i],value=Number(star.dataset.rating);
     setReleaseRating(card,r,releaseRating(r)===value?0:value);
   }
-});
-app.addEventListener("click",e=>{
-  const link=e.target.closest(".p-sp");
-  if(!link)return;
-  const card=link.closest(".card"),r=card&&R[+card.dataset.i];
-  if(!r||stateOf(r).sp)return;
-  e.preventDefault();e.stopPropagation();
-  const fallback=link.href,popup=window.open("about:blank","_blank");
-  Promise.resolve(resolveStream(r)).catch(()=>{}).finally(()=>{
-    const target=stateOf(r).sp||fallback;
-    if(popup&&!popup.closed)popup.location.replace(target);else window.location.href=target;
-  });
 });
 app.addEventListener("keydown",e=>{
   const star=e.target.closest(".rating-star");if(!star||!["ArrowLeft","ArrowDown","ArrowRight","ArrowUp","Home","End"].includes(e.key))return;
@@ -682,7 +670,6 @@ async function ensureSeed(r){
 function upgradeLinks(r){
   const host=document.querySelector('.card[data-i="'+r.i+'"]'),state=stateOf(r);
   if(!host)return;
-  if(state.sp){const a=host.querySelector(".p-sp");if(a){a.href=state.sp;a.title="Abrir álbum no Spotify"}}
   if(state.yt){const a=host.querySelector(".p-yt");if(a){a.href=state.yt;a.title="Abrir no YouTube Music"}}
 }
 async function resolveStream(r){
