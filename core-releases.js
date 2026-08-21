@@ -374,7 +374,7 @@ function renderAccountControl(label){
     if(authState.status==="unavailable"){
       el.innerHTML='<span class="sync-dot" aria-hidden="true"></span><span>sincronização indisponível</span><button type="button" data-account-action="retry">Tentar</button>';return;
     }
-    el.innerHTML='<span class="sync-dot" aria-hidden="true"></span><a href="/signin-with-chatgpt?return_to=%2F" target="_top" rel="nofollow">Entrar</a>'+(label?'<span>'+esc(label)+"</span>":"");return;
+    el.innerHTML='<span class="sync-dot" aria-hidden="true"></span><a class="account-login" aria-label="Entrar com ChatGPT" href="/signin-with-chatgpt?return_to=%2F" target="_top" rel="nofollow">Entrar</a>';return;
   }
   el.innerHTML='<span class="sync-dot" aria-hidden="true"></span><span class="account-name" title="'+esc(authState.displayName||"Conta ChatGPT")+'">'+esc(authState.displayName||"Conta ChatGPT")+'</span><span class="sync-label">'+esc(label||"sincronizando")+'</span><button type="button" data-account-action="logout">Sair</button>';
 }
