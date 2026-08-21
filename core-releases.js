@@ -366,20 +366,21 @@ function clearLegacyMarks(){
   try{localStorage.setItem(USER_STATE_KEY,JSON.stringify({listened:{},ratings:{},filters:userState.filters}))}catch(e){}
 }
 function accountControl(){return document.getElementById("account-control")}
+function syncIcon(label){const text=String(label||"sincronizando");return '<span class="sync-icon" role="img" aria-label="'+esc(text)+'" title="'+esc(text)+'"></span>'}
 function renderAccountControl(label){
   const el=accountControl();if(!el)return;
   if(!IS_SITES_HOST){el.hidden=true;return}
   el.hidden=false;el.dataset.state=authState.status==="authenticated"?(label==="sincronizado"?"ok":"pending"):(authState.status==="checking"?"pending":"error");
   if(authState.status==="checking"){
-    el.innerHTML='<span class="sync-dot" aria-hidden="true"></span><span>verificando sessão</span>';return;
+    el.innerHTML=syncIcon("verificando sessão");return;
   }
   if(authState.status!=="authenticated"){
     if(authState.status==="unavailable"){
-      el.innerHTML='<span class="sync-dot" aria-hidden="true"></span><span>sincronização indisponível</span><button type="button" data-account-action="retry">Tentar</button>';return;
+      el.innerHTML=syncIcon("sincronização indisponível")+'<button type="button" data-account-action="retry">Tentar</button>';return;
     }
     el.innerHTML='<span class="sync-dot" aria-hidden="true"></span><a class="account-login" aria-label="Entrar com ChatGPT" href="/signin-with-chatgpt?return_to=%2F" target="_top" rel="nofollow">Entrar</a>';return;
   }
-  el.innerHTML='<span class="sync-dot" aria-hidden="true"></span><span class="account-name" title="'+esc(authState.displayName||"Conta ChatGPT")+'">'+esc(authState.displayName||"Conta ChatGPT")+'</span><span class="sync-label">'+esc(label||"sincronizando")+'</span><button type="button" data-account-action="logout">Sair</button>';
+  el.innerHTML=syncIcon(label||"sincronizando")+'<span class="account-name" title="'+esc(authState.displayName||"Conta ChatGPT")+'">'+esc(authState.displayName||"Conta ChatGPT")+'</span><button type="button" data-account-action="logout">Sair</button>';
 }
 function setSyncStatus(label){renderAccountControl(label)}
 async function authFetch(path,options={}){

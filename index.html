@@ -122,6 +122,13 @@ body::after{
 .account-control .sync-dot{width:6px;height:6px;flex:0 0 6px;border-radius:50%;background:var(--faint)}
 .account-control[data-state="ok"] .sync-dot{background:#f2f2f2}
 .account-control[data-state="error"] .sync-dot{background:#e3a8a8}
+.account-control .sync-icon{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;flex:0 0 14px;color:var(--dim);font-family:Arial,sans-serif;font-size:13px;line-height:1}
+.account-control .sync-icon::before{content:"↻"}
+.account-control[data-state="pending"] .sync-icon{color:var(--ink);animation:account-sync-spin 1.1s linear infinite}
+.account-control[data-state="ok"] .sync-icon{color:#f2f2f2}
+.account-control[data-state="ok"] .sync-icon::before{content:"✓";font-size:12px}
+.account-control[data-state="error"] .sync-icon{color:#e3a8a8}
+.account-control[data-state="error"] .sync-icon::before{content:"!";font-weight:700}
 .account-control a,.account-control button{font:inherit;letter-spacing:inherit;text-transform:uppercase;color:var(--ink);background:transparent;border:1px solid var(--line2);border-radius:2px;padding:5px 8px;cursor:pointer;text-decoration:none}
 .account-control a:hover,.account-control button:hover{border-color:var(--bord);color:#fff}
 .account-control .account-name{max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink)}
@@ -143,6 +150,8 @@ body::after{
   .blurb i{white-space:normal}
 }
 @keyframes blink{to{visibility:hidden}}
+@keyframes account-sync-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.account-control[data-state="pending"] .sync-icon{animation:none}}
 
 .heroTitle{margin:clamp(20px,4vh,40px) 0 6px}
 .ht{
