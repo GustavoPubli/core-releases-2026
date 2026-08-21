@@ -1,7 +1,7 @@
 {
   "meta": {
     "year": 2026,
-    "updated": "2026-08-12",
+    "updated": "2026-08-21",
     "schemaVersion": 1
   },
   "releases": [
@@ -4361,6 +4361,17 @@
       "spotifyLink": "https://open.spotify.com/intl-pt/album/45iwWf1Mrk7Mba0hKnFRTR"
     },
     {
+      "id": "witherhorde|circleofbones",
+      "d": "01/08",
+      "a": "Witherhorde",
+      "t": "Circle of Bones",
+      "k": "EP",
+      "g": "deathcore-inflected hardcore / metallic hardcore",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0205ea279b27659e981b91e931",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/2yHnWbNBs8XpQoOVyLPeMr",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/2yHnWbNBs8XpQoOVyLPeMr"
+    },
+    {
       "id": "electriccallboy|tanzneid",
       "d": "07/08",
       "a": "Electric Callboy",
@@ -4433,6 +4444,421 @@
       "q": "Citizen Halcyon Blues",
       "sec": "s",
       "spotifyLink": "https://open.spotify.com/intl-pt/album/3vUBcLeVjcC2HIztGj0T7F"
+    },
+    {
+      "id": "allure|folia",
+      "d": "07/08",
+      "a": "ALLURE",
+      "t": "Folia",
+      "k": "ÁLBUM",
+      "g": "metalcore / alternative metal / electronic metal",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02db3aa78f09e2f9bb475790d9",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/7qRmUeutFBs6q1Ka6TBmjk",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/7qRmUeutFBs6q1Ka6TBmjk"
+    },
+    {
+      "id": "braeker|wantyouback",
+      "d": "07/08",
+      "a": "Braeker",
+      "t": "Want You Back",
+      "k": "EP",
+      "g": "metalcore / alternative metal / pop metalcore",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02426ae334f097bd8e34d3520a",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/2490Awt0yCXoE0LfnCJYJe",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/2490Awt0yCXoE0LfnCJYJe"
+    },
+    {
+      "id": "mouthbreather|ifiloseeverythingyouallloseeverything",
+      "d": "07/08",
+      "a": "MouthBreather",
+      "t": "If I Lose Everything, You All Lose Everything",
+      "k": "EP",
+      "g": "mathcore / metalcore / metallic hardcore",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02fe281d5f533335e8c40ad50a",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/6bitDe06o4zXQv2byD5OeU",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/6bitDe06o4zXQv2byD5OeU"
+    },
+    {
+      "id": "newspeak|burythefoe",
+      "d": "07/08",
+      "a": "Newspeak",
+      "t": "Bury The Foe",
+      "k": "EP",
+      "g": "metalcore / electronic metal",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02facdfaad4b5c7340e26b1880",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/4N48eRbHR2fCvOPgfvQECA",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/4N48eRbHR2fCvOPgfvQECA"
+    },
+    {
+      "id": "reckoninghour|mantra",
+      "d": "07/08",
+      "a": "Reckoning Hour",
+      "t": "Mantra",
+      "k": "ÁLBUM",
+      "g": "metalcore / djent / modern metal",
+      "country": "BR",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f98473aaa392c389ab1d7fba",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/31pZSqPgOvZKe59QVLF8xk",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/31pZSqPgOvZKe59QVLF8xk"
+    },
+    {
+      "id": "vanna|searchparty",
+      "d": "07/08",
+      "a": "Vanna",
+      "t": "Search Party",
+      "k": "EP",
+      "g": "metalcore / post-hardcore",
+      "note": "RE-RECORDING",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0204bf724c9f38b6e141a3ff6a",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/3MqP9eV6xk9rXpOqNYEeSM",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/3MqP9eV6xk9rXpOqNYEeSM"
+    },
+    {
+      "id": "darkous|cuckoo",
+      "d": "10/08",
+      "a": "Darko US",
+      "t": "CUCKOO",
+      "k": "EP",
+      "g": "experimental deathcore / nu deathcore / metalcore",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02c2253fca239defb4c99b092d",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/0BQO3MmVwO4QKYCzMYK0KL",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/0BQO3MmVwO4QKYCzMYK0KL"
+    },
+    {
+      "id": "tempersfray|nopeaceindeath",
+      "d": "10/08",
+      "a": "Tempers Fray",
+      "t": "No Peace In Death",
+      "k": "EP",
+      "g": "metallic hardcore / deathcore",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e020930d9a2c9bc81316ba96f67",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/5MN8k9Q2mqvhONaf1cODxt",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/5MN8k9Q2mqvhONaf1cODxt"
+    },
+    {
+      "id": "observers|theemerald",
+      "d": "12/08",
+      "a": "Observers",
+      "t": "The Emerald",
+      "k": "ÁLBUM",
+      "g": "instrumental post-metal / progressive metal",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0207f281b55ec28ca307d2664e",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/6pwOCwGQXJyPywAcZ5ww06",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/6pwOCwGQXJyPywAcZ5ww06"
+    },
+    {
+      "id": "aforeignaffair|surrealist",
+      "d": "14/08",
+      "a": "A Foreign Affair",
+      "t": "Surrealist",
+      "k": "EP",
+      "g": "alternative rock / post-hardcore / electronic rock",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e020dc72ffa35067c2db0a6762b",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/2tiICV4xv2yST7ska3Tbvh",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/2tiICV4xv2yST7ska3Tbvh"
+    },
+    {
+      "id": "coyoteman|prostheticmemories",
+      "d": "14/08",
+      "a": "Coyote Man",
+      "t": "Prosthetic Memories",
+      "k": "ÁLBUM",
+      "g": "instrumental progressive metal / post-rock / psychedelic metal",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02dec19d58f66c1f695e2ec273",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/4E1wWieou615bczm7fZEND",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/4E1wWieou615bczm7fZEND"
+    },
+    {
+      "id": "deadtired|hornetsoffall",
+      "d": "14/08",
+      "a": "Dead Tired",
+      "t": "Hornets of Fall",
+      "k": "ÁLBUM",
+      "g": "hardcore / sludge / noise rock",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02153c6d339e7a6d04a24275b7",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/7C19XSnLfR8cX4P2cdsaW2",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/7C19XSnLfR8cX4P2cdsaW2"
+    },
+    {
+      "id": "evillisland|terraformtheafterlife",
+      "d": "14/08",
+      "a": "Evil Island",
+      "t": "Terraform the Afterlife",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / sasscore / punk",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e027a78ca776b59fbc5796e2029",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/7gEAIQDYHY8v1tZI5gluz9",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/7gEAIQDYHY8v1tZI5gluz9"
+    },
+    {
+      "id": "emery|styrofoam",
+      "d": "14/08",
+      "a": "Emery",
+      "t": "Styrofoam",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / emo / alternative rock",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02c8d26f74c2336eeaae1f7238",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/2gC0jVu9ttsCyKgYtPKwbO",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/2gC0jVu9ttsCyKgYtPKwbO"
+    },
+    {
+      "id": "fleshcarving|anexhibitionoftorture",
+      "d": "14/08",
+      "a": "Flesh Carving",
+      "t": "An Exhibition Of Torture",
+      "k": "EP",
+      "g": "deathcore",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02802394f76c5ff8e55f1cec4e",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/0G6jj7YkC1basM6rsN9dN8",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/0G6jj7YkC1basM6rsN9dN8"
+    },
+    {
+      "id": "holissstik|chapter1thisendlesssolitude",
+      "d": "14/08",
+      "a": "Holissstik",
+      "t": "Chapter 1: This Endless Solitude",
+      "k": "ÁLBUM",
+      "g": "industrial / avant-garde metal / trip-hop",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02947e0836c072c0181305f42a",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/4wDSJb7dANXUIYUgzpALEG",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/4wDSJb7dANXUIYUgzpALEG"
+    },
+    {
+      "id": "ifnotforme|wherethelightbeginstofade",
+      "d": "14/08",
+      "a": "If Not For Me",
+      "t": "Where The Light Begins To Fade",
+      "k": "ÁLBUM",
+      "g": "metalcore / alternative metal",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e026075da29f4c4b266f369ee26",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/3mZAly1A8xuqNu3ut6kW3l",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/3mZAly1A8xuqNu3ut6kW3l"
+    },
+    {
+      "id": "livingweapon|deathinthefamily",
+      "d": "14/08",
+      "a": "Living Weapon",
+      "t": "Death In The Family",
+      "k": "ÁLBUM",
+      "g": "metallic hardcore / mathcore / metalcore",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e027913fb2077bba8b14867536b",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/1I6TRGVAOwGNkXvMTgp8US",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/1I6TRGVAOwGNkXvMTgp8US"
+    },
+    {
+      "id": "loveletter|noneoftheabove",
+      "d": "14/08",
+      "a": "LOVELETTER",
+      "t": "None Of The Above",
+      "k": "EP",
+      "g": "nu metalcore / metalcore",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024b2eb3deb5c8c503fbf35b49",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/1bOsWrsy9ZlwSQEyKVOYWE",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/1bOsWrsy9ZlwSQEyKVOYWE"
+    },
+    {
+      "id": "ourlastnight|nostalgiaep",
+      "d": "14/08",
+      "a": "Our Last Night",
+      "t": "Nostalgia EP",
+      "k": "EP DE COVERS",
+      "g": "post-hardcore / metalcore / covers",
+      "note": "COVERS",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0211f5d8bfb0eed9eb4a875366",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/3pTZy5S0FrRBIB9FqcXzwY",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/3pTZy5S0FrRBIB9FqcXzwY"
+    },
+    {
+      "id": "peacetest|repercussion",
+      "d": "14/08",
+      "a": "Peace Test",
+      "t": "Repercussion",
+      "k": "ÁLBUM",
+      "g": "hardcore / powerviolence",
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ef5ada5fd2f4b0a32f646068",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/6Vjcycbagx81QFHPMGNRwL",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/6Vjcycbagx81QFHPMGNRwL"
+    },
+    {
+      "id": "putrefacta|aestheticsofthecrimescene",
+      "d": "14/08",
+      "a": "PUTREFACTA",
+      "t": "Aesthetics of the Crime Scene",
+      "k": "COMPILAÇÃO",
+      "g": "goregrind / grindcore / extreme death metal",
+      "note": "COMPILATION",
+      "country": "BR",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0288a8f74647e95c77f4a168d9",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/7EkRtvtQpH3gRLgKJNHOui",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/7EkRtvtQpH3gRLgKJNHOui"
+    },
+    {
+      "id": "raunchy|prisoner",
+      "d": "14/08",
+      "a": "Raunchy",
+      "t": "Prisoner",
+      "k": "ÁLBUM",
+      "g": "melodic death metal / industrial metal / electronic metal",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d220e6eb76d4e3953e0d9e5f",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/6PRxsXgHf3XkPXwdNZmgG2",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/6PRxsXgHf3XkPXwdNZmgG2"
+    },
+    {
+      "id": "regulatorwatts|kwh",
+      "d": "14/08",
+      "a": "Regulator Watts",
+      "t": "kWh",
+      "k": "EP",
+      "g": "post-hardcore / noise rock / math rock",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0246b22387e53ac3469d648bd7",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/6jmIAuubb2cXew9DBPO0UN",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/6jmIAuubb2cXew9DBPO0UN"
+    },
+    {
+      "id": "shush|vowofsilence",
+      "d": "14/08",
+      "a": "SHUSH",
+      "t": "Vow of Silence",
+      "k": "ÁLBUM",
+      "g": "deathcore / trap metal / industrial",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02bac260f637d48dba873087cd",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/5hEEArvvc3jsNqELRYM9js",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/5hEEArvvc3jsNqELRYM9js"
+    },
+    {
+      "id": "silencebeforethestorm|theroadtooblivion",
+      "d": "14/08",
+      "a": "Silence Before the Storm",
+      "t": "The Road to Oblivion",
+      "k": "ÁLBUM",
+      "g": "metalcore / groove metal / melodic death metal",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02de97f603257b1836bbe30f49",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/0zGliTp2w4891CYshQHR6d",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/0zGliTp2w4891CYshQHR6d"
+    },
+    {
+      "id": "unprocessed|losttapes",
+      "d": "14/08",
+      "a": "Unprocessed",
+      "t": "Lost Tapes",
+      "k": "EP",
+      "g": "instrumental progressive metal / djent",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02e61b5631dd0aba59c2769159",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/1GiMwVayYeS3epT4APwIWY",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/1GiMwVayYeS3epT4APwIWY"
+    },
+    {
+      "id": "youwilldie|writteninblood",
+      "d": "11/08",
+      "a": "You Will Die",
+      "t": "Written in Blood",
+      "k": "ÁLBUM",
+      "g": "melodic metalcore / deathcore",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/70rhM5BeTVY4qVQgMCbzbc",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/70rhM5BeTVY4qVQgMCbzbc"
+    },
+    {
+      "id": "godshate|wontbedisgraced",
+      "d": "18/08",
+      "a": "God's Hate",
+      "t": "Won't Be Disgraced",
+      "k": "EP",
+      "g": "metallic hardcore / hardcore",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/5NGr1BDnmHkx8lsStTBQxd",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/5NGr1BDnmHkx8lsStTBQxd"
+    },
+    {
+      "id": "breathein|shadowsformetodancewith",
+      "d": "18/08",
+      "a": "Breathe In",
+      "t": "Shadows for Me to Dance With",
+      "k": "ÁLBUM",
+      "g": "metalcore / post-hardcore / melodic hardcore",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/1QIFkkiDg3O2ESm4bFWdtk",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/1QIFkkiDg3O2ESm4bFWdtk"
+    },
+    {
+      "id": "fallweather|becauseyouwerethere",
+      "d": "19/08",
+      "a": "Fallweather",
+      "t": "Because You Were There",
+      "k": "ÁLBUM",
+      "g": "post-hardcore / metalcore / melodic hardcore",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/4Opclz2pWlIjGHgISz7AC1",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/4Opclz2pWlIjGHgISz7AC1"
+    },
+    {
+      "id": "risinginsane|deathrace",
+      "d": "21/08",
+      "a": "Rising Insane",
+      "t": "DEATHRACE",
+      "k": "ÁLBUM",
+      "g": "metalcore / alternative metal",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/2MDW2hI2jAiomZu97YafXG",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/2MDW2hI2jAiomZu97YafXG"
+    },
+    {
+      "id": "axty|thepainmademewhoiam",
+      "d": "21/08",
+      "a": "AXTY",
+      "t": "The Pain Made Me Who I Am",
+      "k": "ÁLBUM",
+      "g": "deathcore / metalcore / nu-metalcore",
+      "country": "BR",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/0Sr4ZIwShhFsWmsGE5yMj7",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/0Sr4ZIwShhFsWmsGE5yMj7"
+    },
+    {
+      "id": "chelseawolfe|thedark",
+      "d": "21/08",
+      "a": "Chelsea Wolfe",
+      "t": "The Dark",
+      "k": "ÁLBUM",
+      "g": "dark alternative rock / gothic metal / experimental heavy music",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/4gpQHITIKf01iFm9gtcmLA",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/4gpQHITIKf01iFm9gtcmLA"
+    },
+    {
+      "id": "deadvelvet|growingpains",
+      "d": "21/08",
+      "a": "DEAD VELVET",
+      "t": "GROWING PAINS",
+      "k": "ÁLBUM",
+      "g": "nu-metalcore / metalcore / alternative metal",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/2rdRdOcbrLetWJdrICsJOB",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/2rdRdOcbrLetWJdrICsJOB"
+    },
+    {
+      "id": "cutthroat|thepurge",
+      "d": "21/08",
+      "a": "CUTTHROAT",
+      "t": "The Purge",
+      "k": "EP",
+      "g": "metallic hardcore / crossover / thrash hardcore",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/5AM6VsKILSJef0IDJnd3rk",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/5AM6VsKILSJef0IDJnd3rk"
+    },
+    {
+      "id": "karendio|fugaz",
+      "d": "21/08",
+      "a": "Karen Dió",
+      "t": "Fugaz",
+      "k": "EP",
+      "g": "alternative rock / pop punk / punk rock",
+      "country": "BR",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/1tTkxbxuXD1Xfd6ueugrLR",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/1tTkxbxuXD1Xfd6ueugrLR"
+    },
+    {
+      "id": "thebarbariansofcalifornia|megatons",
+      "d": "21/08",
+      "a": "The Barbarians of California",
+      "t": "MEGATONS",
+      "k": "ÁLBUM",
+      "g": "metallic hardcore / chaotic hardcore / crossover punk",
+      "sourceLink": "https://open.spotify.com/intl-pt/album/6eweLuC9bnuSoFk1hlu1C2",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/6eweLuC9bnuSoFk1hlu1C2"
     }
   ]
 }
+
