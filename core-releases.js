@@ -89,11 +89,18 @@ const cutoffDisplay=dateBits.length===3?dateBits[2]+"."+dateBits[1]+"."+dateBits
 const versionDisplay=dateBits.length===3?"v"+dateBits[2]+"."+dateBits[1]+"."+dateBits[0].slice(-2)+" · atualizado":"";
 if(versionDisplay)document.getElementById("version-marker").textContent=versionDisplay;
 if(cutoffDisplay)document.getElementById("cutoff-date").textContent=cutoffDisplay;
+const IS_SITES_HOST=location.hostname.endsWith(".chatgpt.site")||location.hostname==="localhost";
 const USER_STATE_KEY="core-releases-user-state-v1";
+const ACCOUNT_CACHE_PREFIX="core-releases-account-state-v1:";
+const ACCOUNT_QUEUE_PREFIX="core-releases-sync-queue-v1:";
+const ACCOUNT_IMPORT_PREFIX="core-releases-imported-v1:";
+const ACCOUNT_CHANNEL="core-releases-account-sync-v1";
+const accountChannel="BroadcastChannel" in window?new BroadcastChannel(ACCOUNT_CHANNEL):null;
+const newId=()=>{try{return crypto.randomUUID()}catch(e){return Date.now().toString(36)+Math.random().toString(36).slice(2)}};
 function emptyUserState(){
   return {listened:Object.create(null),ratings:Object.create(null),filters:{format:"all",listened:"all",rating:"all"}};
 }
-function loadUserState(){
+function readLegacyUserState(){
   const state=emptyUserState();
   try{
     const parsed=JSON.parse(localStorage.getItem(USER_STATE_KEY)||"null");
@@ -107,8 +114,26 @@ function loadUserState(){
   }catch(e){}
   return state;
 }
+let authState={status:IS_SITES_HOST?"checking":"anonymous",accountKey:null,displayName:null,syncToken:null,etag:null,inFlight:false};
+function loadUserState(){
+  const state=emptyUserState(),legacy=readLegacyUserState();
+  state.filters=legacy.filters;
+  if(!IS_SITES_HOST){state.listened=legacy.listened;state.ratings=legacy.ratings}
+  return state;
+}
 let userState=loadUserState();
-function saveUserState(){try{localStorage.setItem(USER_STATE_KEY,JSON.stringify(userState))}catch(e){}}
+function saveUserState(){
+  try{
+    const legacy=readLegacyUserState();
+    const listened={...legacy.listened,...userState.listened},ratings={...legacy.ratings,...userState.ratings};
+    if(IS_SITES_HOST&&authState.status==="authenticated"){
+      saveAccountCache(authState.accountKey,authState.syncToken);
+    }else{
+      localStorage.setItem(USER_STATE_KEY,JSON.stringify({listened,ratings,filters:userState.filters}));
+    }
+    accountChannel?.postMessage({type:"local-state",accountKey:authState.accountKey});
+  }catch(e){}
+}
 function isListened(r){return userState.listened[key(r)]===true}
 function releaseRating(r){return Number(userState.ratings[key(r)])||0}
 function deezerReleaseLink(r){
@@ -232,7 +257,7 @@ function syncCardPreference(card,r){
 function setReleaseRating(card,r,value){
   const k=key(r);
   if(value)userState.ratings[k]=value;else delete userState.ratings[k];
-  saveUserState();syncCardPreference(card,r);applyFilters();
+  saveUserState();syncCardPreference(card,r);applyFilters();enqueueMutation(r);
 }
 app.addEventListener("click",e=>{
   const listen=e.target.closest(".listen-toggle");
@@ -240,7 +265,7 @@ app.addEventListener("click",e=>{
     e.preventDefault();e.stopPropagation();
     const card=listen.closest(".card"),r=R[+card.dataset.i],k=key(r);
     if(isListened(r))delete userState.listened[k];else userState.listened[k]=true;
-    saveUserState();syncCardPreference(card,r);applyFilters();return;
+    saveUserState();syncCardPreference(card,r);applyFilters();enqueueMutation(r);return;
   }
   const star=e.target.closest(".rating-star");
   if(star){
@@ -259,6 +284,198 @@ app.addEventListener("keydown",e=>{
   card.querySelector('.rating-star[data-rating="'+value+'"]').focus();
 });
 
+/* ============================================================
+   CONTA E SINCRONIZAÇÃO — sessão nativa do Sites + D1
+   O navegador mantém apenas cache opaco, fila e preferências locais.
+============================================================ */
+let queueBusy=false,syncTimer=0;
+function accountStorageKey(prefix,accountKey){return prefix+encodeURIComponent(String(accountKey||""))}
+function readAccountCache(accountKey){
+  if(!accountKey)return null;
+  try{
+    const parsed=JSON.parse(localStorage.getItem(accountStorageKey(ACCOUNT_CACHE_PREFIX,accountKey))||"null");
+    return parsed&&Array.isArray(parsed.states)?{states:parsed.states}:null;
+  }catch(e){return null}
+}
+function saveAccountCache(accountKey,syncToken,states=stateRowsFromCurrent()){
+  if(!accountKey)return;
+  try{localStorage.setItem(accountStorageKey(ACCOUNT_CACHE_PREFIX,accountKey),JSON.stringify({states}))}catch(e){}
+}
+function readQueue(accountKey){
+  if(!accountKey)return[];
+  try{
+    const parsed=JSON.parse(localStorage.getItem(accountStorageKey(ACCOUNT_QUEUE_PREFIX,accountKey))||"[]");
+    return Array.isArray(parsed)?parsed.filter(item=>item&&typeof item.releaseId==="string"&&typeof item.mutationId==="string"):[];
+  }catch(e){return[]}
+}
+function saveQueue(accountKey,queue){
+  if(!accountKey)return;
+  try{
+    if(queue.length)localStorage.setItem(accountStorageKey(ACCOUNT_QUEUE_PREFIX,accountKey),JSON.stringify(queue));
+    else localStorage.removeItem(accountStorageKey(ACCOUNT_QUEUE_PREFIX,accountKey));
+  }catch(e){}
+}
+function stateRowsFromCurrent(){
+  const ids=new Set([...Object.keys(userState.listened),...Object.keys(userState.ratings)]),rows=[];
+  ids.forEach(releaseId=>{
+    const r=R.find(item=>item.id===releaseId);if(!r)return;
+    rows.push({releaseId,listened:userState.listened[releaseId]===true,rating:Number.isInteger(Number(userState.ratings[releaseId]))?Number(userState.ratings[releaseId]):null,listenedAt:null,ratingAt:null,updatedAt:new Date().toISOString()});
+  });
+  return rows;
+}
+function applyStateRows(rows){
+  userState.listened=Object.create(null);userState.ratings=Object.create(null);
+  (Array.isArray(rows)?rows:[]).forEach(row=>{
+    if(!row||typeof row.releaseId!=="string"||!R.some(r=>r.id===row.releaseId))return;
+    if(row.listened===true)userState.listened[row.releaseId]=true;
+    const rating=Number(row.rating);if(Number.isInteger(rating)&&rating>=1&&rating<=5)userState.ratings[row.releaseId]=rating;
+  });
+  document.querySelectorAll(".card").forEach(card=>{const r=R[+card.dataset.i];if(r)syncCardPreference(card,r)});
+  applyFilters();
+}
+function applyStateRow(row){
+  if(!row||typeof row.releaseId!=="string")return;
+  if(row.listened===true)userState.listened[row.releaseId]=true;else delete userState.listened[row.releaseId];
+  const rating=Number(row.rating);
+  if(Number.isInteger(rating)&&rating>=1&&rating<=5)userState.ratings[row.releaseId]=rating;else delete userState.ratings[row.releaseId];
+  const card=document.querySelector('.card[data-user-key="'+esc(row.releaseId)+'"]');
+  const r=card&&R[+card.dataset.i];if(card&&r)syncCardPreference(card,r);
+  applyFilters();
+}
+function enqueueMutation(r){
+  if(!IS_SITES_HOST||authState.status!=="authenticated"||!authState.accountKey)return;
+  const queue=readQueue(authState.accountKey),entry={releaseId:key(r),listened:isListened(r),rating:releaseRating(r),mutationId:newId()};
+  const index=queue.findIndex(item=>item.releaseId===entry.releaseId);
+  if(index>=0)queue[index]=entry;else queue.push(entry);
+  saveQueue(authState.accountKey,queue);setSyncStatus("sincronização pendente");processQueue();
+}
+function localImportStates(){
+  const legacy=readLegacyUserState(),ids=new Set([...Object.keys(legacy.listened),...Object.keys(legacy.ratings)]),states=[];
+  ids.forEach(releaseId=>{
+    if(!R.some(r=>r.id===releaseId))return;
+    const rating=Number(legacy.ratings[releaseId]);
+    if(legacy.listened[releaseId]!==true&&!Number.isInteger(rating))return;
+    states.push({releaseId,listened:legacy.listened[releaseId]===true,rating:Number.isInteger(rating)&&rating>=1&&rating<=5?rating:null});
+  });
+  return states;
+}
+function clearLegacyMarks(){
+  try{localStorage.setItem(USER_STATE_KEY,JSON.stringify({listened:{},ratings:{},filters:userState.filters}))}catch(e){}
+}
+function accountControl(){return document.getElementById("account-control")}
+function renderAccountControl(label){
+  const el=accountControl();if(!el)return;
+  if(!IS_SITES_HOST){el.hidden=true;return}
+  el.hidden=false;el.dataset.state=authState.status==="authenticated"?(label==="sincronizado"?"ok":"pending"):(authState.status==="checking"?"pending":"error");
+  if(authState.status==="checking"){
+    el.innerHTML='<span class="sync-dot" aria-hidden="true"></span><span>verificando sessão</span>';return;
+  }
+  if(authState.status!=="authenticated"){
+    if(authState.status==="unavailable"){
+      el.innerHTML='<span class="sync-dot" aria-hidden="true"></span><span>sincronização indisponível</span><button type="button" data-account-action="retry">Tentar</button>';return;
+    }
+    el.innerHTML='<span class="sync-dot" aria-hidden="true"></span><a href="/signin-with-chatgpt?return_to=%2F" target="_top" rel="nofollow">Entrar</a>'+(label?'<span>'+esc(label)+"</span>":"");return;
+  }
+  el.innerHTML='<span class="sync-dot" aria-hidden="true"></span><span class="account-name" title="'+esc(authState.displayName||"Conta ChatGPT")+'">'+esc(authState.displayName||"Conta ChatGPT")+'</span><span class="sync-label">'+esc(label||"sincronizando")+'</span><button type="button" data-account-action="logout">Sair</button>';
+}
+function setSyncStatus(label){renderAccountControl(label)}
+async function authFetch(path,options={}){
+  const headers={Accept:"application/json",...(options.headers||{})};
+  return fetch(path,{...options,headers,credentials:"include",cache:"no-store"});
+}
+function handleSessionExpired(){
+  if(authState.status!=="authenticated")return;
+  authState.status="anonymous";authState.accountKey=null;authState.syncToken=null;authState.etag=null;authState.inFlight=false;
+  userState.listened=Object.create(null);userState.ratings=Object.create(null);renderAccountControl("entre para sincronizar");applyFilters();
+  clearInterval(syncTimer);syncTimer=0;
+}
+async function processQueue(){
+  if(queueBusy||authState.status!=="authenticated"||!authState.accountKey)return true;
+  queueBusy=true;let success=true;
+  try{
+    while(authState.status==="authenticated"){
+      const queue=readQueue(authState.accountKey),entry=queue[0];if(!entry)break;
+      setSyncStatus("sincronizando");
+      let response;
+      try{response=await authFetch("/api/user-state/"+encodeURIComponent(entry.releaseId),{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify({listened:entry.listened,rating:entry.rating,mutationId:entry.mutationId})})}catch(e){success=false;break}
+      if(response.status===401){handleSessionExpired();success=false;break}
+      if(!response.ok){success=false;break}
+      let payload=null;try{payload=await response.json()}catch(e){}
+      if(payload?.syncToken)authState.syncToken=payload.syncToken;
+      const remaining=readQueue(authState.accountKey).filter(item=>item.mutationId!==entry.mutationId);saveQueue(authState.accountKey,remaining);
+      if(payload?.state)applyStateRow(payload.state);
+      saveAccountCache(authState.accountKey,authState.syncToken);
+      accountChannel?.postMessage({type:"account-update",accountKey:authState.accountKey});
+    }
+  }finally{queueBusy=false}
+  setSyncStatus(success?"sincronizado":"sincronização pendente");return success;
+}
+async function syncNow(){
+  if(!IS_SITES_HOST||authState.status!=="authenticated"||authState.inFlight)return;
+  authState.inFlight=true;setSyncStatus("sincronizando");let success=false;
+  try{
+    const headers={};if(authState.etag)headers["If-None-Match"]=authState.etag;
+    const response=await authFetch("/api/user-state",{headers});
+    if(response.status===401){handleSessionExpired();return}
+    if(response.status===304){success=true;return}
+    if(!response.ok)throw new Error("sync "+response.status);
+    const payload=await response.json();authState.syncToken=payload.syncToken||authState.syncToken;authState.etag=response.headers.get("ETag")||authState.etag;
+    applyStateRows(payload.states||[]);saveAccountCache(authState.accountKey,authState.syncToken,payload.states||[]);success=true;
+  }catch(e){}
+  finally{authState.inFlight=false;setSyncStatus(success?"sincronizado":"sincronização pendente")}
+  if(success)await processQueue();
+}
+async function importLocalHistory(){
+  if(authState.status!=="authenticated"||!authState.accountKey)return;
+  const states=localImportStates();
+  if(!states.length){try{localStorage.setItem(accountStorageKey(ACCOUNT_IMPORT_PREFIX,authState.accountKey),"done")}catch(e){};return}
+  setSyncStatus("importando histórico");
+  try{
+    const response=await authFetch("/api/user-state/import",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({importId:newId(),states})});
+    if(response.status===401){handleSessionExpired();return}
+    if(!response.ok)throw new Error("import "+response.status);
+    const payload=await response.json();authState.syncToken=payload.syncToken||authState.syncToken;authState.etag=null;applyStateRows(payload.states||[]);saveAccountCache(authState.accountKey,authState.syncToken,payload.states||[]);clearLegacyMarks();localStorage.setItem(accountStorageKey(ACCOUNT_IMPORT_PREFIX,authState.accountKey),"done");setSyncStatus("sincronizado");
+  }catch(e){setSyncStatus("sincronização pendente")}
+}
+function startSyncLoop(){
+  clearInterval(syncTimer);syncTimer=0;
+  const update=()=>{if(document.hidden){clearInterval(syncTimer);syncTimer=0}else{syncNow()}};
+  if(!document.hidden)syncTimer=setInterval(update,10000);
+  document.addEventListener("visibilitychange",()=>{if(authState.status!=="authenticated")return;if(document.hidden){clearInterval(syncTimer);syncTimer=0}else{syncNow();syncTimer=setInterval(update,10000)}});
+  window.addEventListener("focus",()=>syncNow());window.addEventListener("online",()=>{syncNow();processQueue()});
+}
+async function explicitLogout(){
+  if(authState.status!=="authenticated")return;
+  const flushed=await processQueue();
+  if(!flushed&&!window.confirm("Há alterações pendentes. Sair agora pode deixá-las sem sincronizar. Continuar?"))return;
+  const accountKey=authState.accountKey;
+  try{localStorage.removeItem(accountStorageKey(ACCOUNT_CACHE_PREFIX,accountKey));localStorage.removeItem(accountStorageKey(ACCOUNT_QUEUE_PREFIX,accountKey));localStorage.removeItem(accountStorageKey(ACCOUNT_IMPORT_PREFIX,accountKey));clearLegacyMarks()}catch(e){}
+  userState.listened=Object.create(null);userState.ratings=Object.create(null);applyFilters();
+  window.top.location.href="/signout-with-chatgpt?return_to=%2F";
+}
+accountControl()?.addEventListener("click",e=>{if(e.target.closest('[data-account-action="logout"]')){e.preventDefault();explicitLogout()}else if(e.target.closest('[data-account-action="retry"]')){e.preventDefault();initializeAccount()}});
+accountChannel?.addEventListener("message",e=>{if(e.data?.accountKey!==authState.accountKey)return;if(e.data?.type==="account-update")syncNow();if(e.data?.type==="local-state"&&authState.status!=="authenticated"){userState=loadUserState();applyFilters()}});
+window.addEventListener("online",()=>{if(IS_SITES_HOST&&authState.status!=="authenticated")initializeAccount()});
+let accountInitBusy=false;
+async function initializeAccount(){
+  if(accountInitBusy)return;
+  if(!IS_SITES_HOST){renderAccountControl();return}
+  accountInitBusy=true;
+  renderAccountControl();
+  try{
+    const response=await authFetch("/api/account");
+    if(response.status===503){authState.status="unavailable";userState=readLegacyUserState();renderAccountControl("sincronização indisponível");applyFilters();return}
+    const payload=await response.json();
+    if(!response.ok||payload.authenticated!==true){authState.status="anonymous";userState=readLegacyUserState();renderAccountControl("somente neste aparelho");applyFilters();return}
+    authState={...authState,status:"authenticated",accountKey:payload.accountKey,displayName:payload.displayName||"Conta ChatGPT"};
+    const cached=readAccountCache(authState.accountKey);if(cached){applyStateRows(cached.states)}
+    renderAccountControl("sincronizando");
+    await syncNow();
+    await importLocalHistory();
+    startSyncLoop();
+  }catch(e){authState.status="unavailable";userState=readLegacyUserState();renderAccountControl("sincronização indisponível");applyFilters()}
+  finally{accountInitBusy=false}
+}
 /* marquee */
 (function(){
   const genres=[...new Set(R.flatMap(r=>(r.g||"")
@@ -750,3 +967,4 @@ function enqueueArt(r){
 })();
 const idleLinks=()=>startLinkTrickle();
 "requestIdleCallback" in window?requestIdleCallback(idleLinks,{timeout:5000}):setTimeout(idleLinks,5000);
+initializeAccount();
