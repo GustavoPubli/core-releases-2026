@@ -4514,6 +4514,38 @@
       "spotifyLink": "https://open.spotify.com/intl-pt/album/3MqP9eV6xk9rXpOqNYEeSM"
     },
     {
+      "id": "cellardoor|playingpossum",
+      "d": "07/08",
+      "a": "cellardoor",
+      "t": "playing possum",
+      "k": "ÁLBUM",
+      "g": "emo / post-hardcore / post-rock",
+      "cover": "https://f4.bcbits.com/img/a1711678632_5.jpg",
+      "sourceLink": "https://cellardoor-nh.bandcamp.com/album/playing-possum"
+    },
+    {
+      "id": "sufferuk|soulfromflesh",
+      "d": "07/08",
+      "a": "Suffer UK",
+      "t": "Soul From Flesh",
+      "k": "ÁLBUM",
+      "g": "deathcore / metalcore / doom metal",
+      "cover": "https://f4.bcbits.com/img/a2814934788_5.jpg",
+      "sourceLink": "https://sufferuk.bandcamp.com/album/soul-from-flesh",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/6YnozfYRwevSFWPY1xzeLf"
+    },
+    {
+      "id": "thebeautifulmonument|euphoricthriller",
+      "d": "07/08",
+      "a": "The Beautiful Monument",
+      "t": "Euphoric Thriller",
+      "k": "ÁLBUM",
+      "g": "emo / post-hardcore / alternative rock",
+      "cover": "https://f4.bcbits.com/img/a1435734022_5.jpg",
+      "sourceLink": "https://tbmofficial.bandcamp.com/album/euphoric-thriller",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/2ZmzjExvcGJPTQ5wOWKayR"
+    },
+    {
       "id": "darkous|cuckoo",
       "d": "10/08",
       "a": "Darko US",
@@ -4556,6 +4588,60 @@
       "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e020dc72ffa35067c2db0a6762b",
       "sourceLink": "https://open.spotify.com/intl-pt/album/2tiICV4xv2yST7ska3Tbvh",
       "spotifyLink": "https://open.spotify.com/intl-pt/album/2tiICV4xv2yST7ska3Tbvh"
+    },
+    {
+      "id": "fracturedwake|ionlyliedtokeepyousafe",
+      "d": "14/08",
+      "a": "Fractured Wake",
+      "t": "I Only Lied to Keep You Safe",
+      "k": "EP",
+      "g": "metalcore / melodic hardcore / metallic hardcore",
+      "cover": "https://f4.bcbits.com/img/a2026586405_5.jpg",
+      "sourceLink": "https://fracturedwake.bandcamp.com/album/i-only-lied-to-keep-you-safe",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/2gmgoLA7M24a4inYTwJIcK"
+    },
+    {
+      "id": "racetraitor|nobodysonofnobody",
+      "d": "14/08",
+      "a": "Racetraitor",
+      "t": "Nobody, Son of Nobody",
+      "k": "EP",
+      "g": "metallic hardcore / hardcore",
+      "cover": "https://f4.bcbits.com/img/a1196121223_5.jpg",
+      "sourceLink": "https://racetraitor-hc.bandcamp.com/album/nobody-son-of-nobody-2",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/68LnpO8wrjvNQ4p9czz6DD"
+    },
+    {
+      "id": "massofthefermentingdregs|iwaou",
+      "d": "14/08",
+      "a": "Mass of the Fermenting Dregs",
+      "t": "祝おう (Iwaou)",
+      "k": "ÁLBUM",
+      "g": "alternative rock / shoegaze / post-hardcore",
+      "cover": "https://f4.bcbits.com/img/a1374158725_5.jpg",
+      "sourceLink": "https://massofthefermentingdregs.bandcamp.com/album/iwaou",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/3IAu2faS3zOlSoYxD3c7xq"
+    },
+    {
+      "id": "chico|chico",
+      "d": "14/08",
+      "a": "CHICO",
+      "t": "Chico",
+      "k": "ÁLBUM",
+      "g": "hardcore / punk / alternative rock / post-hardcore",
+      "cover": "https://f4.bcbits.com/img/a1978211622_5.jpg",
+      "sourceLink": "https://newmoralityzine.bandcamp.com/album/chico"
+    },
+    {
+      "id": "drill|catharsis",
+      "d": "14/08",
+      "a": "Drill",
+      "t": "Catharsis",
+      "k": "EP",
+      "g": "deathcore / metalcore / beatdown / djent",
+      "cover": "https://f4.bcbits.com/img/a1170205600_5.jpg",
+      "sourceLink": "https://drillhc.bandcamp.com/album/catharsis",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/1OJW9rMdBeF0gcKsDTzC84"
     },
     {
       "id": "coyoteman|prostheticmemories",
@@ -4786,6 +4872,17 @@
       "g": "post-hardcore / metalcore / melodic hardcore",
       "sourceLink": "https://open.spotify.com/intl-pt/album/4Opclz2pWlIjGHgISz7AC1",
       "spotifyLink": "https://open.spotify.com/intl-pt/album/4Opclz2pWlIjGHgISz7AC1"
+    },
+    {
+      "id": "avoider|maelstrom",
+      "d": "21/08",
+      "a": "avoider",
+      "t": "Maelstrom",
+      "k": "ÁLBUM",
+      "g": "deathcore / djent / metalcore / thall",
+      "cover": "https://f4.bcbits.com/img/a2148788663_5.jpg",
+      "sourceLink": "https://avoiderexe.bandcamp.com/album/maelstrom",
+      "spotifyLink": "https://open.spotify.com/intl-pt/album/7aT9Ok1FZ54pu81gHJD6lA"
     },
     {
       "id": "risinginsane|deathrace",
