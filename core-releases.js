@@ -93,6 +93,7 @@ const IS_SITES_HOST=location.hostname.endsWith(".chatgpt.site")||location.hostna
 const USER_STATE_KEY="core-releases-user-state-v1";
 const ACCOUNT_CACHE_PREFIX="core-releases-account-state-v1:";
 const ACCOUNT_QUEUE_PREFIX="core-releases-sync-queue-v1:";
+const ACCOUNT_PREFERENCES_PREFIX="core-releases-preferences-v1:";
 const ACCOUNT_IMPORT_PREFIX="core-releases-imported-v1:";
 const ACCOUNT_CHANNEL="core-releases-account-sync-v1";
 const accountChannel="BroadcastChannel" in window?new BroadcastChannel(ACCOUNT_CHANNEL):null;
@@ -162,6 +163,34 @@ try{
   const savedSort=localStorage.getItem(SORT_KEY);
   if(savedSort==="asc"||savedSort==="desc")sortDir=savedSort;
 }catch(e){}
+function normalizeClientPreferences(value){
+  const input=value&&typeof value==="object"?value:{};
+  return {
+    format:["all","alb","ep","oth"].includes(input.format)?input.format:"all",
+    listened:["all","listened","unlistened"].includes(input.listened)?input.listened:"all",
+    rating:["all","unrated","1","2","3","4","5"].includes(String(input.rating))?String(input.rating):"all",
+    sortOrder:input.sortOrder==="desc"?"desc":"asc"
+  };
+}
+function currentUserPreferences(){
+  return {format:userState.filters.format,listened:userState.filters.listened,rating:userState.filters.rating,sortOrder:sortDir};
+}
+function applyRemotePreferences(value){
+  const preferences=normalizeClientPreferences(value);
+  userState.filters.format=preferences.format;
+  userState.filters.listened=preferences.listened;
+  userState.filters.rating=preferences.rating;
+  sortDir=preferences.sortOrder;
+  const sortControl=document.getElementById("sort-order");
+  const listenedControl=document.getElementById("listen-filter");
+  const ratingControl=document.getElementById("rating-filter");
+  if(sortControl)sortControl.value=sortDir;
+  if(listenedControl)listenedControl.value=preferences.listened;
+  if(ratingControl)ratingControl.value=preferences.rating;
+  applySortOrder();
+  applyFilters();
+  try{localStorage.setItem(SORT_KEY,sortDir)}catch(e){}
+}
 function dateKey(r){
   const p=r.d.split("/").map(Number);
   return (p[1]||0)*100+(p[0]||0);
@@ -288,18 +317,18 @@ app.addEventListener("keydown",e=>{
    CONTA E SINCRONIZAÇÃO — sessão nativa do Sites + D1
    O navegador mantém apenas cache opaco, fila e preferências locais.
 ============================================================ */
-let queueBusy=false,syncTimer=0;
+let queueBusy=false,preferenceQueueBusy=false,syncTimer=0;
 function accountStorageKey(prefix,accountKey){return prefix+encodeURIComponent(String(accountKey||""))}
 function readAccountCache(accountKey){
   if(!accountKey)return null;
   try{
     const parsed=JSON.parse(localStorage.getItem(accountStorageKey(ACCOUNT_CACHE_PREFIX,accountKey))||"null");
-    return parsed&&Array.isArray(parsed.states)?{states:parsed.states}:null;
+    return parsed&&Array.isArray(parsed.states)?{states:parsed.states,preferences:parsed.preferences||null}:null;
   }catch(e){return null}
 }
-function saveAccountCache(accountKey,syncToken,states=stateRowsFromCurrent()){
+function saveAccountCache(accountKey,syncToken,states=stateRowsFromCurrent(),preferences=currentUserPreferences()){
   if(!accountKey)return;
-  try{localStorage.setItem(accountStorageKey(ACCOUNT_CACHE_PREFIX,accountKey),JSON.stringify({states}))}catch(e){}
+  try{localStorage.setItem(accountStorageKey(ACCOUNT_CACHE_PREFIX,accountKey),JSON.stringify({states,preferences:normalizeClientPreferences(preferences)}))}catch(e){}
 }
 function readQueue(accountKey){
   if(!accountKey)return[];
@@ -313,6 +342,20 @@ function saveQueue(accountKey,queue){
   try{
     if(queue.length)localStorage.setItem(accountStorageKey(ACCOUNT_QUEUE_PREFIX,accountKey),JSON.stringify(queue));
     else localStorage.removeItem(accountStorageKey(ACCOUNT_QUEUE_PREFIX,accountKey));
+  }catch(e){}
+}
+function readPreferenceQueue(accountKey){
+  if(!accountKey)return null;
+  try{
+    const parsed=JSON.parse(localStorage.getItem(accountStorageKey(ACCOUNT_PREFERENCES_PREFIX,accountKey))||"null");
+    return parsed&&typeof parsed.mutationId==="string"&&parsed.preferences?{mutationId:parsed.mutationId,preferences:normalizeClientPreferences(parsed.preferences)}:null;
+  }catch(e){return null}
+}
+function savePreferenceQueue(accountKey,entry){
+  if(!accountKey)return;
+  try{
+    if(entry)localStorage.setItem(accountStorageKey(ACCOUNT_PREFERENCES_PREFIX,accountKey),JSON.stringify({mutationId:entry.mutationId,preferences:normalizeClientPreferences(entry.preferences)}));
+    else localStorage.removeItem(accountStorageKey(ACCOUNT_PREFERENCES_PREFIX,accountKey));
   }catch(e){}
 }
 function stateRowsFromCurrent(){
@@ -351,6 +394,12 @@ function enqueueMutation(r){
   const index=queue.findIndex(item=>item.releaseId===entry.releaseId);
   if(index>=0)queue[index]=entry;else queue.push(entry);
   saveQueue(authState.accountKey,queue);setSyncStatus("sincronização pendente");processQueue();
+}
+function enqueuePreferences(flush=true){
+  if(!IS_SITES_HOST||authState.status!=="authenticated"||!authState.accountKey)return;
+  const entry={mutationId:newId(),preferences:currentUserPreferences()};
+  savePreferenceQueue(authState.accountKey,entry);setSyncStatus("sincronização pendente");
+  if(flush)processPreferenceQueue();
 }
 function localImportStates(){
   const legacy=readLegacyUserState(),ids=new Set([...Object.keys(legacy.listened),...Object.keys(legacy.ratings)]),states=[];
@@ -414,6 +463,29 @@ async function processQueue(){
   }finally{queueBusy=false}
   setSyncStatus(success?"sincronizado":"sincronização pendente");return success;
 }
+async function processPreferenceQueue(){
+  if(preferenceQueueBusy||authState.status!=="authenticated"||!authState.accountKey)return true;
+  preferenceQueueBusy=true;let success=true;
+  try{
+    const entry=readPreferenceQueue(authState.accountKey);
+    if(entry){
+      setSyncStatus("sincronizando");
+      let response=null;
+      try{response=await authFetch("/api/user-preferences",{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify({preferences:entry.preferences,mutationId:entry.mutationId})})}catch(e){success=false}
+      if(response?.status===401){handleSessionExpired();success=false}
+      else if(!response?.ok){success=false}
+      else{
+        let payload=null;try{payload=await response.json()}catch(e){}
+        if(payload?.syncToken){authState.syncToken=payload.syncToken;authState.etag=null}
+        const current=readPreferenceQueue(authState.accountKey);
+        if(current?.mutationId===entry.mutationId){savePreferenceQueue(authState.accountKey,null);applyRemotePreferences(payload?.preferences||entry.preferences)}
+        saveAccountCache(authState.accountKey,authState.syncToken,stateRowsFromCurrent(),payload?.preferences||entry.preferences);
+        accountChannel?.postMessage({type:"account-update",accountKey:authState.accountKey});
+      }
+    }
+  }finally{preferenceQueueBusy=false}
+  setSyncStatus(success?"sincronizado":"sincronização pendente");return success;
+}
 async function syncNow(){
   if(!IS_SITES_HOST||authState.status!=="authenticated"||authState.inFlight)return;
   authState.inFlight=true;setSyncStatus("sincronizando");let success=false;
@@ -421,13 +493,21 @@ async function syncNow(){
     const headers={};if(authState.etag)headers["If-None-Match"]=authState.etag;
     const response=await authFetch("/api/user-state",{headers});
     if(response.status===401){handleSessionExpired();return}
-    if(response.status===304){success=true;return}
-    if(!response.ok)throw new Error("sync "+response.status);
-    const payload=await response.json();authState.syncToken=payload.syncToken||authState.syncToken;authState.etag=response.headers.get("ETag")||authState.etag;
-    applyStateRows(payload.states||[]);saveAccountCache(authState.accountKey,authState.syncToken,payload.states||[]);success=true;
+    if(response.status===304){success=true}
+    else{
+      if(!response.ok)throw new Error("sync "+response.status);
+      const payload=await response.json();
+      authState.syncToken=payload.syncToken||authState.syncToken;authState.etag=response.headers.get("ETag")||authState.etag;
+      applyStateRows(payload.states||[]);
+      const pendingPreferences=readPreferenceQueue(authState.accountKey);
+      if(payload.preferences&&!pendingPreferences)applyRemotePreferences(payload.preferences);
+      else if(!payload.preferences&&!pendingPreferences)enqueuePreferences(false);
+      saveAccountCache(authState.accountKey,authState.syncToken,payload.states||[],pendingPreferences?.preferences||payload.preferences||currentUserPreferences());
+      success=true;
+    }
   }catch(e){}
   finally{authState.inFlight=false;setSyncStatus(success?"sincronizado":"sincronização pendente")}
-  if(success)await processQueue();
+  if(success){await processQueue();await processPreferenceQueue()}
 }
 async function importLocalHistory(){
   if(authState.status!=="authenticated"||!authState.accountKey)return;
@@ -443,17 +523,17 @@ async function importLocalHistory(){
 }
 function startSyncLoop(){
   clearInterval(syncTimer);syncTimer=0;
-  const update=()=>{if(document.hidden){clearInterval(syncTimer);syncTimer=0}else{syncNow()}};
+  const update=()=>{if(document.hidden){clearInterval(syncTimer);syncTimer=0}else{syncNow();processPreferenceQueue()}};
   if(!document.hidden)syncTimer=setInterval(update,10000);
-  document.addEventListener("visibilitychange",()=>{if(authState.status!=="authenticated")return;if(document.hidden){clearInterval(syncTimer);syncTimer=0}else{syncNow();syncTimer=setInterval(update,10000)}});
-  window.addEventListener("focus",()=>syncNow());window.addEventListener("online",()=>{syncNow();processQueue()});
+  document.addEventListener("visibilitychange",()=>{if(authState.status!=="authenticated")return;if(document.hidden){clearInterval(syncTimer);syncTimer=0}else{syncNow();processPreferenceQueue();syncTimer=setInterval(update,10000)}});
+  window.addEventListener("focus",()=>{syncNow();processPreferenceQueue()});window.addEventListener("online",()=>{syncNow();processQueue();processPreferenceQueue()});
 }
 async function explicitLogout(){
   if(authState.status!=="authenticated")return;
-  const flushed=await processQueue();
+  const flushed=(await processQueue())&&(await processPreferenceQueue());
   if(!flushed&&!window.confirm("Há alterações pendentes. Sair agora pode deixá-las sem sincronizar. Continuar?"))return;
   const accountKey=authState.accountKey;
-  try{localStorage.removeItem(accountStorageKey(ACCOUNT_CACHE_PREFIX,accountKey));localStorage.removeItem(accountStorageKey(ACCOUNT_QUEUE_PREFIX,accountKey));localStorage.removeItem(accountStorageKey(ACCOUNT_IMPORT_PREFIX,accountKey));clearLegacyMarks()}catch(e){}
+  try{localStorage.removeItem(accountStorageKey(ACCOUNT_CACHE_PREFIX,accountKey));localStorage.removeItem(accountStorageKey(ACCOUNT_QUEUE_PREFIX,accountKey));localStorage.removeItem(accountStorageKey(ACCOUNT_PREFERENCES_PREFIX,accountKey));localStorage.removeItem(accountStorageKey(ACCOUNT_IMPORT_PREFIX,accountKey));clearLegacyMarks()}catch(e){}
   userState.listened=Object.create(null);userState.ratings=Object.create(null);syncAllCardPreferences();applyFilters();
   window.top.location.href="/signout-with-chatgpt?return_to=%2F";
 }
@@ -472,7 +552,7 @@ async function initializeAccount(){
     const payload=await response.json();
     if(!response.ok||payload.authenticated!==true){authState.status="anonymous";userState=readLegacyUserState();syncAllCardPreferences();renderAccountControl("somente neste aparelho");applyFilters();return}
     authState={...authState,status:"authenticated",accountKey:payload.accountKey,displayName:payload.displayName||"Conta ChatGPT"};
-    const cached=readAccountCache(authState.accountKey);if(cached){applyStateRows(cached.states)}
+    const cached=readAccountCache(authState.accountKey);if(cached){applyStateRows(cached.states);if(cached.preferences)applyRemotePreferences(cached.preferences)}
     renderAccountControl("sincronizando");
     await syncNow();
     await importLocalHistory();
@@ -534,6 +614,7 @@ sortOrder.addEventListener("change",e=>{
   sortDir=e.target.value;
   try{localStorage.setItem(SORT_KEY,sortDir)}catch(err){}
   applySortOrder();
+  saveUserState();enqueuePreferences();
 });
 
 function applyFilters(){
@@ -556,10 +637,10 @@ function applyFilters(){
 
 filtersEl.addEventListener("click",e=>{
   const b=e.target.closest(".fbtn[data-f]");if(!b)return;
-  userState.filters.format=b.dataset.f;saveUserState();applyFilters();
+  userState.filters.format=b.dataset.f;saveUserState();applyFilters();enqueuePreferences();
 });
-listenedFilter.addEventListener("change",e=>{userState.filters.listened=e.target.value;saveUserState();applyFilters()});
-ratingFilter.addEventListener("change",e=>{userState.filters.rating=e.target.value;saveUserState();applyFilters()});
+listenedFilter.addEventListener("change",e=>{userState.filters.listened=e.target.value;saveUserState();applyFilters();enqueuePreferences()});
+ratingFilter.addEventListener("change",e=>{userState.filters.rating=e.target.value;saveUserState();applyFilters();enqueuePreferences()});
 
 /* ============================================================
    DOCK (port vanilla do React Bits Dock) — navegação rápida
