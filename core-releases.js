@@ -330,8 +330,11 @@ function applyStateRows(rows){
     if(row.listened===true)userState.listened[row.releaseId]=true;
     const rating=Number(row.rating);if(Number.isInteger(rating)&&rating>=1&&rating<=5)userState.ratings[row.releaseId]=rating;
   });
-  document.querySelectorAll(".card").forEach(card=>{const r=R[+card.dataset.i];if(r)syncCardPreference(card,r)});
+  syncAllCardPreferences();
   applyFilters();
+}
+function syncAllCardPreferences(){
+  document.querySelectorAll(".card").forEach(card=>{const r=R[+card.dataset.i];if(r)syncCardPreference(card,r)});
 }
 function applyStateRow(row){
   if(!row||typeof row.releaseId!=="string")return;
@@ -386,7 +389,7 @@ async function authFetch(path,options={}){
 function handleSessionExpired(){
   if(authState.status!=="authenticated")return;
   authState.status="anonymous";authState.accountKey=null;authState.syncToken=null;authState.etag=null;authState.inFlight=false;
-  userState.listened=Object.create(null);userState.ratings=Object.create(null);renderAccountControl("entre para sincronizar");applyFilters();
+  userState.listened=Object.create(null);userState.ratings=Object.create(null);syncAllCardPreferences();renderAccountControl("entre para sincronizar");applyFilters();
   clearInterval(syncTimer);syncTimer=0;
 }
 async function processQueue(){
@@ -450,7 +453,7 @@ async function explicitLogout(){
   if(!flushed&&!window.confirm("Há alterações pendentes. Sair agora pode deixá-las sem sincronizar. Continuar?"))return;
   const accountKey=authState.accountKey;
   try{localStorage.removeItem(accountStorageKey(ACCOUNT_CACHE_PREFIX,accountKey));localStorage.removeItem(accountStorageKey(ACCOUNT_QUEUE_PREFIX,accountKey));localStorage.removeItem(accountStorageKey(ACCOUNT_IMPORT_PREFIX,accountKey));clearLegacyMarks()}catch(e){}
-  userState.listened=Object.create(null);userState.ratings=Object.create(null);applyFilters();
+  userState.listened=Object.create(null);userState.ratings=Object.create(null);syncAllCardPreferences();applyFilters();
   window.top.location.href="/signout-with-chatgpt?return_to=%2F";
 }
 accountControl()?.addEventListener("click",e=>{if(e.target.closest('[data-account-action="logout"]')){e.preventDefault();explicitLogout()}else if(e.target.closest('[data-account-action="retry"]')){e.preventDefault();initializeAccount()}});
@@ -464,16 +467,16 @@ async function initializeAccount(){
   renderAccountControl();
   try{
     const response=await authFetch("/api/account");
-    if(response.status===503){authState.status="unavailable";userState=readLegacyUserState();renderAccountControl("sincronização indisponível");applyFilters();return}
+    if(response.status===503){authState.status="unavailable";userState=readLegacyUserState();syncAllCardPreferences();renderAccountControl("sincronização indisponível");applyFilters();return}
     const payload=await response.json();
-    if(!response.ok||payload.authenticated!==true){authState.status="anonymous";userState=readLegacyUserState();renderAccountControl("somente neste aparelho");applyFilters();return}
+    if(!response.ok||payload.authenticated!==true){authState.status="anonymous";userState=readLegacyUserState();syncAllCardPreferences();renderAccountControl("somente neste aparelho");applyFilters();return}
     authState={...authState,status:"authenticated",accountKey:payload.accountKey,displayName:payload.displayName||"Conta ChatGPT"};
     const cached=readAccountCache(authState.accountKey);if(cached){applyStateRows(cached.states)}
     renderAccountControl("sincronizando");
     await syncNow();
     await importLocalHistory();
     startSyncLoop();
-  }catch(e){authState.status="unavailable";userState=readLegacyUserState();renderAccountControl("sincronização indisponível");applyFilters()}
+  }catch(e){authState.status="unavailable";userState=readLegacyUserState();syncAllCardPreferences();renderAccountControl("sincronização indisponível");applyFilters()}
   finally{accountInitBusy=false}
 }
 /* marquee */
